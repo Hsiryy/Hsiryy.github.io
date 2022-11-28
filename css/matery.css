@@ -34,9 +34,9 @@
 }
 
 body {
-    background-color: #eaeaea;
+    background-color: #c3c4d4;
     margin: 0;
-    color: #34495e;
+    color: #553fd0;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -117,7 +117,7 @@ pre {
     left: 12px;
     margin-top: 12px;
     -webkit-box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
-    box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
+    box-shadow: 20px 0 #ffbd2e, 40px 0 #cae2ce;
 }
 
 code {
@@ -241,7 +241,7 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background-image: linear-gradient(to right, #f99b6c 0%, #d7b09d 100%);
 }
 
 .text-color {
