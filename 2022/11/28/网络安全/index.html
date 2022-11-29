@@ -5,9 +5,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="SEC, Maple Leaf Falling">
-    <meta name="description" content="一、初识Linux1. 指定模板机的名称1hostnamectl set-hostname （名称）
+    <meta name="description" content="一、初识Linux1. 指定模板机的名称hostnamectl set-hostname （名称）
 
-2.指定一个静态IP地址（固定IP地址）123网卡的配置文件 &amp;gt;&amp;gt; /etc/sysconfig/network-scrip">
+2.指定一个静态IP地址（固定IP地址）网卡的配置文件 &amp;gt;&amp;gt; &amp;#x2F;etc&amp;#x2F;sysconfig&amp;#x2F;ne">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -99,22 +99,25 @@
   <li class="hide-on-med-and-down nav-item">
     
     <a href="/categories" class="waves-effect waves-light">
+
       
       <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
       
       <span>类别</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
     </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/archives" class="waves-effect waves-light">
+    <ul class="sub-nav menus_item_child ">
       
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      <li>
+        <a href="/musics">
+          
+          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Musics</span>
+        </a>
+      </li>
       
-      <span>档案</span>
-    </a>
+    </ul>
     
   </li>
   
@@ -204,23 +207,26 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/categories" class="waves-effect waves-light">
+		<a href="javascript:;">
 			
-			    <i class="fa-fw fas fa-bookmark"></i>
+				<i class="fa-fw fas fa-bookmark"></i>
 			
 			类别
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
 		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			档案
-		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/musics " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Musics</span>
+                  </a>
+                </li>
+              
+            </ul>
           
         </li>
         
@@ -393,23 +399,33 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.min.css">
+        
 
         
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="一、初识Linux"><a href="#一、初识Linux" class="headerlink" title="一、初识Linux"></a>一、初识Linux</h1><h2 id="1-指定模板机的名称"><a href="#1-指定模板机的名称" class="headerlink" title="1. 指定模板机的名称"></a>1. 指定模板机的名称</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hostnamectl set-hostname （名称）</span><br></pre></td></tr></table></figure>
+                <h1 id="一、初识Linux"><a href="#一、初识Linux" class="headerlink" title="一、初识Linux"></a>一、初识Linux</h1><h2 id="1-指定模板机的名称"><a href="#1-指定模板机的名称" class="headerlink" title="1. 指定模板机的名称"></a>1. 指定模板机的名称</h2><pre class="line-numbers language-none"><code class="language-none">hostnamectl set-hostname （名称）<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h2 id="2-指定一个静态IP地址（固定IP地址）"><a href="#2-指定一个静态IP地址（固定IP地址）" class="headerlink" title="2.指定一个静态IP地址（固定IP地址）"></a>2.指定一个静态IP地址（固定IP地址）</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">网卡的配置文件 &gt;&gt; /etc/sysconfig/network-scripts/ifcfg-ens33</span><br><span class="line">物理服务器 &gt;&gt; Dell --&gt; em1 or em2,3...</span><br><span class="line">云主机（阿里云）&gt;&gt; eth0</span><br></pre></td></tr></table></figure>
+<h2 id="2-指定一个静态IP地址（固定IP地址）"><a href="#2-指定一个静态IP地址（固定IP地址）" class="headerlink" title="2.指定一个静态IP地址（固定IP地址）"></a>2.指定一个静态IP地址（固定IP地址）</h2><pre class="line-numbers language-none"><code class="language-none">网卡的配置文件 &gt;&gt; &#x2F;etc&#x2F;sysconfig&#x2F;network-scripts&#x2F;ifcfg-ens33
+物理服务器 &gt;&gt; Dell --&gt; em1 or em2,3...
+云主机（阿里云）&gt;&gt; eth0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="3-vim和vi的知识"><a href="#3-vim和vi的知识" class="headerlink" title="3.vim和vi的知识"></a>3.vim和vi的知识</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">文本编辑器 &gt;&gt; yum install -y vim tree lrzsz wget curl unzip</span><br><span class="line">yum install -y net-tools</span><br></pre></td></tr></table></figure>
+<h2 id="3-vim和vi的知识"><a href="#3-vim和vi的知识" class="headerlink" title="3.vim和vi的知识"></a>3.vim和vi的知识</h2><pre class="line-numbers language-none"><code class="language-none">文本编辑器 &gt;&gt; yum install -y vim tree lrzsz wget curl unzip
+yum install -y net-tools<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart network 重启网络</span><br><span class="line">systemctl stop firewalld 关闭防火墙</span><br><span class="line">systemctl disable firewalld 开机不启动防火墙</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">systemctl restart network 重启网络
+systemctl stop firewalld 关闭防火墙
+systemctl disable firewalld 开机不启动防火墙<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221101230844153.png" alt="image-20221101230844153"></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/sysconfig/network-scripts/ifcfg-ens33</span><br><span class="line"></span><br><span class="line">还要删除UUID 删除之后MAC地址随机</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">vim &#x2F;etc&#x2F;sysconfig&#x2F;network-scripts&#x2F;ifcfg-ens33
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C7模板机 root 密码Hlh！@#45</span><br></pre></td></tr></table></figure>
+还要删除UUID 删除之后MAC地址随机<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">C7模板机 root 密码Hlh！@#45<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p> 配置网络。</p>
 <h1 id="二、网络信息安全基础知识"><a href="#二、网络信息安全基础知识" class="headerlink" title="二、网络信息安全基础知识"></a>二、网络信息安全基础知识</h1><h2 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102214517676.png" alt="image-20221102214517676"></p>
@@ -427,9 +443,10 @@
 <h2 id="网站的数据库被植入内容"><a href="#网站的数据库被植入内容" class="headerlink" title="网站的数据库被植入内容"></a>网站的数据库被植入内容</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102223512264.png" alt="image-20221102223512264"></p>
 <h2 id="DDos攻击网站网页打不开"><a href="#DDos攻击网站网页打不开" class="headerlink" title="DDos攻击网站网页打不开"></a>DDos攻击网站网页打不开</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102223746318.png" alt="image-20221102223746318"></p>
 <h2 id="非法桥页-网站打开跳转到指定页面上"><a href="#非法桥页-网站打开跳转到指定页面上" class="headerlink" title="非法桥页 网站打开跳转到指定页面上"></a>非法桥页 网站打开跳转到指定页面上</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102223846370.png" alt="image-20221102223846370"></p>
-<h1 id="四、Linux系统常见的150个命令-开发-运维-测试-安全"><a href="#四、Linux系统常见的150个命令-开发-运维-测试-安全" class="headerlink" title="四、Linux系统常见的150个命令/开发/运维/测试/安全"></a>四、Linux系统常见的150个命令/开发/运维/测试/安全</h1><h2 id="线上查询和帮助-2个："><a href="#线上查询和帮助-2个：" class="headerlink" title="线上查询和帮助 2个："></a>线上查询和帮助 2个：</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">man 查看命令帮助 -- 命令的词典</span><br><span class="line">help 查看Linux系统的内置命令帮助</span><br></pre></td></tr></table></figure>
+<h1 id="四、Linux系统常见的150个命令-开发-运维-测试-安全"><a href="#四、Linux系统常见的150个命令-开发-运维-测试-安全" class="headerlink" title="四、Linux系统常见的150个命令/开发/运维/测试/安全"></a>四、Linux系统常见的150个命令/开发/运维/测试/安全</h1><h2 id="线上查询和帮助-2个："><a href="#线上查询和帮助-2个：" class="headerlink" title="线上查询和帮助 2个："></a>线上查询和帮助 2个：</h2><pre class="line-numbers language-none"><code class="language-none">man 查看命令帮助 -- 命令的词典
+help 查看Linux系统的内置命令帮助<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h2 id="文件和目录操作命令-15个："><a href="#文件和目录操作命令-15个：" class="headerlink" title="文件和目录操作命令 15个："></a>文件和目录操作命令 15个：</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls 查看当前目录内容以及内容属性的信息 -l -a</span><br></pre></td></tr></table></figure>
+<h2 id="文件和目录操作命令-15个："><a href="#文件和目录操作命令-15个：" class="headerlink" title="文件和目录操作命令 15个："></a>文件和目录操作命令 15个：</h2><pre class="line-numbers language-none"><code class="language-none">ls 查看当前目录内容以及内容属性的信息 -l -a<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>cd</p>
 <blockquote>
@@ -485,35 +502,151 @@
 <blockquote>
 <p>显示文件类型</p>
 </blockquote>
-<h2 id="查看文件内容以及内容处理"><a href="#查看文件内容以及内容处理" class="headerlink" title="查看文件内容以及内容处理"></a>查看文件内容以及内容处理</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">cat</span><br><span class="line">more</span><br><span class="line">less</span><br><span class="line">head</span><br><span class="line">tail</span><br><span class="line">cut</span><br><span class="line">wc</span><br><span class="line">diff</span><br><span class="line">vimdiff</span><br><span class="line">tr</span><br><span class="line">vi/vim -- 没有就 yum install -y vim</span><br><span class="line">grep</span><br><span class="line">rev</span><br><span class="line">....</span><br></pre></td></tr></table></figure>
+<h2 id="查看文件内容以及内容处理"><a href="#查看文件内容以及内容处理" class="headerlink" title="查看文件内容以及内容处理"></a>查看文件内容以及内容处理</h2><pre class="line-numbers language-none"><code class="language-none">cat
+more
+less
+head
+tail
+cut
+wc
+diff
+vimdiff
+tr
+vi&#x2F;vim -- 没有就 yum install -y vim
+grep
+rev
+....<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
-<h2 id="文件压缩"><a href="#文件压缩" class="headerlink" title="文件压缩"></a>文件压缩</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">tar</span><br><span class="line">unzip</span><br><span class="line">gzip</span><br><span class="line">zip</span><br><span class="line">rar</span><br><span class="line">....</span><br></pre></td></tr></table></figure>
+<h2 id="文件压缩"><a href="#文件压缩" class="headerlink" title="文件压缩"></a>文件压缩</h2><pre class="line-numbers language-none"><code class="language-none">tar
+unzip
+gzip
+zip
+rar
+....<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="文件传输"><a href="#文件传输" class="headerlink" title="文件传输"></a>文件传输</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">scp 	--不支持断点续传</span><br><span class="line">ssh+scp</span><br><span class="line">rsync 	--增量支持断点</span><br><span class="line">....</span><br></pre></td></tr></table></figure>
+<h2 id="文件传输"><a href="#文件传输" class="headerlink" title="文件传输"></a>文件传输</h2><pre class="line-numbers language-none"><code class="language-none">scp 	--不支持断点续传
+ssh+scp
+rsync 	--增量支持断点
+....<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="信息显示命令"><a href="#信息显示命令" class="headerlink" title="信息显示命令"></a>信息显示命令</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">uname</span><br><span class="line">hostname</span><br><span class="line">dmesg</span><br><span class="line">uptime</span><br><span class="line">stat</span><br><span class="line">du</span><br><span class="line">df -TH</span><br><span class="line">top</span><br><span class="line">free</span><br><span class="line">date</span><br><span class="line">cal</span><br><span class="line">....</span><br></pre></td></tr></table></figure>
+<h2 id="信息显示命令"><a href="#信息显示命令" class="headerlink" title="信息显示命令"></a>信息显示命令</h2><pre class="line-numbers language-none"><code class="language-none">uname
+hostname
+dmesg
+uptime
+stat
+du
+df -TH
+top
+free
+date
+cal
+....<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="文件查找和搜索"><a href="#文件查找和搜索" class="headerlink" title="文件查找和搜索"></a>文件查找和搜索</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">find</span><br><span class="line">which</span><br><span class="line">whereis</span><br><span class="line">locate</span><br></pre></td></tr></table></figure>
+<h2 id="文件查找和搜索"><a href="#文件查找和搜索" class="headerlink" title="文件查找和搜索"></a>文件查找和搜索</h2><pre class="line-numbers language-none"><code class="language-none">find
+which
+whereis
+locate<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="用户管和用户组理"><a href="#用户管和用户组理" class="headerlink" title="用户管和用户组理"></a>用户管和用户组理</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">useradd</span><br><span class="line">userdel</span><br><span class="line">usermod</span><br><span class="line">groupadd</span><br><span class="line">id</span><br><span class="line">passwd</span><br><span class="line">chage</span><br><span class="line">su</span><br><span class="line">sudo</span><br><span class="line">visudu --/etc/sudiers</span><br></pre></td></tr></table></figure>
+<h2 id="用户管和用户组理"><a href="#用户管和用户组理" class="headerlink" title="用户管和用户组理"></a>用户管和用户组理</h2><pre class="line-numbers language-none"><code class="language-none">useradd
+userdel
+usermod
+groupadd
+id
+passwd
+chage
+su
+sudo
+visudu --&#x2F;etc&#x2F;sudiers<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="基本的网络管理命令"><a href="#基本的网络管理命令" class="headerlink" title="基本的网络管理命令"></a>基本的网络管理命令</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">ip</span><br><span class="line">ping</span><br><span class="line">route</span><br><span class="line">telnet</span><br><span class="line">ssh</span><br><span class="line">scp</span><br><span class="line">wget</span><br><span class="line">curl</span><br><span class="line">ipconfig</span><br><span class="line">netstat</span><br><span class="line">ss</span><br><span class="line">ifup</span><br><span class="line">ifdown</span><br><span class="line">nslookup</span><br><span class="line">dig</span><br></pre></td></tr></table></figure>
+<h2 id="基本的网络管理命令"><a href="#基本的网络管理命令" class="headerlink" title="基本的网络管理命令"></a>基本的网络管理命令</h2><pre class="line-numbers language-none"><code class="language-none">ip
+ping
+route
+telnet
+ssh
+scp
+wget
+curl
+ipconfig
+netstat
+ss
+ifup
+ifdown
+nslookup
+dig<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="进阶的网络命令"><a href="#进阶的网络命令" class="headerlink" title="进阶的网络命令"></a>进阶的网络命令</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">nnap</span><br><span class="line">lsof</span><br><span class="line">iftop</span><br><span class="line">mail</span><br><span class="line">host</span><br><span class="line">tcpdump</span><br><span class="line">traceroute</span><br></pre></td></tr></table></figure>
+<h2 id="进阶的网络命令"><a href="#进阶的网络命令" class="headerlink" title="进阶的网络命令"></a>进阶的网络命令</h2><pre class="line-numbers language-none"><code class="language-none">nnap
+lsof
+iftop
+mail
+host
+tcpdump
+traceroute<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="磁盘相关命令"><a href="#磁盘相关命令" class="headerlink" title="磁盘相关命令"></a>磁盘相关命令</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">fdisk</span><br><span class="line">mount</span><br><span class="line">unmount</span><br><span class="line">fsck</span><br><span class="line">dd</span><br><span class="line">mkfs</span><br><span class="line">mkswap</span><br><span class="line">swapon</span><br><span class="line">swapoff</span><br><span class="line">sync</span><br><span class="line">....</span><br></pre></td></tr></table></figure>
+<h2 id="磁盘相关命令"><a href="#磁盘相关命令" class="headerlink" title="磁盘相关命令"></a>磁盘相关命令</h2><pre class="line-numbers language-none"><code class="language-none">fdisk
+mount
+unmount
+fsck
+dd
+mkfs
+mkswap
+swapon
+swapoff
+sync
+....<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="系统权限以及用户授权相关"><a href="#系统权限以及用户授权相关" class="headerlink" title="系统权限以及用户授权相关"></a>系统权限以及用户授权相关</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">chown</span><br><span class="line">chmod</span><br><span class="line">chgrp</span><br><span class="line">umask</span><br></pre></td></tr></table></figure>
+<h2 id="系统权限以及用户授权相关"><a href="#系统权限以及用户授权相关" class="headerlink" title="系统权限以及用户授权相关"></a>系统权限以及用户授权相关</h2><pre class="line-numbers language-none"><code class="language-none">chown
+chmod
+chgrp
+umask<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="查看系统用户登录信息"><a href="#查看系统用户登录信息" class="headerlink" title="查看系统用户登录信息"></a>查看系统用户登录信息</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">w</span><br><span class="line">who</span><br><span class="line">whoami</span><br><span class="line">last</span><br><span class="line">lastlog</span><br><span class="line">users</span><br></pre></td></tr></table></figure>
+<h2 id="查看系统用户登录信息"><a href="#查看系统用户登录信息" class="headerlink" title="查看系统用户登录信息"></a>查看系统用户登录信息</h2><pre class="line-numbers language-none"><code class="language-none">w
+who
+whoami
+last
+lastlog
+users<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="系统内置命令"><a href="#系统内置命令" class="headerlink" title="系统内置命令"></a>系统内置命令</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">echo</span><br><span class="line">date</span><br><span class="line">alias -rm</span><br><span class="line">rpm</span><br><span class="line">yum</span><br><span class="line">printf</span><br><span class="line">clear</span><br><span class="line">history</span><br><span class="line">time</span><br><span class="line">nc</span><br><span class="line">exec</span><br><span class="line">export</span><br><span class="line">type</span><br></pre></td></tr></table></figure>
+<h2 id="系统内置命令"><a href="#系统内置命令" class="headerlink" title="系统内置命令"></a>系统内置命令</h2><pre class="line-numbers language-none"><code class="language-none">echo
+date
+alias -rm
+rpm
+yum
+printf
+clear
+history
+time
+nc
+exec
+export
+type<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="系统管理和监控"><a href="#系统管理和监控" class="headerlink" title="系统管理和监控"></a>系统管理和监控</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable</span><br><span class="line">chkconfig</span><br><span class="line">vmstat</span><br><span class="line">mpstat</span><br><span class="line">iostat</span><br><span class="line">sar</span><br><span class="line">ipcs</span><br><span class="line">service</span><br><span class="line">iptable</span><br><span class="line">firewalld</span><br></pre></td></tr></table></figure>
+<h2 id="系统管理和监控"><a href="#系统管理和监控" class="headerlink" title="系统管理和监控"></a>系统管理和监控</h2><pre class="line-numbers language-none"><code class="language-none">systemctl enable
+chkconfig
+vmstat
+mpstat
+iostat
+sar
+ipcs
+service
+iptable
+firewalld<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="进程管理"><a href="#进程管理" class="headerlink" title="进程管理"></a>进程管理</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">ps</span><br><span class="line">pstree</span><br><span class="line">pgrep</span><br><span class="line">kill</span><br><span class="line">pkill</span><br><span class="line">killall</span><br><span class="line">jobs</span><br><span class="line">fg</span><br><span class="line">bg</span><br><span class="line">bgexit</span><br><span class="line">ctrl+d</span><br><span class="line">nice</span><br><span class="line">runlevel</span><br><span class="line">init</span><br></pre></td></tr></table></figure>
+<h2 id="进程管理"><a href="#进程管理" class="headerlink" title="进程管理"></a>进程管理</h2><pre class="line-numbers language-none"><code class="language-none">ps
+pstree
+pgrep
+kill
+pkill
+killall
+jobs
+fg
+bg
+bgexit
+ctrl+d
+nice
+runlevel
+init<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
@@ -551,12 +684,12 @@
 <p>关闭服务</p>
 <p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103012013947.png" alt="image-20221103012013947"></p>
 <p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103012319716.png" alt="image-20221103012319716"></p>
-<h2 id="Windows系统"><a href="#Windows系统" class="headerlink" title="Windows系统"></a>Windows系统</h2><h3 id="Windows-XP"><a href="#Windows-XP" class="headerlink" title="Windows XP"></a>Windows XP</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msdn.itellyou.cn 可以在此网站下载</span><br></pre></td></tr></table></figure>
+<h2 id="Windows系统"><a href="#Windows系统" class="headerlink" title="Windows系统"></a>Windows系统</h2><h3 id="Windows-XP"><a href="#Windows-XP" class="headerlink" title="Windows XP"></a>Windows XP</h3><pre class="line-numbers language-none"><code class="language-none">msdn.itellyou.cn 可以在此网站下载<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103125206559.png" alt="image-20221103125206559"></p>
-<h3 id="Windows-7专业版无补丁"><a href="#Windows-7专业版无补丁" class="headerlink" title="Windows 7专业版无补丁"></a>Windows 7专业版无补丁</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ed2k://|file|cn_windows_7_professional_x64_dvd_x15-65791.iso|3341268992|3474800521D169FBF3F5E527CD835156|/</span><br></pre></td></tr></table></figure>
+<h3 id="Windows-7专业版无补丁"><a href="#Windows-7专业版无补丁" class="headerlink" title="Windows 7专业版无补丁"></a>Windows 7专业版无补丁</h3><pre class="line-numbers language-none"><code class="language-none">ed2k:&#x2F;&#x2F;|file|cn_windows_7_professional_x64_dvd_x15-65791.iso|3341268992|3474800521D169FBF3F5E527CD835156|&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h3 id="Windows-Server-2008-R2系统"><a href="#Windows-Server-2008-R2系统" class="headerlink" title="Windows Server 2008 R2系统"></a>Windows Server 2008 R2系统</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ed2k://|file|cn_windows_server_2008_r2_standard_enterprise_datacenter_and_web_with_sp1_x64_dvd_617598.iso|3368839168|D282F613A80C2F45FF23B79212A3CF67|/</span><br></pre></td></tr></table></figure>
+<h3 id="Windows-Server-2008-R2系统"><a href="#Windows-Server-2008-R2系统" class="headerlink" title="Windows Server 2008 R2系统"></a>Windows Server 2008 R2系统</h3><pre class="line-numbers language-none"><code class="language-none">ed2k:&#x2F;&#x2F;|file|cn_windows_server_2008_r2_standard_enterprise_datacenter_and_web_with_sp1_x64_dvd_617598.iso|3368839168|D282F613A80C2F45FF23B79212A3CF67|&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h3 id="Windows-10-1903"><a href="#Windows-10-1903" class="headerlink" title="Windows 10 1903"></a>Windows 10 1903</h3><h3 id="Kali-Linux各个版本下载地址"><a href="#Kali-Linux各个版本下载地址" class="headerlink" title="Kali Linux各个版本下载地址"></a>Kali Linux各个版本下载地址</h3><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103163647944.png" alt="image-20221103163647944"></p>
 <p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103163719186.png" alt="image-20221103163719186"></p>
@@ -567,7 +700,7 @@
 <p>五大语句</p>
 <p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103173430398.png" alt="image-20221103173430398"></p>
 <p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103173550901.png" alt="image-20221103173550901"></p>
-<h2 id="Parrot-Linux的下载"><a href="#Parrot-Linux的下载" class="headerlink" title="Parrot Linux的下载"></a>Parrot Linux的下载</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">镜像地址：https://mirrors.aliyun.com/parrot/</span><br></pre></td></tr></table></figure>
+<h2 id="Parrot-Linux的下载"><a href="#Parrot-Linux的下载" class="headerlink" title="Parrot Linux的下载"></a>Parrot Linux的下载</h2><pre class="line-numbers language-none"><code class="language-none">镜像地址：https:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;parrot&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
 
@@ -605,10 +738,10 @@
 <p>安装完成后输入 docker version 如下图显示</p>
 <p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104000242547.png" alt="image-20221104000242547"></p>
 <p>如若没有Server：Docker Engine - Community 则执行</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service docker start </span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">service docker start <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>设置 开机自启</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable docker</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">systemctl enable docker<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
 
@@ -623,7 +756,14 @@
 <p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104001502919.png" alt="image-20221104001502919"></p>
 <p>按顺序执行</p>
 <p>vim /etc/docker/daemon.json </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;registry-mirrors&quot;: [&quot;https://2rx34ysn.mirror.aliyuncs.com&quot;] &lt;此码人人不一样</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">sudo systemctl daemon-reload</span><br><span class="line">sudo systemctl restart docker</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">&#123;
+  &quot;registry-mirrors&quot;: [&quot;https:&#x2F;&#x2F;2rx34ysn.mirror.aliyuncs.com&quot;] &lt;此码人人不一样
+&#125;
+
+
+
+sudo systemctl daemon-reload
+sudo systemctl restart docker<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>Docker模板机关机状态克隆一台DVWA的机器</p>
 <p>进入xshell连接DVWA</p>
@@ -636,7 +776,8 @@
 <p>docker images命令查看是否下载成功 </p>
 <p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104003535246.png" alt="image-20221104003535246"></p>
 <p>docker run -d -p 80:80 -p 3306:3306 -e MYSQL_PASS=”password” infoslack/dvwa</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-d 后台运行</span><br><span class="line">-p 打开端口</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">-d 后台运行
+-p 打开端口<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104004026010.png" alt="image-20221104004026010"></p>
 <p>查看是否运行</p>
@@ -653,7 +794,7 @@
 <p>输入</p>
 <p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104010959318.png" alt="image-20221104010959318"></p>
 <p>执行</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/zhuifengshaonianhanlu/pikachu</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;zhuifengshaonianhanlu&#x2F;pikachu<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104011521895.png" alt="image-20221104011521895"></p>
 <p>cd pikachu/</p>
@@ -764,12 +905,30 @@
 <p>2、非交互式    –通过Shell脚本    sh</p>
 </blockquote>
 <p>​    </p>
-<h2 id="Linux系统中重要的文件和目录"><a href="#Linux系统中重要的文件和目录" class="headerlink" title="Linux系统中重要的文件和目录"></a>Linux系统中重要的文件和目录</h2><h3 id="网卡配置文件的目录"><a href="#网卡配置文件的目录" class="headerlink" title="网卡配置文件的目录"></a>网卡配置文件的目录</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">/etc/sysconfig/network-scripts</span><br><span class="line">			|</span><br><span class="line">ifcfg-ens33		ifcfg-ens192		ifcfg-eth0		em1 em2 em3 em4</span><br><span class="line">										|					|</span><br><span class="line">									（阿里）云主机的配置文件	戴尔</span><br></pre></td></tr></table></figure>
+<h2 id="Linux系统中重要的文件和目录"><a href="#Linux系统中重要的文件和目录" class="headerlink" title="Linux系统中重要的文件和目录"></a>Linux系统中重要的文件和目录</h2><h3 id="网卡配置文件的目录"><a href="#网卡配置文件的目录" class="headerlink" title="网卡配置文件的目录"></a>网卡配置文件的目录</h3><pre class="line-numbers language-none"><code class="language-none">&#x2F;etc&#x2F;sysconfig&#x2F;network-scripts
+			|
+ifcfg-ens33		ifcfg-ens192		ifcfg-eth0		em1 em2 em3 em4
+										|					|
+									（阿里）云主机的配置文件	戴尔<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
 <p>网卡获取IP地址的方式</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">TYPE---网卡的类型</span><br><span class="line"></span><br><span class="line">BOOTPROTO DHCO(自动 动态)	STATIC(手动 静态)</span><br><span class="line"></span><br><span class="line">NAME--网卡名称</span><br><span class="line"></span><br><span class="line">ONBOOT--yes or no 是否开启网卡</span><br><span class="line"></span><br><span class="line">IPADDR--逻辑地址-IP地址-IPV4-xxx.xxx.xxx.xxx</span><br><span class="line"></span><br><span class="line">GATEWAY--网关---路由器的地址可以</span><br><span class="line"></span><br><span class="line">NETNASK--子网掩码---快速寻址--子网划分的作用</span><br><span class="line"></span><br><span class="line">DNS--域名解析协议 可以配置多个DNS</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">TYPE---网卡的类型
+
+BOOTPROTO DHCO(自动 动态)	STATIC(手动 静态)
+
+NAME--网卡名称
+
+ONBOOT--yes or no 是否开启网卡
+
+IPADDR--逻辑地址-IP地址-IPV4-xxx.xxx.xxx.xxx
+
+GATEWAY--网关---路由器的地址可以
+
+NETNASK--子网掩码---快速寻址--子网划分的作用
+
+DNS--域名解析协议 可以配置多个DNS<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
@@ -1275,7 +1434,8 @@
 <p>VNC进行X11图形库 进行图形化的操作</p>
 </blockquote>
 <h1 id="十一、Linux系统目录结构"><a href="#十一、Linux系统目录结构" class="headerlink" title="十一、Linux系统目录结构"></a>十一、Linux系统目录结构</h1><p>Linux系统目录是一个倒着的树形结构，一切由根开始</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tree 用树形结构显示目录内容</span><br><span class="line">tree -L 1或tree -L 2</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">tree 用树形结构显示目录内容
+tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <blockquote>
 <p>​                                                                          /</p>
@@ -3193,10 +3353,50 @@
 </div>
 
 
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('60')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE' || selection.getRangeAt(0).commonAncestorContainer.nodeName === 'CODE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + 'From: Maple Leaf Falling<br />'
+            + 'Author: 枫<br />'
+            + 'Link: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
 
 <!-- 代码块功能依赖 -->
 <script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
 
+
+  <!-- 是否加载使用自带的 prismjs. -->
+  <script type="text/javascript" src="/libs/prism/prism.min.js"></script>
 
 
 <!-- 代码语言 -->
@@ -3341,7 +3541,7 @@
         <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
                    server="netease"
                    type="playlist"
-                   id="503838841"
+                   id="534989918"
                    fixed='true'
                    autoplay='false'
                    theme='#42b983'
@@ -3365,7 +3565,7 @@
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2019-2022</span>
+                <span id="year">2022</span>
             
             <a href="/about" target="_blank">枫</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
@@ -3401,10 +3601,10 @@
                         var days = hours * 24;
                         var years = days * 365;
                         var today = new Date();
-                        var startYear = "2019";
-                        var startMonth = "6";
+                        var startYear = "2022";
+                        var startMonth = "11";
                         var startDate = "28";
-                        var startHour = "0";
+                        var startHour = "21";
                         var startMinute = "0";
                         var startSecond = "0";
                         var todayYear = today.getFullYear();
@@ -3685,6 +3885,11 @@ $(function () {
     <!--腾讯兔小巢-->
     
     
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
+    
 
     
 
@@ -3694,6 +3899,6 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"live2d-widget-model-miku"},"display":{"position":"right","width":150,"height":190,"hOffset":50,"vOffset":-5},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.8},"log":false});</script></body>
 
 </html>
