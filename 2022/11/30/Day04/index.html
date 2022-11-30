@@ -4,8 +4,21 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, Maple Leaf Falling">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="SEC04, Maple Leaf Falling">
+    <meta name="description" content="day04COOKIE
+常用于识别用户  令牌
+保存在本地
+可被xss偷取cookie 进行越权
+
+setcookie()函数用于设置cookie
+
+value    cookie的名字
+
+name    值
+
+expire   有效期
+
+">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +30,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | Maple Leaf Falling</title>
+    <title>SEC04 | Maple Leaf Falling</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -340,12 +353,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">SEC04</h1>
                 </div>
             </div>
         </div>
@@ -381,7 +394,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-11-28
+                    2022-11-30
                 </div>
                 
 
@@ -390,7 +403,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    75
+                    1.3k
                 </div>
                 
 
@@ -410,19 +423,417 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new &quot;My New Post&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h1 id="day04"><a href="#day04" class="headerlink" title="day04"></a>day04</h1><h2 id="COOKIE"><a href="#COOKIE" class="headerlink" title="COOKIE"></a>COOKIE</h2><blockquote>
+<p>常用于识别用户  令牌</p>
+<p>保存在本地</p>
+<p>可被xss偷取cookie 进行越权</p>
+</blockquote>
+<p>setcookie()函数用于设置cookie</p>
+<ul>
+<li><p>value    cookie的名字</p>
+</li>
+<li><p>name    值</p>
+</li>
+<li><p>expire   有效期</p>
+</li>
+<li><p>path      服务器路径</p>
+</li>
+<li><p>domain 域名</p>
+</li>
+<li><p>secure   是否通过安全的HTTPS连接来传输cookie</p>
+</li>
+</ul>
+<blockquote>
+<p>为防止URL编码 可使用setrawcookie()</p>
+</blockquote>
+<pre class="line-numbers language-php" data-language="php"><code class="language-php">&lt;?php
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+setcookie(&#39;user&#39;, &#39;admin&#39;, time()+3600);
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+<blockquote>
+<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221112121848674.png" alt="image-20221112121848674"></p>
+</blockquote>
+<p>SESSION</p>
+<blockquote>
+<p>会话</p>
+<p>保存在服务端</p>
+</blockquote>
+<pre class="line-numbers language-php" data-language="php"><code class="language-php">&lt;?php
+
+session_start();
+if(isset($_SESSION[&#39;view&#39;]))&#123;
+    $_SESSION[&#39;view&#39;] &#x3D; $_SESSION[&#39;view&#39;]+1;
+&#125;else&#123;
+    $_SESSION[&#39;view&#39;] &#x3D; 1;
+&#125;
+
+echo &#39;浏览量：&#39;.$_SESSION[&#39;view&#39;];
+?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221112122404582.png" alt="image-20221112122404582"></p>
+</blockquote>
+<p>如果要删除某些session数据 可以使用unset()或session_destroy()函数</p>
+<p>unset()函数用于释放指定的session变量</p>
+<h2 id="PHP连接MySQL"><a href="#PHP连接MySQL" class="headerlink" title="PHP连接MySQL"></a>PHP连接MySQL</h2><p>面向过程</p>
+<pre class="line-numbers language-php" data-language="php"><code class="language-php">&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset&#x3D;&quot;utf-8&quot;&gt;
+&lt;&#x2F;head&gt;
+&lt;?php
+$servername &#x3D; &#39;127.0.0.1&#39;;
+$username &#x3D; &#39;root&#39;;
+$password &#x3D; &#39;1234&#39;;
+
+&#x2F;&#x2F; 创建连接
+$conn &#x3D; mysqli_connect($servername, $username, $password);
+
+&#x2F;&#x2F; 检测连接
+if(!$conn)&#123;
+    die(&quot;Connection failed:&quot; . mysqli_connect_error());
+&#125;
+echo &#39;chenggong&#39;;
+?&gt;
+&lt;body&gt;
+&lt;&#x2F;body&gt;
+&lt;&#x2F;html&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>面向对象</p>
+<pre class="line-numbers language-php" data-language="php"><code class="language-php">&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset&#x3D;&quot;utf-8&quot;&gt;
+&lt;&#x2F;head&gt;
+&lt;?php
+$servername &#x3D; &#39;127.0.0.1&#39;;
+$username &#x3D; &#39;root&#39;;
+$password &#x3D; &#39;1234&#39;;
+
+&#x2F;&#x2F; 创建连接
+$conn &#x3D; new mysqli($servername, $username, $password);
+
+&#x2F;&#x2F; 检测连接
+if($conn-&gt;connect_error)&#123;
+    die(&quot;错误&quot; . $conn-&gt;connect_error);
+&#125;
+echo &#39;chenggong&#39;;
+?&gt;
+&lt;body&gt;
+&lt;&#x2F;body&gt;
+&lt;&#x2F;html&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>PDO</p>
+<pre class="line-numbers language-php+HTML" data-language="php+HTML"><code class="language-php+HTML">&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset&#x3D;&quot;utf-8&quot;&gt;
+&lt;&#x2F;head&gt;
+&lt;?php
+$servername &#x3D; &#39;127.0.0.1&#39;;
+$username &#x3D; &#39;root&#39;;
+$password &#x3D; &#39;1234&#39;;
+
+
+&#x2F;&#x2F;$conn &#x3D; new PDO(&quot;mysql:host&#x3D;$servername;&quot;, $username, $password);
+&#x2F;&#x2F;echo &#39;chenggong&#39;;
+
+
+try &#123;
+    $conn &#x3D; new PDO(&quot;mysql:host&#x3D;$servername;&quot;, $username, $password);
+    echo &#39;chenggong&#39;;
+&#125;catch(PDOException $e)&#123;
+    echo $e-&gt;getMessage();
+&#125;
+?&gt;
+&lt;body&gt;
+&lt;&#x2F;body&gt;
+&lt;&#x2F;html&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+
+
+
+
+<h2 id="创建数据库与表"><a href="#创建数据库与表" class="headerlink" title="创建数据库与表"></a>创建数据库与表</h2><pre class="line-numbers language-php+HTML" data-language="php+HTML"><code class="language-php+HTML">&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset&#x3D;&quot;utf-8&quot;&gt;
+&lt;&#x2F;head&gt;
+&lt;?php
+$servername &#x3D; &#39;127.0.0.1&#39;;
+$username &#x3D; &#39;root&#39;;
+$password &#x3D; &#39;1234&#39;;
+
+&#x2F;&#x2F; 创建连接
+$conn &#x3D; mysqli_connect($servername, $username, $password);
+
+&#x2F;&#x2F;检测连接
+if(!$conn)&#123;
+    echo &#39;error&#39;.mysqli_connect_error();
+&#125;else&#123;
+    echo &#39;成功&#39;;
+&#125;
+
+&#x2F;&#x2F; 创建数据库
+$sql &#x3D; &#39;create database kkk&#39;;
+if (mysqli_query($conn, $sql))&#123;
+    echo &#39;数据库创建成功&#39;;
+&#125;else&#123;
+    echo &#39;Error creating database:&#39;. mysqli_error($conn);
+&#125;
+?&gt;
+&lt;body&gt;
+&lt;&#x2F;body&gt;
+&lt;&#x2F;html&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221112160605209.png" alt="image-20221112160605209"></p>
+</blockquote>
+<h2 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h2><p>确定目标</p>
+<p>信息收集</p>
+<ul>
+<li>域名相关信息</li>
+<li>IP相关信息</li>
+<li>端口服务相关信息</li>
+<li>指纹识别</li>
+<li>Google Hacking</li>
+<li>目录信息</li>
+<li>Git Hack</li>
+</ul>
+<p>漏洞扫描</p>
+<p>漏洞利用</p>
+<p>形成报告</p>
+<h2 id="域名信息"><a href="#域名信息" class="headerlink" title="域名信息"></a>域名信息</h2><p>域名是什么？</p>
+<p>域名的分类</p>
+<ul>
+<li>国际域名</li>
+<li>国别域名</li>
+<li>新顶级域名</li>
+</ul>
+<p>域名联系人信息</p>
+<p>子域名信息</p>
+<p>域名DNS信息</p>
+<p>console.dnspod.cn</p>
+<p>phpinfo.me</p>
+<p>dbcha.com</p>
+<p>sitereport.netcraft.com</p>
+<p>jsons.cn</p>
+<blockquote>
+<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221112202809025.png" alt="image-20221112202809025"></p>
+<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221112202624226.png" alt="image-20221112202624226"></p>
+</blockquote>
+<h2 id="IP信息收集"><a href="#IP信息收集" class="headerlink" title="IP信息收集"></a>IP信息收集</h2><p>DNS服务器的类型</p>
+<p>dns解析流程</p>
+<blockquote>
+<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221112204155746.png" alt="image-20221112204155746"></p>
+</blockquote>
+<p>Ping（Packet Internet Groper）/nslookup</p>
+<p>ip归属信息</p>
+<p>ipwhois.cnnic.net.cn</p>
+<p>如何获取CDN（内容分发网络）背后的真实ID</p>
+<p>ping.chinaz.com</p>
+<ul>
+<li><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221112205158095.png" alt="image-20221112205158095"></li>
+</ul>
+<ol>
+<li>超级ping</li>
+<li>历史DNS<ul>
+<li>dnshistory.org</li>
+<li></li>
+</ul>
+</li>
+<li>通过子域名查询IP</li>
+<li>国外主机解析<ul>
+<li>webpagetest.org</li>
+<li>dnscheck.pingdom.com</li>
+</ul>
+</li>
+<li>其他，比如邮件、SSL证书、手机APP抓包、网络空间搜索引擎</li>
+</ol>
+<h2 id="端口服务信息"><a href="#端口服务信息" class="headerlink" title="端口服务信息"></a>端口服务信息</h2><ol>
+<li>端口扫描思路和代码实现</li>
+<li>常见端口及漏洞</li>
+<li>端口扫描工具</li>
+</ol>
+<p>查看本机端口信息</p>
+<blockquote>
+<p>Windows</p>
+<p>netstat -aon|findstr 3306</p>
+<p>Linux</p>
+<p>netstat -an|grep 3306</p>
+</blockquote>
+<p>Kali连接xshell</p>
+<blockquote>
+<p>cd /etc/ssh/sshd_config    修改参数</p>
+<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221112212011013.png" alt="image-20221112212011013"></p>
+<p>重启服务</p>
+<p>systemctl restrat ssh</p>
+<p>自动启动服务</p>
+<p>systemctl enable ssh</p>
+</blockquote>
+<p>常见端口</p>
+<blockquote>
+<p>nsrc.org/workshops/2009/summer/presentations/day3/common-ports.pdf</p>
+</blockquote>
+<p>分类</p>
+<ol>
+<li>文件共享服务<ul>
+<li><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221112212944927.png" alt="image-20221112212944927"></li>
+</ul>
+</li>
+<li>远程连接服务<ul>
+<li><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221112213034173.png" alt="image-20221112213034173"></li>
+</ul>
+</li>
+<li>Web应用服务<ul>
+<li><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221112213051031.png" alt="image-20221112213051031"></li>
+</ul>
+</li>
+<li>数据库服务<ul>
+<li><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221112213120098.png" alt="image-20221112213120098"></li>
+</ul>
+</li>
+<li>邮件服务<ul>
+<li><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221112213129345.png" alt="image-20221112213129345"></li>
+</ul>
+</li>
+<li>网络常见协议<ul>
+<li><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221112213146195.png" alt="image-20221112213146195"></li>
+</ul>
+</li>
+<li>其他服务端口<ul>
+<li><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221112213203626.png" alt="image-20221112213203626"></li>
+</ul>
+</li>
+</ol>
+<p>工具</p>
+<blockquote>
+<p>Nmap（Network Mapper）</p>
+<p><a target="_blank" rel="noopener" href="https://nmap.org/">https://nmap.org</a></p>
+<p>扫描主机</p>
+<p>扫描端口</p>
+<p>探测操作系统、软件版本</p>
+</blockquote>
+<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221112213555368.png" alt="image-20221112213555368"></p>
+<p>脚本</p>
+<blockquote>
+<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221112213848161.png" alt="image-20221112213848161"></p>
+</blockquote>
+<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221112215719016.png" alt="image-20221112215719016"></p>
+<p>IP后面的/24</p>
+<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221112221110626.png" alt="image-20221112221110626"></p>
+<p>Zenmap</p>
+<blockquote>
+<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221112221350391.png" alt="image-20221112221350391"></p>
+</blockquote>
+<blockquote>
+<ol>
+<li>强力扫描</li>
+<li>强力扫描plus 加 UDP</li>
+<li>密集扫描 所有TCP端口</li>
+<li>强力扫描 no ping</li>
+<li>Ping扫描</li>
+<li>快速扫描</li>
+<li>快速扫描plus</li>
+<li>快速追踪</li>
+<li>定期扫描</li>
+<li>综合扫描（慢）</li>
+</ol>
+</blockquote>
+<h2 id="CMS指纹识别"><a href="#CMS指纹识别" class="headerlink" title="CMS指纹识别"></a>CMS指纹识别</h2><blockquote>
+<p>通过关键特征，识别出目标的CMS系统、服务器、开发语言、操作系统、CDN、WAF的类别版本等等</p>
+</blockquote>
+<p>识别对象</p>
+<blockquote>
+<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221112225750393.png" alt="image-20221112225750393"></p>
+</blockquote>
+<p>CMS</p>
+<blockquote>
+<p>内容管理系统（Content Management System）</p>
+</blockquote>
+<p>主流开源CMS</p>
+<blockquote>
+<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221112230251443.png" alt="image-20221112230251443"></p>
+</blockquote>
+<p>各类网站开源CMS</p>
+<blockquote>
+<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221112230322916.png" alt="image-20221112230322916"></p>
+</blockquote>
+<p>CMS识别思路</p>
+<blockquote>
+<p>版权信息</p>
+<p>特点文件MD5值</p>
+<p>查看网页源代码</p>
+<p>通过特定文件分析</p>
+</blockquote>
+<p>github.com/Lucifer1993/cmsprint</p>
+<p>CMS识别工具</p>
+<blockquote>
+<p>在线识别  <a target="_blank" rel="noopener" href="http://whatweb.bugscaner.com/">http://whatweb.bugscaner.com/</a>     finger.tidesec.com</p>
+<p>插件whatruns      wapplyzer</p>
+</blockquote>
+<p>kali</p>
+<blockquote>
+<p>cmseek</p>
+<p>cmseek -u  域名</p>
+</blockquote>
+<h2 id="CDN指纹识别"><a href="#CDN指纹识别" class="headerlink" title="CDN指纹识别"></a>CDN指纹识别</h2><p>专用工具</p>
+<blockquote>
+<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221112235348035.png" alt="image-20221112235348035"></p>
+</blockquote>
+<h2 id="WAF指纹识别"><a href="#WAF指纹识别" class="headerlink" title="WAF指纹识别"></a>WAF指纹识别</h2><ol>
+<li>什么时WAF</li>
+</ol>
+<blockquote>
+<p>Web Application Firewall 应用防火墙</p>
+<p>过滤HTTP/HTTPS的请求</p>
+</blockquote>
+<p>WAF的作用</p>
+<blockquote>
+<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221112235632374.png" alt="image-20221112235632374"></p>
+</blockquote>
+<p>WAF分类</p>
+<blockquote>
+<p>硬件型</p>
+<p>云WAF</p>
+<p>软件型WAF（部署在Apache、Nginx等）</p>
+</blockquote>
+<p>常见WAF厂商</p>
+<blockquote>
+<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221112235819645.png" alt="image-20221112235819645"></p>
+</blockquote>
+<p>WAF识别思路  </p>
+<blockquote>
+<p>额外的cookie</p>
+<p>任何响应或请求的附加标头</p>
+<p>响应内容</p>
+<p>响应代码</p>
+<p>IP地址（云WAF）</p>
+<p>JS客户端模块（客户端WAF）</p>
+</blockquote>
+<p>如何触发拦截</p>
+<blockquote>
+<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221113000445697.png" alt="image-20221113000445697"></p>
+</blockquote>
+<p>工具</p>
+<blockquote>
+<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221113000553273.png" alt="image-20221113000553273"></p>
+</blockquote>
+<h2 id="搜索引擎搜集信息"><a href="#搜索引擎搜集信息" class="headerlink" title="搜索引擎搜集信息"></a>搜索引擎搜集信息</h2><p>Google Hacking</p>
+<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221113005021169.png" alt="image-20221113005021169"></p>
+<p>语法数据库   </p>
+<blockquote>
+<p>exploit-db.com/google-hacking-database</p>
+<p>github.com/BullsEye0/</p>
+</blockquote>
+<p>工具</p>
+<blockquote>
+<p>github搜索 Google Hacking  Google dorks</p>
+</blockquote>
 
                 
             </div>
@@ -449,7 +860,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://hsiryy.github.io/2022/11/28/hello-world/">https://hsiryy.github.io/2022/11/28/hello-world/</a>
+                    <a href="https://hsiryy.github.io/2022/11/30/Day04/">https://hsiryy.github.io/2022/11/30/Day04/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -800,13 +1211,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2022/11/28/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">
+                <a href="/2022/11/30/Day03/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="SEC">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="SEC03">
                         
-                        <span class="card-title">SEC</span>
+                        <span class="card-title">SEC03</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -817,7 +1228,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-11-28
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-11-30
                         </span>
                         <span class="publish-author">
                             
@@ -834,16 +1245,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                Current&nbsp;<i class="far fa-dot-circle"></i>
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/11/28/hello-world/">
+                <a href="/2022/11/30/Day05/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="SEC05">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">SEC05</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -854,7 +1265,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-11-28
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-11-30
                             </span>
                         <span class="publish-author">
                             
@@ -864,7 +1275,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
