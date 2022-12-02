@@ -194,25 +194,6 @@
     
     
     <entry>
-      <title>SEC08</title>
-      <link href="/2022/11/30/Day08/"/>
-      <url>/2022/11/30/Day08/</url>
-      
-        <content type="html"><![CDATA[<h1 id="day08"><a href="#day08" class="headerlink" title="day08"></a>day08</h1><h2 id="练习SQL注入"><a href="#练习SQL注入" class="headerlink" title="练习SQL注入"></a>练习SQL注入</h2><p><strong>Less1</strong></p><p>group_concat()函数可以让多个数据在一行显示，但是只能显示64位，可以选择截取或者用limit的方式 显示全部数据</p><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">爆破数据库?id&#x3D;-1&#39; union select 1,2,group_concat(schema_name) frominformation_schema.schemata limit 0,1--+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><blockquote><p><img src="/2022/11/30/Day08/myblog\hexoblog\source_posts\Day08\image-20221115171630607.png"></p></blockquote><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">爆破表名?id&#x3D;-1&#39; union select 1,2,group_concat(table_name)from information_schema.tableswhere table_schema&#x3D;database()--+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><blockquote><p><img src="/2022/11/30/Day08/myblog\hexoblog\source_posts\Day08\image-20221115171713650.png"></p></blockquote><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">爆破字段名?id&#x3D;-1&#39; union select 1,2,group_concat(column_name)frominformation_schema.columns where table_name&#x3D;&#39;users&#39;--+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><blockquote><p>!<img src="/2022/11/30/Day08/myblog\hexoblog\source_posts\Day08\image-20221115173051680.png"></p></blockquote><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">爆破字段?id&#x3D;-1&#39; union select 1,2,(select group_concat(username,0x7e,password)fromusers)--+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><blockquote><p><img src="/2022/11/30/Day08/myblog\hexoblog\source_posts\Day08\image-20221115174526906.png"></p></blockquote><p><strong>Less2</strong></p><p>和1大致相同 less1的注入点是字符型 2则是数字型</p><p><strong>Less3</strong></p><p>闭合方式为‘）</p><p><strong>Less4</strong></p><p>雷同</p><h2 id="SQL注入之查询方式"><a href="#SQL注入之查询方式" class="headerlink" title="SQL注入之查询方式"></a>SQL注入之查询方式</h2><p>select查询数据</p><blockquote><p>select * from user where id&#x3D;$id</p></blockquote><p>delete删除数据</p><blockquote><p>delete from user where id&#x3D;$id</p></blockquote><h2 id="SQL注入之报错盲注"><a href="#SQL注入之报错盲注" class="headerlink" title="SQL注入之报错盲注"></a>SQL注入之报错盲注</h2><p>函数解析：</p><p>update</p><h2 id="SQL注入之延时注入"><a href="#SQL注入之延时注入" class="headerlink" title="SQL注入之延时注入"></a>SQL注入之延时注入</h2><p>sleep()</p><blockquote><p>Sleep 函数可以使计算机程序进入休眠</p></blockquote><p>if()</p><blockquote><p>if是计算机编程语言的一个关键字</p></blockquote><p>mid(a,b,c)</p><blockquote><p>从b开始，截取a字符串的c位</p></blockquote><p>substr(a,b,c)</p><blockquote><p>从b开始，截取a字符串的c长度</p></blockquote><p>left(database(),1),database()</p><blockquote><p>left(a,b)从左侧截取a的前b位</p></blockquote><p>length(database())&#x3D;8</p><blockquote><p>判断长度</p></blockquote><p>ord&#x3D;ascii ascii(x)&#x3D;100</p><blockquote><p>判断x的ascii值是否为100</p></blockquote><p>sleep与if结合使用</p><blockquote><p><img src="/2022/11/30/Day08/myblog\hexoblog\source_posts\Day08\image-20221116194611602.png"></p></blockquote><h2 id="SQL注入之布尔注入"><a href="#SQL注入之布尔注入" class="headerlink" title="SQL注入之布尔注入"></a>SQL注入之布尔注入</h2><p><strong>注入流程：</strong></p><ol><li>判断有无注入点<ul><li>and 1&#x3D;1</li><li>or 1&#x3D;1</li></ul></li><li>判断数据类型<ul><li>‘’  “”</li><li>123</li></ul></li><li>结合二分法进行猜解<ul><li>length() &gt; 64</li><li>mid() substr() left</li></ul></li></ol><p><strong>总结归纳</strong></p><p>布尔型盲注</p><blockquote><p>根据页面返回的真假来判断的即为<strong>布尔型盲注</strong></p></blockquote><p>时间型盲注</p><blockquote><p>根据页面返回的时间来判断的即为<strong>时间型盲注</strong></p></blockquote><p>报错型盲注</p><blockquote><p>根据页面返回的报错来判断的即为<strong>报错型盲注</strong></p></blockquote><h2 id="SQL注入之加解密注入"><a href="#SQL注入之加解密注入" class="headerlink" title="SQL注入之加解密注入"></a>SQL注入之加解密注入</h2><p>Base64加密</p><h2 id="SQL注入之堆叠注入"><a href="#SQL注入之堆叠注入" class="headerlink" title="SQL注入之堆叠注入"></a>SQL注入之堆叠注入</h2><h2 id="SQL注入之WAF绕过"><a href="#SQL注入之WAF绕过" class="headerlink" title="SQL注入之WAF绕过"></a>SQL注入之WAF绕过</h2><p>WAF拦截原理：WAF从规则库中匹配敏感字符进行拦截</p><p>WAF绕过</p><ul><li><p>数据</p><ul><li><p>大小写</p><blockquote><p>有的WAF因为规则设计的问题，只匹配纯大写或纯小写的字符</p></blockquote></li><li><p>加密解密</p></li><li><p>编码解码</p></li><li><p>等价函数</p></li><li><p>特殊符号</p></li><li><p>反序列化</p></li><li><p>注释符混用</p></li></ul></li><li><p>方式</p><ul><li>更改提交方式</li><li>变异</li></ul></li><li><p>其他</p><ul><li>Fuzz大法</li><li>数据库特性</li><li>垃圾数据溢出</li><li>…</li></ul></li></ul><h2 id="SQL注入之sqlmap使用-get型注入-and-post型注入"><a href="#SQL注入之sqlmap使用-get型注入-and-post型注入" class="headerlink" title="SQL注入之sqlmap使用(get型注入)and (post型注入)"></a>SQL注入之sqlmap使用(get型注入)and (post型注入)</h2><p>Sqlmap全面支持六种SQL注入技术：</p><ul><li>基于布尔值的盲注</li><li>基于时间的盲注</li><li>基于报错注入</li><li>联合查询注入</li><li>堆查询注入</li><li>带外注入</li></ul><p><strong>常用命令</strong></p><p>-u：用于get提交方式，后面跟注入的url网址</p><p>–dbs：获取所有数据库</p><p>–tales：获取所有数据表</p><p>–columns：获取所有字段</p><p>–dump：打印数据</p><p>-D：查询选择某个库</p><p>-T：查询选择某个库</p><p>-C：查询选择某个字段</p><p>level () </p><blockquote><p>执行测试的等级(1~5，默认值为5)，使用-level参数并且数值&gt;&#x3D;2的时候会检查cookie里面的参数</p><p>当&gt;&#x3D;3时检测user-agent和refereer    –leve()</p></blockquote><p> risk ()</p><blockquote><p>执行测试的风险(0~3，默认值为1)，默认是1会测试大部分的测试语句，2会增加基于事件的测试语句，3会增加or语句的sql注入–risk()</p></blockquote><p>-r：表示加载一个文件</p><p>-p：指定参数</p><p>–current-db</p><p>–forms：自动检测表单</p><p><strong>post注入方式一</strong></p><ol><li>用Burp suite抓包</li></ol>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> sec </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>SEC09</title>
       <link href="/2022/11/30/Day09/"/>
       <url>/2022/11/30/Day09/</url>
@@ -251,6 +232,25 @@
     
     
     <entry>
+      <title>SEC08</title>
+      <link href="/2022/11/30/Day08/"/>
+      <url>/2022/11/30/Day08/</url>
+      
+        <content type="html"><![CDATA[<h1 id="day08"><a href="#day08" class="headerlink" title="day08"></a>day08</h1><h2 id="练习SQL注入"><a href="#练习SQL注入" class="headerlink" title="练习SQL注入"></a>练习SQL注入</h2><p><strong>Less1</strong></p><p>group_concat()函数可以让多个数据在一行显示，但是只能显示64位，可以选择截取或者用limit的方式 显示全部数据</p><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">爆破数据库?id&#x3D;-1&#39; union select 1,2,group_concat(schema_name) frominformation_schema.schemata limit 0,1--+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><blockquote><p><img src="/2022/11/30/Day08/myblog\hexoblog\source_posts\Day08\image-20221115171630607.png"></p></blockquote><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">爆破表名?id&#x3D;-1&#39; union select 1,2,group_concat(table_name)from information_schema.tableswhere table_schema&#x3D;database()--+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><blockquote><p><img src="/2022/11/30/Day08/myblog\hexoblog\source_posts\Day08\image-20221115171713650.png"></p></blockquote><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">爆破字段名?id&#x3D;-1&#39; union select 1,2,group_concat(column_name)frominformation_schema.columns where table_name&#x3D;&#39;users&#39;--+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><blockquote><p>!<img src="/2022/11/30/Day08/myblog\hexoblog\source_posts\Day08\image-20221115173051680.png"></p></blockquote><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">爆破字段?id&#x3D;-1&#39; union select 1,2,(select group_concat(username,0x7e,password)fromusers)--+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><blockquote><p><img src="/2022/11/30/Day08/myblog\hexoblog\source_posts\Day08\image-20221115174526906.png"></p></blockquote><p><strong>Less2</strong></p><p>和1大致相同 less1的注入点是字符型 2则是数字型</p><p><strong>Less3</strong></p><p>闭合方式为‘）</p><p><strong>Less4</strong></p><p>雷同</p><h2 id="SQL注入之查询方式"><a href="#SQL注入之查询方式" class="headerlink" title="SQL注入之查询方式"></a>SQL注入之查询方式</h2><p>select查询数据</p><blockquote><p>select * from user where id&#x3D;$id</p></blockquote><p>delete删除数据</p><blockquote><p>delete from user where id&#x3D;$id</p></blockquote><h2 id="SQL注入之报错盲注"><a href="#SQL注入之报错盲注" class="headerlink" title="SQL注入之报错盲注"></a>SQL注入之报错盲注</h2><p>函数解析：</p><p>update</p><h2 id="SQL注入之延时注入"><a href="#SQL注入之延时注入" class="headerlink" title="SQL注入之延时注入"></a>SQL注入之延时注入</h2><p>sleep()</p><blockquote><p>Sleep 函数可以使计算机程序进入休眠</p></blockquote><p>if()</p><blockquote><p>if是计算机编程语言的一个关键字</p></blockquote><p>mid(a,b,c)</p><blockquote><p>从b开始，截取a字符串的c位</p></blockquote><p>substr(a,b,c)</p><blockquote><p>从b开始，截取a字符串的c长度</p></blockquote><p>left(database(),1),database()</p><blockquote><p>left(a,b)从左侧截取a的前b位</p></blockquote><p>length(database())&#x3D;8</p><blockquote><p>判断长度</p></blockquote><p>ord&#x3D;ascii ascii(x)&#x3D;100</p><blockquote><p>判断x的ascii值是否为100</p></blockquote><p>sleep与if结合使用</p><blockquote><p><img src="/2022/11/30/Day08/myblog\hexoblog\source_posts\Day08\image-20221116194611602.png"></p></blockquote><h2 id="SQL注入之布尔注入"><a href="#SQL注入之布尔注入" class="headerlink" title="SQL注入之布尔注入"></a>SQL注入之布尔注入</h2><p><strong>注入流程：</strong></p><ol><li>判断有无注入点<ul><li>and 1&#x3D;1</li><li>or 1&#x3D;1</li></ul></li><li>判断数据类型<ul><li>‘’  “”</li><li>123</li></ul></li><li>结合二分法进行猜解<ul><li>length() &gt; 64</li><li>mid() substr() left</li></ul></li></ol><p><strong>总结归纳</strong></p><p>布尔型盲注</p><blockquote><p>根据页面返回的真假来判断的即为<strong>布尔型盲注</strong></p></blockquote><p>时间型盲注</p><blockquote><p>根据页面返回的时间来判断的即为<strong>时间型盲注</strong></p></blockquote><p>报错型盲注</p><blockquote><p>根据页面返回的报错来判断的即为<strong>报错型盲注</strong></p></blockquote><h2 id="SQL注入之加解密注入"><a href="#SQL注入之加解密注入" class="headerlink" title="SQL注入之加解密注入"></a>SQL注入之加解密注入</h2><p>Base64加密</p><h2 id="SQL注入之堆叠注入"><a href="#SQL注入之堆叠注入" class="headerlink" title="SQL注入之堆叠注入"></a>SQL注入之堆叠注入</h2><h2 id="SQL注入之WAF绕过"><a href="#SQL注入之WAF绕过" class="headerlink" title="SQL注入之WAF绕过"></a>SQL注入之WAF绕过</h2><p>WAF拦截原理：WAF从规则库中匹配敏感字符进行拦截</p><p>WAF绕过</p><ul><li><p>数据</p><ul><li><p>大小写</p><blockquote><p>有的WAF因为规则设计的问题，只匹配纯大写或纯小写的字符</p></blockquote></li><li><p>加密解密</p></li><li><p>编码解码</p></li><li><p>等价函数</p></li><li><p>特殊符号</p></li><li><p>反序列化</p></li><li><p>注释符混用</p></li></ul></li><li><p>方式</p><ul><li>更改提交方式</li><li>变异</li></ul></li><li><p>其他</p><ul><li>Fuzz大法</li><li>数据库特性</li><li>垃圾数据溢出</li><li>…</li></ul></li></ul><h2 id="SQL注入之sqlmap使用-get型注入-and-post型注入"><a href="#SQL注入之sqlmap使用-get型注入-and-post型注入" class="headerlink" title="SQL注入之sqlmap使用(get型注入)and (post型注入)"></a>SQL注入之sqlmap使用(get型注入)and (post型注入)</h2><p>Sqlmap全面支持六种SQL注入技术：</p><ul><li>基于布尔值的盲注</li><li>基于时间的盲注</li><li>基于报错注入</li><li>联合查询注入</li><li>堆查询注入</li><li>带外注入</li></ul><p><strong>常用命令</strong></p><p>-u：用于get提交方式，后面跟注入的url网址</p><p>–dbs：获取所有数据库</p><p>–tales：获取所有数据表</p><p>–columns：获取所有字段</p><p>–dump：打印数据</p><p>-D：查询选择某个库</p><p>-T：查询选择某个库</p><p>-C：查询选择某个字段</p><p>level () </p><blockquote><p>执行测试的等级(1~5，默认值为5)，使用-level参数并且数值&gt;&#x3D;2的时候会检查cookie里面的参数</p><p>当&gt;&#x3D;3时检测user-agent和refereer    –leve()</p></blockquote><p> risk ()</p><blockquote><p>执行测试的风险(0~3，默认值为1)，默认是1会测试大部分的测试语句，2会增加基于事件的测试语句，3会增加or语句的sql注入–risk()</p></blockquote><p>-r：表示加载一个文件</p><p>-p：指定参数</p><p>–current-db</p><p>–forms：自动检测表单</p><p><strong>post注入方式一</strong></p><ol><li>用Burp suite抓包</li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> sec </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>SEC11</title>
       <link href="/2022/11/30/Day11/"/>
       <url>/2022/11/30/Day11/</url>
@@ -270,11 +270,11 @@
     
     
     <entry>
-      <title>SEC15</title>
-      <link href="/2022/11/30/Day15/"/>
-      <url>/2022/11/30/Day15/</url>
+      <title>SEC12</title>
+      <link href="/2022/11/30/Day12/"/>
+      <url>/2022/11/30/Day12/</url>
       
-        <content type="html"><![CDATA[<h1 id="day15"><a href="#day15" class="headerlink" title="day15"></a>day15</h1><h2 id="文件上传漏洞发现与利用"><a href="#文件上传漏洞发现与利用" class="headerlink" title="文件上传漏洞发现与利用"></a>文件上传漏洞发现与利用</h2><p><em><strong>利用流程</strong></em></p><ol><li>找到上传位置</li><li>尝试绕过校验，上传文件</li><li>获取文件位置</li><li>蚁剑连接，管理文件</li></ol><p><em><strong>绕过</strong></em></p><p>删除&#x2F;禁用JS、修改MIME、等价扩展名、大小写、htaccess、双写、空格、点、::$DATA、%00截断、0x00截断</p><p>图片马、条件竞争等等</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="day12"><a href="#day12" class="headerlink" title="day12"></a>day12</h1><p><em><strong>upload-labs靶场 pass-06思路</strong></em></p><p>看源码</p><p>利用黑名单没有对大小写做处理的漏洞</p><blockquote><p><img src="/2022/11/30/Day12/image-20221121233049929.png"></p></blockquote><p><em><strong>upload-labs靶场 pass-07思路</strong></em></p><p>看源码</p><p>抓包 对后缀名加空格</p><p>需要对js禁用</p><p><em><strong>upload-labs靶场 pass-08思路</strong></em></p><p>看源码</p><p>抓包 对后缀名加.</p><blockquote><p><img src="/2022/11/30/Day12/image-20221122115720446.png"></p></blockquote><p><em><strong>upload-labs靶场 pass-09思路</strong></em></p><p>看源码</p><p>抓包 对后缀名加::$DATA</p><p><em><strong>upload-labs靶场 pass-10思路</strong></em></p><p>看源码</p><p>抓包 对后缀名加. .</p><p><em><strong>upload-labs靶场 pass-11思路</strong></em></p><p>看源码</p><p>对所有不符合规则的后缀名删除，所以把后缀名变成.pphphp</p><p><em><strong>upload-labs靶场 pass-12思路</strong></em></p><p>Content-Disposition</p><blockquote><p>作为对下载文件的一个表示字段</p></blockquote><p>知识点</p><blockquote><p>文件名截断</p><p>在文件名后加特殊字符</p><p>截断字符：chr(0)，类似于C++的“\0”</p><p>filename&#x3D;test.php%00.txt  ———&gt;    filename&#x3D;test.php</p></blockquote>]]></content>
       
       
       
@@ -289,11 +289,11 @@
     
     
     <entry>
-      <title>SEC12</title>
-      <link href="/2022/11/30/Day12/"/>
-      <url>/2022/11/30/Day12/</url>
+      <title>SEC15</title>
+      <link href="/2022/11/30/Day15/"/>
+      <url>/2022/11/30/Day15/</url>
       
-        <content type="html"><![CDATA[<h1 id="day12"><a href="#day12" class="headerlink" title="day12"></a>day12</h1><p><em><strong>upload-labs靶场 pass-06思路</strong></em></p><p>看源码</p><p>利用黑名单没有对大小写做处理的漏洞</p><blockquote><p><img src="/2022/11/30/Day12/image-20221121233049929.png"></p></blockquote><p><em><strong>upload-labs靶场 pass-07思路</strong></em></p><p>看源码</p><p>抓包 对后缀名加空格</p><p>需要对js禁用</p><p><em><strong>upload-labs靶场 pass-08思路</strong></em></p><p>看源码</p><p>抓包 对后缀名加.</p><blockquote><p><img src="/2022/11/30/Day12/image-20221122115720446.png"></p></blockquote><p><em><strong>upload-labs靶场 pass-09思路</strong></em></p><p>看源码</p><p>抓包 对后缀名加::$DATA</p><p><em><strong>upload-labs靶场 pass-10思路</strong></em></p><p>看源码</p><p>抓包 对后缀名加. .</p><p><em><strong>upload-labs靶场 pass-11思路</strong></em></p><p>看源码</p><p>对所有不符合规则的后缀名删除，所以把后缀名变成.pphphp</p><p><em><strong>upload-labs靶场 pass-12思路</strong></em></p><p>Content-Disposition</p><blockquote><p>作为对下载文件的一个表示字段</p></blockquote><p>知识点</p><blockquote><p>文件名截断</p><p>在文件名后加特殊字符</p><p>截断字符：chr(0)，类似于C++的“\0”</p><p>filename&#x3D;test.php%00.txt  ———&gt;    filename&#x3D;test.php</p></blockquote>]]></content>
+        <content type="html"><![CDATA[<h1 id="day15"><a href="#day15" class="headerlink" title="day15"></a>day15</h1><h2 id="文件上传漏洞发现与利用"><a href="#文件上传漏洞发现与利用" class="headerlink" title="文件上传漏洞发现与利用"></a>文件上传漏洞发现与利用</h2><p><em><strong>利用流程</strong></em></p><ol><li>找到上传位置</li><li>尝试绕过校验，上传文件</li><li>获取文件位置</li><li>蚁剑连接，管理文件</li></ol><p><em><strong>绕过</strong></em></p><p>删除&#x2F;禁用JS、修改MIME、等价扩展名、大小写、htaccess、双写、空格、点、::$DATA、%00截断、0x00截断</p><p>图片马、条件竞争等等</p>]]></content>
       
       
       
