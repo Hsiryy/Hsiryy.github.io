@@ -374,9 +374,13 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/sec/">
+                                <span class="chip bg-color">sec</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -393,6 +397,11 @@
                 
 
                 
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2022-12-02
+                </div>
+                
 
                 
                 <div class="info-break-policy">
@@ -402,8 +411,18 @@
                 
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    6 Min
+                </div>
+                
 
                 
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
             </div>
         </div>
         <hr class="clearfix">
@@ -432,7 +451,7 @@
 <h3 id="DDos"><a href="#DDos" class="headerlink" title="DDos"></a>DDos</h3><blockquote>
 <p>全称(Distributed Denial of Service) 分布式拒绝服务攻击</p>
 <p>发起大量恶意请求，导致正常用户无法访问</p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221109211021646.png" alt="image-20221109211021646"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221109211021646.png" alt="image-20221109211021646"></p>
 </blockquote>
 <h3 id="后门"><a href="#后门" class="headerlink" title="后门"></a>后门</h3><blockquote>
 <p>全称(backdoor) </p>
@@ -440,7 +459,7 @@
 </blockquote>
 <h3 id="中间人攻击"><a href="#中间人攻击" class="headerlink" title="中间人攻击"></a>中间人攻击</h3><blockquote>
 <p>全称(Man-in-Middle Attack)   MITM攻击</p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221109211339523.png" alt="image-20221109211339523"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221109211339523.png" alt="image-20221109211339523"></p>
 </blockquote>
 <h3 id="webshell"><a href="#webshell" class="headerlink" title="webshell"></a>webshell</h3><blockquote>
 <p>shell是一种命令执行工具，可对计算机进行控制</p>
@@ -512,7 +531,7 @@
 </blockquote>
 <h3 id="WAF"><a href="#WAF" class="headerlink" title="WAF"></a>WAF</h3><blockquote>
 <p>Web应用防火墙(Web Application Firewall)</p>
-<p>对HTTP/HTTPS的流量内容进行分析，拦截恶意攻击行为</p>
+<p>对HTTP&#x2F;HTTPS的流量内容进行分析，拦截恶意攻击行为</p>
 </blockquote>
 <h3 id="APT攻击"><a href="#APT攻击" class="headerlink" title="APT攻击"></a>APT攻击</h3><blockquote>
 <p>Advanced Persistent Threat</p>
@@ -524,22 +543,22 @@
 </blockquote>
 <h2 id="二-CentOS修改yum源"><a href="#二-CentOS修改yum源" class="headerlink" title="二.CentOS修改yum源"></a>二.CentOS修改yum源</h2><p>1.查看官方的yum源配置文件</p>
 <blockquote>
-<p>cd /etc/yum.repos.d/CentOS-Base.repo</p>
+<p>cd &#x2F;etc&#x2F;yum.repos.d&#x2F;CentOS-Base.repo</p>
 </blockquote>
 <p>2.备份（很好的习惯）</p>
 <blockquote>
-<p>cp /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak</p>
+<p>cp &#x2F;etc&#x2F;yum.repos.d&#x2F;CentOS-Base.repo &#x2F;etc&#x2F;yum.repos.d&#x2F;CentOS-Base.repo.bak</p>
 </blockquote>
 <p>3.下载阿里源配置，覆盖源文件</p>
 <blockquote>
-<p>curl -o /etc/yum.repos.d/CentOS-Base.repo <a target="_blank" rel="noopener" href="http://mirrors.aliyun.com/repo/Centos-7.repo">http://mirrors.aliyun.com/repo/Centos-7.repo</a></p>
+<p>curl -o &#x2F;etc&#x2F;yum.repos.d&#x2F;CentOS-Base.repo <a target="_blank" rel="noopener" href="http://mirrors.aliyun.com/repo/Centos-7.repo">http://mirrors.aliyun.com/repo/Centos-7.repo</a></p>
 </blockquote>
-<p>4.清楚缓存/建立新缓存  如果第二个命令报错重试即可 如果不行则应该是没有配置本机DNS</p>
+<p>4.清楚缓存&#x2F;建立新缓存  如果第二个命令报错重试即可 如果不行则应该是没有配置本机DNS</p>
 <blockquote>
 <p>yum clean all</p>
 <p>yum makecache</p>
 </blockquote>
-<h2 id="三、网络管理"><a href="#三、网络管理" class="headerlink" title="三、网络管理"></a>三、网络管理</h2><h3 id="物理地址-逻辑地址"><a href="#物理地址-逻辑地址" class="headerlink" title="物理地址/逻辑地址"></a>物理地址/逻辑地址</h3><p>网卡</p>
+<h2 id="三、网络管理"><a href="#三、网络管理" class="headerlink" title="三、网络管理"></a>三、网络管理</h2><h3 id="物理地址-x2F-逻辑地址"><a href="#物理地址-x2F-逻辑地址" class="headerlink" title="物理地址&#x2F;逻辑地址"></a>物理地址&#x2F;逻辑地址</h3><p>网卡</p>
 <p>MAC地址（Media Access Control）媒体访问控制 出厂唯一</p>
 <p>IP（Internet Protocol Address）互联网协议地址</p>
 <p>局域网</p>
@@ -550,7 +569,7 @@
 <blockquote>
 <p>使用公有IP地址</p>
 </blockquote>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221109223041796.png" alt="image-20221109223041796"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221109223041796.png" alt="image-20221109223041796"></p>
 <h3 id="公网IP地址的分配"><a href="#公网IP地址的分配" class="headerlink" title="公网IP地址的分配"></a>公网IP地址的分配</h3><p>NIC（Network Information Center）分配</p>
 <p>ISP（网络业务提供商）、网络基础设施提供商</p>
 <p>IPv6是128位的 一共有2^128</p>
@@ -599,11 +618,11 @@
 <li>由客户端的某个进程主动发起TCP连接建立，最初两端的TCP进程都处于关闭状态</li>
 <li>TCP服务器被动等待客户进程的TCP请求，所以TCP服务器进入监听状态</li>
 <li>TCP客户进程向TCP服务器进程发送TCP建接请求报文段，并且进入同步已发送状态</li>
-<li><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221109232601767.png" alt="image-20221109232601767"></li>
+<li><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221109232601767.png" alt="image-20221109232601767"></li>
 </ul>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221109232638049.png" alt="image-20221109232638049"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221109232638049.png" alt="image-20221109232638049"></p>
 <h3 id="四次挥手"><a href="#四次挥手" class="headerlink" title="四次挥手"></a>四次挥手</h3><p>TCP通过四次挥手来释放连接，数据通信结束后，TCP双方都可以释放连接</p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221109232948314.png" alt="image-20221109232948314"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221109232948314.png" alt="image-20221109232948314"></p>
 <h2 id="五、关于PHP"><a href="#五、关于PHP" class="headerlink" title="五、关于PHP"></a>五、关于PHP</h2><p>PHP是什么？</p>
 <blockquote>
 <p>PHP文件可包含文本、HTML、JavaScript代码和PHP代码</p>
@@ -640,7 +659,7 @@
 </blockquote>
 <p>网站根目录</p>
 <blockquote>
-<p>D:/phpstudy_pro/WWW/hhsir        系统文件路径</p>
+<p>D:&#x2F;phpstudy_pro&#x2F;WWW&#x2F;hhsir		系统文件路径</p>
 </blockquote>
 
                 
@@ -705,7 +724,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
+                            
+                                <a href="/tags/sec/">
+                                    <span class="chip bg-color">sec</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1000,7 +1023,7 @@
   <script>
     new Waline({
         el: '#waline',
-        serverURL: 'https://waline.your-domain.com',
+        serverURL: 'https://mapled-h93e-dpk4h96dr-hsiryy.vercel.app/',
         avatar: 'mm'    
     });
   </script> 
@@ -1015,18 +1038,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;Current
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2022/11/30/Day01/">
+                <a href="/2022/11/30/%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%B8%97%E9%80%8F%E4%B8%8E%E9%98%B2%E5%BE%A1/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="SEC01">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="远程代码执行渗透与防御">
                         
-                        <span class="card-title">SEC01</span>
+                        <span class="card-title">远程代码执行渗透与防御</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1036,9 +1058,9 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-11-30
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-11-30
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -1047,7 +1069,14 @@
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/sec/">
+                        <span class="chip bg-color">sec</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -1084,6 +1113,14 @@
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/sec/">
+                        <span class="chip bg-color">sec</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1313,6 +1350,9 @@
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">21.1k</span>
             
             
             
@@ -1575,17 +1615,16 @@ $(function () {
     
 
     
-        
+
+    <!-- 雪花特效 -->
+     
         <script type="text/javascript">
             // 只在桌面版网页启用特效
             var windowWidth = $(window).width();
             if (windowWidth > 768) {
-                document.write('<script type="text/javascript" src="/libs/others/sakura.js"><\/script>');
+                document.write('<script type="text/javascript" src="/libs/others/snow.js"><\/script>');
             }
         </script>
-    
-
-    <!-- 雪花特效 -->
     
 
     <!-- 鼠标星星特效 -->

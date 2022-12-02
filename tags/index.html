@@ -355,9 +355,9 @@
                     var typed = new Typed("#subtitle", {
                         strings: [ 
                             
-                                "从来没有真正的绝境, 只有心灵的迷途",
+                                "知其不可奈何，而安之若命",
                             
-                                "Never really desperate, only the lost of the soul",
+                                "As knowing no anyway to do it, so accepting as a fate.",
                             
                         ],
                         startDelay: 300,
@@ -397,10 +397,43 @@
             </div>
             <div class="tag-chips">
                 
+                
+                <a href="/tags/sec/" title="sec: 15">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="sec" style="background-color: #F9EBEA;">sec
+                        <span class="tag-length">15</span>
+                    </span>
+                </a>
+                
             </div>
         </div>
     </div>
 </div>
+
+    
+    <link rel="stylesheet" type="text/css" href="/libs/jqcloud/jqcloud.css">
+<style type="text/css">
+    #tag-wordcloud {
+        width: 100%;
+        height: 300px;
+    }
+</style>
+
+<div class="container" data-aos="fade-up">
+    <div class="card">
+        <div id="tag-wordcloud" class="card-content"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/libs/jqcloud/jqcloud-1.0.4.min.js"></script>
+<script type="text/javascript">
+    
+
+    $('#tag-wordcloud').jQCloud([{"text":"sec","weight":15,"link":"/tags/sec/"}], {
+        autoResize: true
+    });
+</script>
 
     
 
@@ -475,6 +508,9 @@
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">21.1k</span>
             
             
             
@@ -737,17 +773,16 @@ $(function () {
     
 
     
-        
+
+    <!-- 雪花特效 -->
+     
         <script type="text/javascript">
             // 只在桌面版网页启用特效
             var windowWidth = $(window).width();
             if (windowWidth > 768) {
-                document.write('<script type="text/javascript" src="/libs/others/sakura.js"><\/script>');
+                document.write('<script type="text/javascript" src="/libs/others/snow.js"><\/script>');
             }
         </script>
-    
-
-    <!-- 雪花特效 -->
     
 
     <!-- 鼠标星星特效 -->

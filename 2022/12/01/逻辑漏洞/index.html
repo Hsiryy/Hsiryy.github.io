@@ -4,22 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="SEC03, Maple Leaf Falling">
-    <meta name="description" content="day03PHP魔术方法（函数）LINE
-
-显示文件中的当前行
-
-&amp;lt;?php
-echo &amp;quot;di&amp;quot;.__LINE__.&amp;quot;hang&amp;quot;;
-?&amp;gt;
-
-
-
-
-FILE
-
-文件的完整路径和文件名
-网站的">
+    <meta name="keywords" content="逻辑漏洞, Maple Leaf Falling">
+    <meta name="description" content="逻辑漏洞概要
+逻辑漏洞:又称业务逻辑漏洞,是指由于程序逻辑不严谨或者 逻辑太复杂,导致一些逻辑分支不能正常处理或 者处理错误。通俗的讲,一个系统功能太多后,程序开发人员难以顾及到方方面面,对于某些地方的处理可能有遗漏, 从而导致逻辑漏洞。
+">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -31,7 +19,7 @@ FILE
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>SEC03 | Maple Leaf Falling</title>
+    <title>逻辑漏洞 | Maple Leaf Falling</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -354,12 +342,12 @@ FILE
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">SEC03</h1>
+                    <h1 class="description center-align post-title">逻辑漏洞</h1>
                 </div>
             </div>
         </div>
@@ -399,7 +387,7 @@ FILE
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-11-30
+                    2022-12-01
                 </div>
                 
 
@@ -413,14 +401,14 @@ FILE
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    977
+                    112
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    4 Min
+                    1 Min
                 </div>
                 
 
@@ -443,221 +431,10 @@ FILE
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="day03"><a href="#day03" class="headerlink" title="day03"></a>day03</h1><h2 id="PHP魔术方法（函数）"><a href="#PHP魔术方法（函数）" class="headerlink" title="PHP魔术方法（函数）"></a>PHP魔术方法（函数）</h2><p>LINE</p>
-<blockquote>
-<p>显示文件中的当前行</p>
+                <h2 id="逻辑漏洞概要"><a href="#逻辑漏洞概要" class="headerlink" title="逻辑漏洞概要"></a>逻辑漏洞概要</h2><blockquote>
+<p>逻辑漏洞:又称业务逻辑漏洞,是指由于程序逻辑不严谨或者 逻辑太复杂,导致一些逻辑分支不能正常处理或 者处理错误。通俗的讲,一个系统功能太多后,程序开发人员难以顾及到方方面面,对于某些地方的处理可能有遗漏, 从而导致逻辑漏洞。</p>
 </blockquote>
-<pre class="line-numbers language-php" data-language="php"><code class="language-php">&lt;?php
-echo &quot;di&quot;.__LINE__.&quot;hang&quot;;
-?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<blockquote>
-<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221111132408980.png" alt="image-20221111132408980"></p>
-</blockquote>
-<p>FILE</p>
-<blockquote>
-<p>文件的完整路径和文件名</p>
-<p>网站的绝对路径 </p>
-<p>可以配合 into outfile </p>
-</blockquote>
-<pre class="line-numbers language-php" data-language="php"><code class="language-php">&lt;?php
-echo __FILE__;
-?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<blockquote>
-<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221111132523280.png" alt="image-20221111132523280"></p>
-</blockquote>
-<p>DIR</p>
-<blockquote>
-<p>显示文件所在的目录</p>
-</blockquote>
-<p>FUNCTION</p>
-<pre class="line-numbers language-php" data-language="php"><code class="language-php">&lt;?php
-function test()&#123;
-    echo &#39;hans：&#39;.__FUNCTION__;
-&#125;
-
-test();
-?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<blockquote>
-<img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221111133006559.png" alt="image-20221111133006559" style="zoom:67%;">
-</blockquote>
-<p>CLASS</p>
-<blockquote>
-<p>类的名称（区分大小写）</p>
-</blockquote>
-<pre class="line-numbers language-php" data-language="php"><code class="language-php">&lt;?php
-class test&#123;
-    function _print()&#123;
-        echo &#39;class&#39;.__CLASS__.&#39;&lt;br&gt;&#39;;
-        echo &#39;hans：&#39;.__FUNCTION__;
-    &#125;
-&#125;
-$t &#x3D; new test();
-$t-&gt;_print();
-?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<blockquote>
-<img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221111133615490.png" alt="image-20221111133615490" style="zoom:67%;">
-</blockquote>
-<h2 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h2><pre class="line-numbers language-php+HTML" data-language="php+HTML"><code class="language-php+HTML">&lt;html&gt;
-    &lt;head&gt;
-        &lt;meta charset&#x3D;&quot;utf-8&quot;&gt;
-    &lt;&#x2F;head&gt;
-&lt;body&gt;
-&lt;?php
-    $q &#x3D; $_REQUEST[&#39;q&#39;];
-    if($q &#x3D;&#x3D; &#39;baidu&#39;)&#123;
-        echo &#39;www.baidu.com&#39;;
-    &#125;elseif($q &#x3D;&#x3D; &#39;Google&#39;)&#123;
-        echo &#39;www.Google.com&#39;;
-    &#125;elseif($q &#x3D;&#x3D; &#39;taobao&#39;)&#123;
-        echo &#39;www.taobao.com&#39;;
-    &#125;   
-?&gt;
-&lt;form action&#x3D;&quot;#&quot; method&#x3D;&quot;post&quot;&gt;   &#x2F;&#x2F; 多选 在select标签添加属性 multiple
-    &lt;select name&#x3D;&quot;q&quot;&gt;
-        &lt;option value&#x3D;&quot;&quot;&gt;请选择站点&lt;&#x2F;option&gt;
-        &lt;option value&#x3D;&quot;baidu&quot;&gt;Baidu&lt;&#x2F;option&gt;
-        &lt;option value&#x3D;&quot;Google&quot;&gt;Google&lt;&#x2F;option&gt;
-        &lt;option value&#x3D;&quot;taobao&quot;&gt;Taobao&lt;&#x2F;option&gt;
-    &lt;&#x2F;select&gt;
-    &lt;input type&#x3D;&quot;submit&quot; value&#x3D;&quot;提交&quot;&gt;
-&lt;&#x2F;form&gt;
-&lt;&#x2F;body&gt;
-&lt;&#x2F;html&gt;
-
-&#x2F;&#x2F; 基于安全方面考虑 安全开发的要求 前端get 后端必须用get接受
-
-&#x2F;&#x2F; 偷懒的就用$_REQUEST
-
-&#x2F;&#x2F; 接收传值的 $_GET $_POST $_REQUEST<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<blockquote>
-<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221111203233623.png" alt="image-20221111203233623"></p>
-</blockquote>
-<blockquote>
-<p>&#x2F;&#x2F; 攻击的时候 找到后端 php 回显</p>
-<p>黑客测试</p>
-</blockquote>
-<h2 id="表单验证"><a href="#表单验证" class="headerlink" title="表单验证"></a>表单验证</h2><p>在处理PHP表单时需要考虑安全性</p>
-<p>防止黑客及垃圾信息需要对表单进行数据安全验证</p>
-<p>使用htmlspecialchars()函数进行加固</p>
-<pre class="line-numbers language-php" data-language="php"><code class="language-php">$name &#x3D;htmlspecialchars($_REQUEST[&#39;name&#39;]);  
-$email &#x3D;htmlspecialchars($_REQUEST[&#39;email&#39;]);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<blockquote>
-<p>加固，加固完（客户代码报错，业务下线）</p>
-<p>发现漏洞  写代码加固（高危操作）</p>
-<p>不从代码层面加固（客户在哪买的系统，叫谁打补丁）</p>
-<p>产品方面加固  fw	ufw	waf	ips	ids	公司赚钱 轻松 风险转移</p>
-</blockquote>
-<h2 id="必填以及验证"><a href="#必填以及验证" class="headerlink" title="必填以及验证"></a>必填以及验证</h2><pre class="line-numbers language-php" data-language="php"><code class="language-php">&lt;?php
-$a &#x3D; &quot;&quot;;
-echo empty($a);
-?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<blockquote>
-<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221111212059899.png" alt="image-20221111212059899"></p>
-</blockquote>
-<pre class="line-numbers language-php" data-language="php"><code class="language-php">&lt;html&gt;
-&lt;head&gt;
-
-&lt;&#x2F;head&gt;
-&lt;?php
-$name &#x3D; $_REQUEST[&#39;name&#39;]; 
-$email &#x3D; $_REQUEST[&#39;email&#39;];
-
-if(empty($name))&#123;
-    echo &#39;用户名sss必填&#39;;
-&#125;elseif(empty($email))&#123;
-    echo &#39;邮箱必填&#39;;
-&#125;else&#123;
-    echo $name,$email;
-&#125;
-
-
-?&gt;
-    &lt;body&gt;
-    &lt;form action&#x3D;&quot;#&quot; method&#x3D;&quot;get&quot;&gt;
-    名字：&lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;name&quot; &#x2F;&gt;&lt;br&gt;
-    邮件：&lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;email&quot; &#x2F;&gt;&lt;br&gt;
-    &lt;input type&#x3D;&quot;submit&quot; value&#x3D;&quot;get&quot;&gt;
-    &lt;&#x2F;form&gt;
-    
-    &lt;&#x2F;body&gt;
-&lt;&#x2F;html&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<blockquote>
-<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221111213653027.png" alt="image-20221111213653027"></p>
-<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221111213705227.png" alt="image-20221111213705227"></p>
-</blockquote>
-<h2 id="文件包含"><a href="#文件包含" class="headerlink" title="文件包含"></a>文件包含</h2><blockquote>
-<p>应用场景：</p>
-<p>当有大量文件需要被引用的时候</p>
-<p>开发出一个页面 处理调用 多个页面的内容</p>
-</blockquote>
-<p>include  </p>
-<p>include 包含语句</p>
-<blockquote>
-<p>最终包含的文件会以主文件的php打开</p>
-<p>传txt jpg文件 到网站 用包含漏洞打开</p>
-</blockquote>
-<h2 id="文件以及文件上传"><a href="#文件以及文件上传" class="headerlink" title="文件以及文件上传"></a>文件以及文件上传</h2><pre class="line-numbers language-php+HTML" data-language="php+HTML"><code class="language-php+HTML">&lt;html&gt;
-&lt;head&gt;
-&lt;meta charset&#x3D;&quot;utf-8&quot;&gt;
-&lt;&#x2F;head&gt;
-&lt;body&gt;
-&lt;?php
-$file &#x3D; $_FILES[&#39;file&#39;][&#39;type&#39;].&#39;&lt;br&gt;&#39;;
-$ss &#x3D; $_FILES[&#39;file&#39;][&#39;size&#39;];
-echo $file,$ss;
-
-?&gt;
-
-&lt;form action&#x3D;&quot;#&quot; method&#x3D;&quot;post&quot; enctype&#x3D;&quot;multipart&#x2F;form-data&quot;&gt;
-    &lt;label for&#x3D;&quot;file&quot;&gt;文件名：&lt;&#x2F;label&gt;
-    &lt;input type&#x3D;&quot;file&quot; name&#x3D;&quot;file&quot; id&#x3D;&quot;file&quot;&#x2F;&gt;&lt;br&gt;
-    &lt;input type&#x3D;&quot;submit&quot; name&#x3D;&quot;submit&quot; value&#x3D;&quot;get&quot;&gt;
-&lt;&#x2F;form&gt;
-&lt;&#x2F;body&gt;
-&lt;&#x2F;html&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<blockquote>
-<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221111223941679.png" alt="image-20221111223941679"></p>
-</blockquote>
-<blockquote>
-<p>[‘file’]  [‘name’]</p>
-<ul>
-<li>上传文件的名称</li>
-</ul>
-<p>[‘file’]  [‘type’]</p>
-<ul>
-<li>文件的类型</li>
-</ul>
-<p>[‘file’]  [‘size’]</p>
-<ul>
-<li>文件的大小，以字节记</li>
-</ul>
-<p>[‘file’]  [‘tmp_name’]</p>
-<ul>
-<li>储存在服务器的文件的临时副本的名称</li>
-</ul>
-<p>[‘file’]  [‘error’]</p>
-<ul>
-<li>由文件上传导致的错误代码</li>
-</ul>
-</blockquote>
-<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221111224533921.png" alt="image-20221111224533921"></p>
-<blockquote>
-<p>explode 可以用某个字符进行分割</p>
-<p>end(); 取函数最后一位</p>
-<p>|| 或者 </p>
-<p>&amp;&amp; 并</p>
-</blockquote>
-<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221111225634043.png" alt="image-20221111225634043"></p>
-
+<h2 id="身份验证漏洞"><a href="#身份验证漏洞" class="headerlink" title="身份验证漏洞"></a>身份验证漏洞</h2>
                 
             </div>
             <hr/>
@@ -683,7 +460,7 @@ echo $file,$ss;
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://hsiryy.github.io/2022/11/30/Day03/">https://hsiryy.github.io/2022/11/30/Day03/</a>
+                    <a href="https://hsiryy.github.io/2022/12/01/%E9%80%BB%E8%BE%91%E6%BC%8F%E6%B4%9E/">https://hsiryy.github.io/2022/12/01/%E9%80%BB%E8%BE%91%E6%BC%8F%E6%B4%9E/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1034,17 +811,18 @@ echo $file,$ss;
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2022/11/30/Day02/">
+                <a href="/2022/12/01/%E9%80%BB%E8%BE%91%E6%BC%8F%E6%B4%9E/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="SEC02">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="逻辑漏洞">
                         
-                        <span class="card-title">SEC02</span>
+                        <span class="card-title">逻辑漏洞</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1054,9 +832,9 @@ echo $file,$ss;
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-11-30
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-01
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -1065,6 +843,7 @@ echo $file,$ss;
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1083,13 +862,13 @@ echo $file,$ss;
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/11/30/Day04/">
+                <a href="/2022/11/30/%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%B8%97%E9%80%8F%E4%B8%8E%E9%98%B2%E5%BE%A1/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="SEC04">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="远程代码执行渗透与防御">
                         
-                        <span class="card-title">SEC04</span>
+                        <span class="card-title">远程代码执行渗透与防御</span>
                     </div>
                 </a>
                 <div class="card-content article-content">

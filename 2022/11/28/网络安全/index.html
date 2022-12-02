@@ -388,17 +388,32 @@
                 
 
                 
-
-                
-                <div class="info-break-policy">
-                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    10k
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2022-11-28
                 </div>
                 
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    10.3k
+                </div>
+                
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    41 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
             </div>
         </div>
         <hr class="clearfix">
@@ -425,7 +440,7 @@ yum install -y net-tools<span aria-hidden="true" class="line-numbers-rows"><span
 systemctl stop firewalld 关闭防火墙
 systemctl disable firewalld 开机不启动防火墙<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221101230844153.png" alt="image-20221101230844153"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221101230844153.png" alt="image-20221101230844153"></p>
 <pre class="line-numbers language-none"><code class="language-none">vim &#x2F;etc&#x2F;sysconfig&#x2F;network-scripts&#x2F;ifcfg-ens33
 
 还要删除UUID 删除之后MAC地址随机<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
@@ -433,22 +448,22 @@ systemctl disable firewalld 开机不启动防火墙<span aria-hidden="true" cla
 <pre class="line-numbers language-none"><code class="language-none">C7模板机 root 密码Hlh！@#45<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p> 配置网络。</p>
-<h1 id="二、网络信息安全基础知识"><a href="#二、网络信息安全基础知识" class="headerlink" title="二、网络信息安全基础知识"></a>二、网络信息安全基础知识</h1><h2 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102214517676.png" alt="image-20221102214517676"></p>
-<h2 id="传输介质"><a href="#传输介质" class="headerlink" title="传输介质"></a>传输介质</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102214326581.png" alt="image-20221102214326581"></p>
-<h2 id="资源共享"><a href="#资源共享" class="headerlink" title="资源共享"></a>资源共享</h2><p> <img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102214631611.png" alt="image-20221102214631611"></p>
-<h2 id="按地域分"><a href="#按地域分" class="headerlink" title="按地域分"></a>按地域分</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102214747124.png" alt="image-20221102214747124"></p>
-<h1 id="三、网站常见的攻击方式"><a href="#三、网站常见的攻击方式" class="headerlink" title="三、网站常见的攻击方式"></a>三、网站常见的攻击方式</h1><h2 id="网站出现大量的黑链"><a href="#网站出现大量的黑链" class="headerlink" title="网站出现大量的黑链"></a>网站出现大量的黑链</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102220954524.png" alt="image-20221102220954524"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102221045333.png" alt="image-20221102221045333"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102221253374.png" alt="image-20221102221253374"></p>
-<h2 id="网站根目录中出现大量的植入网页"><a href="#网站根目录中出现大量的植入网页" class="headerlink" title="网站根目录中出现大量的植入网页"></a>网站根目录中出现大量的植入网页</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102221826649.png" alt="image-20221102221826649"></p>
-<h2 id="网站网页挂马"><a href="#网站网页挂马" class="headerlink" title="网站网页挂马"></a>网站网页挂马</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102222327510.png" alt="image-20221102222327510"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102222729641.png" alt="image-20221102222729641"></p>
-<h2 id="网站域名DNS劫持"><a href="#网站域名DNS劫持" class="headerlink" title="网站域名DNS劫持"></a>网站域名DNS劫持</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102223023959.png" alt="image-20221102223023959"></p>
-<h2 id="网站和服务器密码被篡改"><a href="#网站和服务器密码被篡改" class="headerlink" title="网站和服务器密码被篡改"></a>网站和服务器密码被篡改</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102223305560.png" alt="image-20221102223305560"></p>
-<h2 id="网站的数据库被植入内容"><a href="#网站的数据库被植入内容" class="headerlink" title="网站的数据库被植入内容"></a>网站的数据库被植入内容</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102223512264.png" alt="image-20221102223512264"></p>
-<h2 id="DDos攻击网站网页打不开"><a href="#DDos攻击网站网页打不开" class="headerlink" title="DDos攻击网站网页打不开"></a>DDos攻击网站网页打不开</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102223746318.png" alt="image-20221102223746318"></p>
-<h2 id="非法桥页-网站打开跳转到指定页面上"><a href="#非法桥页-网站打开跳转到指定页面上" class="headerlink" title="非法桥页 网站打开跳转到指定页面上"></a>非法桥页 网站打开跳转到指定页面上</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102223846370.png" alt="image-20221102223846370"></p>
-<h1 id="四、Linux系统常见的150个命令-开发-运维-测试-安全"><a href="#四、Linux系统常见的150个命令-开发-运维-测试-安全" class="headerlink" title="四、Linux系统常见的150个命令/开发/运维/测试/安全"></a>四、Linux系统常见的150个命令/开发/运维/测试/安全</h1><h2 id="线上查询和帮助-2个："><a href="#线上查询和帮助-2个：" class="headerlink" title="线上查询和帮助 2个："></a>线上查询和帮助 2个：</h2><pre class="line-numbers language-none"><code class="language-none">man 查看命令帮助 -- 命令的词典
+<h1 id="二、网络信息安全基础知识"><a href="#二、网络信息安全基础知识" class="headerlink" title="二、网络信息安全基础知识"></a>二、网络信息安全基础知识</h1><h2 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h2><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102214517676.png" alt="image-20221102214517676"></p>
+<h2 id="传输介质"><a href="#传输介质" class="headerlink" title="传输介质"></a>传输介质</h2><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102214326581.png" alt="image-20221102214326581"></p>
+<h2 id="资源共享"><a href="#资源共享" class="headerlink" title="资源共享"></a>资源共享</h2><p> <img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102214631611.png" alt="image-20221102214631611"></p>
+<h2 id="按地域分"><a href="#按地域分" class="headerlink" title="按地域分"></a>按地域分</h2><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102214747124.png" alt="image-20221102214747124"></p>
+<h1 id="三、网站常见的攻击方式"><a href="#三、网站常见的攻击方式" class="headerlink" title="三、网站常见的攻击方式"></a>三、网站常见的攻击方式</h1><h2 id="网站出现大量的黑链"><a href="#网站出现大量的黑链" class="headerlink" title="网站出现大量的黑链"></a>网站出现大量的黑链</h2><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102220954524.png" alt="image-20221102220954524"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102221045333.png" alt="image-20221102221045333"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102221253374.png" alt="image-20221102221253374"></p>
+<h2 id="网站根目录中出现大量的植入网页"><a href="#网站根目录中出现大量的植入网页" class="headerlink" title="网站根目录中出现大量的植入网页"></a>网站根目录中出现大量的植入网页</h2><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102221826649.png" alt="image-20221102221826649"></p>
+<h2 id="网站网页挂马"><a href="#网站网页挂马" class="headerlink" title="网站网页挂马"></a>网站网页挂马</h2><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102222327510.png" alt="image-20221102222327510"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102222729641.png" alt="image-20221102222729641"></p>
+<h2 id="网站域名DNS劫持"><a href="#网站域名DNS劫持" class="headerlink" title="网站域名DNS劫持"></a>网站域名DNS劫持</h2><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102223023959.png" alt="image-20221102223023959"></p>
+<h2 id="网站和服务器密码被篡改"><a href="#网站和服务器密码被篡改" class="headerlink" title="网站和服务器密码被篡改"></a>网站和服务器密码被篡改</h2><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102223305560.png" alt="image-20221102223305560"></p>
+<h2 id="网站的数据库被植入内容"><a href="#网站的数据库被植入内容" class="headerlink" title="网站的数据库被植入内容"></a>网站的数据库被植入内容</h2><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102223512264.png" alt="image-20221102223512264"></p>
+<h2 id="DDos攻击网站网页打不开"><a href="#DDos攻击网站网页打不开" class="headerlink" title="DDos攻击网站网页打不开"></a>DDos攻击网站网页打不开</h2><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102223746318.png" alt="image-20221102223746318"></p>
+<h2 id="非法桥页-网站打开跳转到指定页面上"><a href="#非法桥页-网站打开跳转到指定页面上" class="headerlink" title="非法桥页 网站打开跳转到指定页面上"></a>非法桥页 网站打开跳转到指定页面上</h2><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102223846370.png" alt="image-20221102223846370"></p>
+<h1 id="四、Linux系统常见的150个命令-x2F-开发-x2F-运维-x2F-测试-x2F-安全"><a href="#四、Linux系统常见的150个命令-x2F-开发-x2F-运维-x2F-测试-x2F-安全" class="headerlink" title="四、Linux系统常见的150个命令&#x2F;开发&#x2F;运维&#x2F;测试&#x2F;安全"></a>四、Linux系统常见的150个命令&#x2F;开发&#x2F;运维&#x2F;测试&#x2F;安全</h1><h2 id="线上查询和帮助-2个："><a href="#线上查询和帮助-2个：" class="headerlink" title="线上查询和帮助 2个："></a>线上查询和帮助 2个：</h2><pre class="line-numbers language-none"><code class="language-none">man 查看命令帮助 -- 命令的词典
 help 查看Linux系统的内置命令帮助<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <h2 id="文件和目录操作命令-15个："><a href="#文件和目录操作命令-15个：" class="headerlink" title="文件和目录操作命令 15个："></a>文件和目录操作命令 15个：</h2><pre class="line-numbers language-none"><code class="language-none">ls 查看当前目录内容以及内容属性的信息 -l -a<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -457,13 +472,15 @@ help 查看Linux系统的内置命令帮助<span aria-hidden="true" class="line-
 <blockquote>
 <p>.（当前目录） </p>
 <p>..（当前目录的上一级目录） </p>
-<p>/（根目录）</p>
+<p>&#x2F;（根目录）</p>
 <p>~（主目录）</p>
-<p>-</p>
+<ul>
+<li></li>
+</ul>
 </blockquote>
 <p>cp</p>
 <blockquote>
-<p>复制/拷贝文件或目录</p>
+<p>复制&#x2F;拷贝文件或目录</p>
 </blockquote>
 <p>pwd</p>
 <blockquote>
@@ -471,7 +488,7 @@ help 查看Linux系统的内置命令帮助<span aria-hidden="true" class="line-
 </blockquote>
 <p>mv</p>
 <blockquote>
-<p>移动文件或目录/重命名</p>
+<p>移动文件或目录&#x2F;重命名</p>
 </blockquote>
 <p>rm</p>
 <blockquote>
@@ -663,48 +680,48 @@ init<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span
 
 
 
-<h1 id="五、网络信息安全基础知识"><a href="#五、网络信息安全基础知识" class="headerlink" title="五、网络信息安全基础知识"></a>五、网络信息安全基础知识</h1><h2 id="什么是网络"><a href="#什么是网络" class="headerlink" title="什么是网络"></a>什么是网络</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102230812056.png" alt="image-20221102230812056"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102230853492.png" alt="image-20221102230853492"></p>
-<h2 id="信息系统与信息安全"><a href="#信息系统与信息安全" class="headerlink" title="信息系统与信息安全"></a>信息系统与信息安全</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102230916718.png" alt="image-20221102230916718"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102231218337.png" alt="image-20221102231218337"></p>
-<h2 id="计算机病毒"><a href="#计算机病毒" class="headerlink" title="计算机病毒"></a>计算机病毒</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102231621323.png" alt="image-20221102231621323"></p>
-<h2 id="木马"><a href="#木马" class="headerlink" title="木马"></a>木马</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102231820002.png" alt="image-20221102231820002"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102232205951.png" alt="image-20221102232205951"></p>
-<h2 id="入侵"><a href="#入侵" class="headerlink" title="入侵"></a>入侵</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102232534747.png" alt="image-20221102232534747"></p>
-<h2 id="黑客"><a href="#黑客" class="headerlink" title="黑客"></a>黑客</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102232723194.png" alt="image-20221102232723194"></p>
-<h2 id="攻击"><a href="#攻击" class="headerlink" title="攻击"></a>攻击</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102232814271.png" alt="image-20221102232814271"></p>
-<h2 id="漏洞（无意的行为）"><a href="#漏洞（无意的行为）" class="headerlink" title="漏洞（无意的行为）"></a>漏洞（无意的行为）</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102233323087.png" alt="image-20221102233323087"></p>
-<h2 id="后门（有意的行为）"><a href="#后门（有意的行为）" class="headerlink" title="后门（有意的行为）"></a>后门（有意的行为）</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102233545783.png" alt="image-20221102233545783"></p>
-<h2 id="防火墙"><a href="#防火墙" class="headerlink" title="防火墙"></a>防火墙</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102233743335.png" alt="image-20221102233743335"></p>
-<h2 id="补丁"><a href="#补丁" class="headerlink" title="补丁"></a>补丁</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102233816970.png" alt="image-20221102233816970"></p>
-<h2 id="密码加密与解密"><a href="#密码加密与解密" class="headerlink" title="密码加密与解密"></a>密码加密与解密</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102233936514.png" alt="image-20221102233936514"></p>
-<h3 id="加密"><a href="#加密" class="headerlink" title="加密"></a>加密</h3><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102234129951.png" alt="image-20221102234129951"></p>
-<h3 id="解密"><a href="#解密" class="headerlink" title="解密"></a>解密</h3><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102234315322.png" alt="image-20221102234315322"></p>
-<h2 id="数字签名与数字水印"><a href="#数字签名与数字水印" class="headerlink" title="数字签名与数字水印"></a>数字签名与数字水印</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102234616868.png" alt="image-20221102234616868"></p>
-<h1 id="六、Linux系统安装与优化以及攻防环境搭建"><a href="#六、Linux系统安装与优化以及攻防环境搭建" class="headerlink" title="六、Linux系统安装与优化以及攻防环境搭建"></a>六、Linux系统安装与优化以及攻防环境搭建</h1><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102235140786.png" alt="image-20221102235140786"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103004548144.png" alt="image-20221103004548144"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103005815739.png" alt="image-20221103005815739"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103011356458.png" alt="image-20221103011356458"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103011601555.png" alt="image-20221103011601555"></p>
+<h1 id="五、网络信息安全基础知识"><a href="#五、网络信息安全基础知识" class="headerlink" title="五、网络信息安全基础知识"></a>五、网络信息安全基础知识</h1><h2 id="什么是网络"><a href="#什么是网络" class="headerlink" title="什么是网络"></a>什么是网络</h2><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102230812056.png" alt="image-20221102230812056"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102230853492.png" alt="image-20221102230853492"></p>
+<h2 id="信息系统与信息安全"><a href="#信息系统与信息安全" class="headerlink" title="信息系统与信息安全"></a>信息系统与信息安全</h2><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102230916718.png" alt="image-20221102230916718"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102231218337.png" alt="image-20221102231218337"></p>
+<h2 id="计算机病毒"><a href="#计算机病毒" class="headerlink" title="计算机病毒"></a>计算机病毒</h2><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102231621323.png" alt="image-20221102231621323"></p>
+<h2 id="木马"><a href="#木马" class="headerlink" title="木马"></a>木马</h2><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102231820002.png" alt="image-20221102231820002"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102232205951.png" alt="image-20221102232205951"></p>
+<h2 id="入侵"><a href="#入侵" class="headerlink" title="入侵"></a>入侵</h2><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102232534747.png" alt="image-20221102232534747"></p>
+<h2 id="黑客"><a href="#黑客" class="headerlink" title="黑客"></a>黑客</h2><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102232723194.png" alt="image-20221102232723194"></p>
+<h2 id="攻击"><a href="#攻击" class="headerlink" title="攻击"></a>攻击</h2><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102232814271.png" alt="image-20221102232814271"></p>
+<h2 id="漏洞（无意的行为）"><a href="#漏洞（无意的行为）" class="headerlink" title="漏洞（无意的行为）"></a>漏洞（无意的行为）</h2><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102233323087.png" alt="image-20221102233323087"></p>
+<h2 id="后门（有意的行为）"><a href="#后门（有意的行为）" class="headerlink" title="后门（有意的行为）"></a>后门（有意的行为）</h2><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102233545783.png" alt="image-20221102233545783"></p>
+<h2 id="防火墙"><a href="#防火墙" class="headerlink" title="防火墙"></a>防火墙</h2><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102233743335.png" alt="image-20221102233743335"></p>
+<h2 id="补丁"><a href="#补丁" class="headerlink" title="补丁"></a>补丁</h2><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102233816970.png" alt="image-20221102233816970"></p>
+<h2 id="密码加密与解密"><a href="#密码加密与解密" class="headerlink" title="密码加密与解密"></a>密码加密与解密</h2><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102233936514.png" alt="image-20221102233936514"></p>
+<h3 id="加密"><a href="#加密" class="headerlink" title="加密"></a>加密</h3><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102234129951.png" alt="image-20221102234129951"></p>
+<h3 id="解密"><a href="#解密" class="headerlink" title="解密"></a>解密</h3><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102234315322.png" alt="image-20221102234315322"></p>
+<h2 id="数字签名与数字水印"><a href="#数字签名与数字水印" class="headerlink" title="数字签名与数字水印"></a>数字签名与数字水印</h2><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102234616868.png" alt="image-20221102234616868"></p>
+<h1 id="六、Linux系统安装与优化以及攻防环境搭建"><a href="#六、Linux系统安装与优化以及攻防环境搭建" class="headerlink" title="六、Linux系统安装与优化以及攻防环境搭建"></a>六、Linux系统安装与优化以及攻防环境搭建</h1><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221102235140786.png" alt="image-20221102235140786"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103004548144.png" alt="image-20221103004548144"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103005815739.png" alt="image-20221103005815739"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103011356458.png" alt="image-20221103011356458"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103011601555.png" alt="image-20221103011601555"></p>
 <p>关闭服务</p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103012013947.png" alt="image-20221103012013947"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103012319716.png" alt="image-20221103012319716"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103012013947.png" alt="image-20221103012013947"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103012319716.png" alt="image-20221103012319716"></p>
 <h2 id="Windows系统"><a href="#Windows系统" class="headerlink" title="Windows系统"></a>Windows系统</h2><h3 id="Windows-XP"><a href="#Windows-XP" class="headerlink" title="Windows XP"></a>Windows XP</h3><pre class="line-numbers language-none"><code class="language-none">msdn.itellyou.cn 可以在此网站下载<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103125206559.png" alt="image-20221103125206559"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103125206559.png" alt="image-20221103125206559"></p>
 <h3 id="Windows-7专业版无补丁"><a href="#Windows-7专业版无补丁" class="headerlink" title="Windows 7专业版无补丁"></a>Windows 7专业版无补丁</h3><pre class="line-numbers language-none"><code class="language-none">ed2k:&#x2F;&#x2F;|file|cn_windows_7_professional_x64_dvd_x15-65791.iso|3341268992|3474800521D169FBF3F5E527CD835156|&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h3 id="Windows-Server-2008-R2系统"><a href="#Windows-Server-2008-R2系统" class="headerlink" title="Windows Server 2008 R2系统"></a>Windows Server 2008 R2系统</h3><pre class="line-numbers language-none"><code class="language-none">ed2k:&#x2F;&#x2F;|file|cn_windows_server_2008_r2_standard_enterprise_datacenter_and_web_with_sp1_x64_dvd_617598.iso|3368839168|D282F613A80C2F45FF23B79212A3CF67|&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h3 id="Windows-10-1903"><a href="#Windows-10-1903" class="headerlink" title="Windows 10 1903"></a>Windows 10 1903</h3><h3 id="Kali-Linux各个版本下载地址"><a href="#Kali-Linux各个版本下载地址" class="headerlink" title="Kali Linux各个版本下载地址"></a>Kali Linux各个版本下载地址</h3><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103163647944.png" alt="image-20221103163647944"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103163719186.png" alt="image-20221103163719186"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103163736549.png" alt="image-20221103163736549"></p>
-<h1 id="七、渗透攻防环境搭建"><a href="#七、渗透攻防环境搭建" class="headerlink" title="七、渗透攻防环境搭建"></a>七、渗透攻防环境搭建</h1><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103172225176.png" alt="image-20221103172225176"></p>
+<h3 id="Windows-10-1903"><a href="#Windows-10-1903" class="headerlink" title="Windows 10 1903"></a>Windows 10 1903</h3><h3 id="Kali-Linux各个版本下载地址"><a href="#Kali-Linux各个版本下载地址" class="headerlink" title="Kali Linux各个版本下载地址"></a>Kali Linux各个版本下载地址</h3><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103163647944.png" alt="image-20221103163647944"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103163719186.png" alt="image-20221103163719186"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103163736549.png" alt="image-20221103163736549"></p>
+<h1 id="七、渗透攻防环境搭建"><a href="#七、渗透攻防环境搭建" class="headerlink" title="七、渗透攻防环境搭建"></a>七、渗透攻防环境搭建</h1><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103172225176.png" alt="image-20221103172225176"></p>
 <p>三大结构</p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103172621178.png" alt="image-20221103172621178"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103172621178.png" alt="image-20221103172621178"></p>
 <p>五大语句</p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103173430398.png" alt="image-20221103173430398"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103173550901.png" alt="image-20221103173550901"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103173430398.png" alt="image-20221103173430398"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103173550901.png" alt="image-20221103173550901"></p>
 <h2 id="Parrot-Linux的下载"><a href="#Parrot-Linux的下载" class="headerlink" title="Parrot Linux的下载"></a>Parrot Linux的下载</h2><pre class="line-numbers language-none"><code class="language-none">镜像地址：https:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;parrot&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
@@ -727,21 +744,21 @@ init<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span
 
 <h1 id="八、Docker安装DVWA和Pikachu靶场环境"><a href="#八、Docker安装DVWA和Pikachu靶场环境" class="headerlink" title="八、Docker安装DVWA和Pikachu靶场环境"></a>八、Docker安装DVWA和Pikachu靶场环境</h1><h2 id="DVWA"><a href="#DVWA" class="headerlink" title="DVWA"></a>DVWA</h2><h3 id="Docker基础"><a href="#Docker基础" class="headerlink" title="Docker基础"></a>Docker基础</h3><blockquote>
 <p>Docker安装</p>
-<p>​    Linux系统下    MacOS系统下    Windows系统下</p>
-<p>​            |                            |                            |</p>
-<p>​    yum 在线安装                Docker Desktop</p>
-<p>​            |    </p>
-<p>步骤零、准备工作 –&gt;&gt; uname -a （3.10以上版本 默认）    CentOS6.5以上 3.10内核普遍偏低            </p>
+<p>​	Linux系统下	MacOS系统下	Windows系统下</p>
+<p>​			|							|							|</p>
+<p>​	yum 在线安装				Docker Desktop</p>
+<p>​			|	</p>
+<p>步骤零、准备工作 –&gt;&gt; uname -a （3.10以上版本 默认）	CentOS6.5以上 3.10内核普遍偏低			</p>
 <p>步骤一、替换Docker的安装源 –&gt;&gt; yum update （更新系统  （选做）） –&gt;&gt; 1. yum install -y yum-utils device-mapper-persistent-data lvm2   –&gt;&gt;  2.  yum-config-manager –add-repo <a target="_blank" rel="noopener" href="http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo">http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo</a>  –&gt;&gt; 3.  yum list docker-ce –showduplicates | sort -r</p>
 <p>步骤二、生存缓存</p>
 <p>步骤三、Docker安装</p>
-<p>​            |</p>
+<p>​			|</p>
 <p>1、安装最新版本</p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103235914986.png" alt="image-20221103235914986"></p>
-<p>2、安装指定版本<img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103235757490.png" alt="image-20221103235757490"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103235914986.png" alt="image-20221103235914986"></p>
+<p>2、安装指定版本<img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221103235757490.png" alt="image-20221103235757490"></p>
 </blockquote>
 <p>安装完成后输入 docker version 如下图显示</p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104000242547.png" alt="image-20221104000242547"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104000242547.png" alt="image-20221104000242547"></p>
 <p>如若没有Server：Docker Engine - Community 则执行</p>
 <pre class="line-numbers language-none"><code class="language-none">service docker start <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -754,13 +771,13 @@ init<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span
 
 <h3 id="优化Docker"><a href="#优化Docker" class="headerlink" title="优化Docker"></a>优化Docker</h3><p>国内镜像加速</p>
 <blockquote>
-<p>IT互联网公司的镜像加速源 –阿里    –搜狐    –163等</p>
-<p>知名学府    –清华    –科大</p>
+<p>IT互联网公司的镜像加速源 –阿里	–搜狐	–163等</p>
+<p>知名学府	–清华	–科大</p>
 </blockquote>
 <p> 阿里源 –&gt; 登录 –&gt;控制台 –&gt;搜索容器镜像服务</p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104001502919.png" alt="image-20221104001502919"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104001502919.png" alt="image-20221104001502919"></p>
 <p>按顺序执行</p>
-<p>vim /etc/docker/daemon.json </p>
+<p>vim &#x2F;etc&#x2F;docker&#x2F;daemon.json </p>
 <pre class="line-numbers language-none"><code class="language-none">&#123;
   &quot;registry-mirrors&quot;: [&quot;https:&#x2F;&#x2F;2rx34ysn.mirror.aliyuncs.com&quot;] &lt;此码人人不一样
 &#125;
@@ -773,45 +790,45 @@ sudo systemctl restart docker<span aria-hidden="true" class="line-numbers-rows">
 <p>Docker模板机关机状态克隆一台DVWA的机器</p>
 <p>进入xshell连接DVWA</p>
 <p>重新打开此虚拟机 修改主机名</p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104002528403.png" alt="image-20221104002528403"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104002528403.png" alt="image-20221104002528403"></p>
 <p>输入 </p>
 <blockquote>
-<p>docker pull infoslack/dvwa</p>
+<p>docker pull infoslack&#x2F;dvwa</p>
 </blockquote>
 <p>docker images命令查看是否下载成功 </p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104003535246.png" alt="image-20221104003535246"></p>
-<p>docker run -d -p 80:80 -p 3306:3306 -e MYSQL_PASS=”password” infoslack/dvwa</p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104003535246.png" alt="image-20221104003535246"></p>
+<p>docker run -d -p 80:80 -p 3306:3306 -e MYSQL_PASS&#x3D;”password” infoslack&#x2F;dvwa</p>
 <pre class="line-numbers language-none"><code class="language-none">-d 后台运行
 -p 打开端口<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104004026010.png" alt="image-20221104004026010"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104004026010.png" alt="image-20221104004026010"></p>
 <p>查看是否运行</p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104004122053.png" alt="image-20221104004122053"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104004122053.png" alt="image-20221104004122053"></p>
 <p>打开浏览器<a target="_blank" rel="noopener" href="http://ip(自己的ip地址)/">http://IP(自己的ip地址)</a></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104004249352.png" alt="image-20221104004249352"></p>
-<p>点击Create/Reset…   进入DVWA登录界面</p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104004637749.png" alt="image-20221104004637749"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104004249352.png" alt="image-20221104004249352"></p>
+<p>点击Create&#x2F;Reset…   进入DVWA登录界面</p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104004637749.png" alt="image-20221104004637749"></p>
 <p>账号密码为 admin password</p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104004819388.png" alt="image-20221104004819388"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104004819388.png" alt="image-20221104004819388"></p>
 <h3 id="安装成功！"><a href="#安装成功！" class="headerlink" title="安装成功！"></a>安装成功！</h3><h2 id="Pikachu"><a href="#Pikachu" class="headerlink" title="Pikachu"></a>Pikachu</h2><p>在模板机中克隆一台虚拟机（关机状态）</p>
 <p>在xshell中改名为pikachu</p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104010521063.png" alt="image-20221104010521063"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104010521063.png" alt="image-20221104010521063"></p>
 <p>输入</p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104010959318.png" alt="image-20221104010959318"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104010959318.png" alt="image-20221104010959318"></p>
 <p>执行</p>
 <pre class="line-numbers language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;zhuifengshaonianhanlu&#x2F;pikachu<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104011521895.png" alt="image-20221104011521895"></p>
-<p>cd pikachu/</p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104011521895.png" alt="image-20221104011521895"></p>
+<p>cd pikachu&#x2F;</p>
 <blockquote>
 <p>目录里有Dockerfile的文件 通过此文件自动构建一个Docker镜像</p>
 <p>docker build -t pikachu</p>
 <p>构建成功 docker images查看</p>
 </blockquote>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104012231585.png" alt="image-20221104012231585"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104012231585.png" alt="image-20221104012231585"></p>
 <p>docker run -d -p 80:80 pikachu</p>
 <p>docek ps 查看是否运行</p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104012516710.png" alt="image-20221104012516710"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104012516710.png" alt="image-20221104012516710"></p>
 <h3 id="安装成功"><a href="#安装成功" class="headerlink" title="安装成功"></a>安装成功</h3><h2 id="关于BWAPP靶场环境的搭建"><a href="#关于BWAPP靶场环境的搭建" class="headerlink" title="关于BWAPP靶场环境的搭建"></a>关于BWAPP靶场环境的搭建</h2><p>卸载以前安装的Docker容器</p>
 <blockquote>
 <p>sudo yum remove docker \ docker-client \ docker-client-latest \docker-common \docker-latest \docker-latest-logrotate \docker-logrotate \ocker-engine</p>
@@ -823,7 +840,7 @@ sudo systemctl restart docker<span aria-hidden="true" class="line-numbers-rows">
 <p>查看是否安装成功</p>
 <blockquote>
 <p>yum list installed |grep docker</p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221107234830061.png" alt="image-20221107234830061"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221107234830061.png" alt="image-20221107234830061"></p>
 </blockquote>
 <p>启动docker服务并设置开机自启</p>
 <blockquote>
@@ -833,15 +850,15 @@ sudo systemctl restart docker<span aria-hidden="true" class="line-numbers-rows">
 <p>查看docker服务状态 running就是成功</p>
 <blockquote>
 <p>systemctl status docker</p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221107235006525.png" alt="image-20221107235006525"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221107235006525.png" alt="image-20221107235006525"></p>
 </blockquote>
 <p>使用docker镜像配置国内镜像(中科大)</p>
 <blockquote>
 <ol>
-<li>在宿主机器编辑文件：vim /etc/docker/daemon.json</li>
+<li>在宿主机器编辑文件：vim &#x2F;etc&#x2F;docker&#x2F;daemon.json</li>
 <li>请在该配置文件中加入（没有该文件的话，请先建一个）：</li>
 <li>{</li>
-<li>  “registry-mirrors”: [“<a href="https://docker.mirrors.ustc.edu.cn&quot;]">https://docker.mirrors.ustc.edu.cn&quot;]</a></li>
+<li>“registry-mirrors”: [“<a href="https://docker.mirrors.ustc.edu.cn&quot;]">https://docker.mirrors.ustc.edu.cn&quot;]</a></li>
 <li>}</li>
 </ol>
 </blockquote>
@@ -853,9 +870,9 @@ sudo systemctl restart docker<span aria-hidden="true" class="line-numbers-rows">
 <blockquote>
 <p>docker search bwapp</p>
 </blockquote>
-<p>下载raesene/bwapp镜像</p>
+<p>下载raesene&#x2F;bwapp镜像</p>
 <blockquote>
-<p>docker pull raesene/bwapp</p>
+<p>docker pull raesene&#x2F;bwapp</p>
 </blockquote>
 <p>查看镜像</p>
 <blockquote>
@@ -863,7 +880,7 @@ sudo systemctl restart docker<span aria-hidden="true" class="line-numbers-rows">
 </blockquote>
 <p>最后运行</p>
 <blockquote>
-<p>docker run -it -d -p 8080:80 raesene/bwapp</p>
+<p>docker run -it -d -p 8080:80 raesene&#x2F;bwapp</p>
 </blockquote>
 <p>查看运行情况</p>
 <blockquote>
@@ -871,23 +888,23 @@ sudo systemctl restart docker<span aria-hidden="true" class="line-numbers-rows">
 </blockquote>
 <p>最后运行网址</p>
 <blockquote>
-<p>10.0.0.156(&lt;&lt;此处为你虚拟机的ip 可以在ContOS使用 ip a查看):8000:80/install.php</p>
+<p>10.0.0.156(&lt;&lt;此处为你虚拟机的ip 可以在ContOS使用 ip a查看):8000:80&#x2F;install.php</p>
 </blockquote>
 <p>点击here自动安装</p>
 <blockquote>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221108000950627.png" alt="image-20221108000950627"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221108000950627.png" alt="image-20221108000950627"></p>
 </blockquote>
 <p>然后进入登录界面 默认账号密码为 bee bug</p>
 <blockquote>
-<p>10.0.0.156(&lt;&lt;此处为你虚拟机的ip 可以在ContOS使用 ip a查看):8000:80/login.php</p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221108001148172.png" alt="image-20221108001148172"></p>
+<p>10.0.0.156(&lt;&lt;此处为你虚拟机的ip 可以在ContOS使用 ip a查看):8000:80&#x2F;login.php</p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221108001148172.png" alt="image-20221108001148172"></p>
 </blockquote>
 <h1 id="九、必会的Linux系统中重要的文件和目录"><a href="#九、必会的Linux系统中重要的文件和目录" class="headerlink" title="九、必会的Linux系统中重要的文件和目录"></a>九、必会的Linux系统中重要的文件和目录</h1><h2 id="CentOS系统优化"><a href="#CentOS系统优化" class="headerlink" title="CentOS系统优化"></a>CentOS系统优化</h2><p>改名</p>
 <blockquote>
 <p>hostnamectl set-hostname [名称]     </p>
 </blockquote>
 <blockquote>
-<p>vim /etc/bashrc</p>
+<p>vim &#x2F;etc&#x2F;bashrc</p>
 </blockquote>
 <h2 id="关于Shell"><a href="#关于Shell" class="headerlink" title="关于Shell"></a>关于Shell</h2><p>什么是Shell</p>
 <blockquote>
@@ -905,11 +922,11 @@ sudo systemctl restart docker<span aria-hidden="true" class="line-numbers-rows">
 </blockquote>
 <p>如何使用Shell</p>
 <blockquote>
-<p>1、交互式        –通过Shell命令    CLi</p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104165831377.png" alt="image-20221104165831377"></p>
-<p>2、非交互式    –通过Shell脚本    sh</p>
+<p>1、交互式		–通过Shell命令	CLi</p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104165831377.png" alt="image-20221104165831377"></p>
+<p>2、非交互式	–通过Shell脚本	sh</p>
 </blockquote>
-<p>​    </p>
+<p>​	</p>
 <h2 id="Linux系统中重要的文件和目录"><a href="#Linux系统中重要的文件和目录" class="headerlink" title="Linux系统中重要的文件和目录"></a>Linux系统中重要的文件和目录</h2><h3 id="网卡配置文件的目录"><a href="#网卡配置文件的目录" class="headerlink" title="网卡配置文件的目录"></a>网卡配置文件的目录</h3><pre class="line-numbers language-none"><code class="language-none">&#x2F;etc&#x2F;sysconfig&#x2F;network-scripts
 			|
 ifcfg-ens33		ifcfg-ens192		ifcfg-eth0		em1 em2 em3 em4
@@ -938,101 +955,101 @@ DNS--域名解析协议 可以配置多个DNS<span aria-hidden="true" class="lin
 
 
 <blockquote>
-<p>/etc/fstab</p>
+<p>&#x2F;etc&#x2F;fstab</p>
 </blockquote>
 <blockquote>
-<p>/etc/hostname</p>
+<p>&#x2F;etc&#x2F;hostname</p>
 </blockquote>
 <blockquote>
-<p>/etc/hosts –查看本地DNS域名解析</p>
+<p>&#x2F;etc&#x2F;hosts –查看本地DNS域名解析</p>
 </blockquote>
 <blockquote>
-<p>/etc/resolve.conf –查看DNS地址</p>
+<p>&#x2F;etc&#x2F;resolve.conf –查看DNS地址</p>
 </blockquote>
-<p>Bash全局配置文件  /etc/bashrc</p>
+<p>Bash全局配置文件  &#x2F;etc&#x2F;bashrc</p>
 <blockquote>
-<p>​                            $PATH –JAVA_HOME  </p>
-<p>/etc/profile  | /etc/bashrc</p>
-<p>​                            export http_proxy=http://本机地址:1080(端口)  执行curl <a target="_blank" rel="noopener" href="https://www.goole.com/">https://www.goole.com</a></p>
-<p>​                     ~/.bashrc                                                                                 –全局配置文件</p>
-<p>​                      ~/.bash_profile          set nu </p>
-</blockquote>
-<blockquote>
-<p>/etc/shells –查看shell文件</p>
+<p>​							$PATH –JAVA_HOME  </p>
+<p>&#x2F;etc&#x2F;profile  | &#x2F;etc&#x2F;bashrc</p>
+<p>​							export http_proxy&#x3D;http:&#x2F;&#x2F;本机地址:1080(端口)  执行curl <a target="_blank" rel="noopener" href="https://www.goole.com/">https://www.goole.com</a></p>
+<p>​					 ~&#x2F;.bashrc				 																–全局配置文件</p>
+<p>​					  ~&#x2F;.bash_profile  		set nu </p>
 </blockquote>
 <blockquote>
-<p>cat /etc/redhat-release  –查看内核版本</p>
+<p>&#x2F;etc&#x2F;shells –查看shell文件</p>
 </blockquote>
 <blockquote>
-<p>/etc/init.d  –内核调优</p>
+<p>cat &#x2F;etc&#x2F;redhat-release  –查看内核版本</p>
 </blockquote>
 <blockquote>
-<p>/etc/inittab –运行级别</p>
+<p>&#x2F;etc&#x2F;init.d  –内核调优</p>
 </blockquote>
 <blockquote>
-<p>/etc/sudoers –root用户权限</p>
+<p>&#x2F;etc&#x2F;inittab –运行级别</p>
 </blockquote>
 <blockquote>
-<p>/etc/shadow  –保存加密后的密码</p>
+<p>&#x2F;etc&#x2F;sudoers –root用户权限</p>
 </blockquote>
 <blockquote>
-<p>/etc/yum.repos.d  yum软件仓库源</p>
+<p>&#x2F;etc&#x2F;shadow  –保存加密后的密码</p>
 </blockquote>
 <blockquote>
-<p>/usr/local                –/opt      相当于Windows下的   C:\Program Files</p>
+<p>&#x2F;etc&#x2F;yum.repos.d  yum软件仓库源</p>
 </blockquote>
 <blockquote>
-<p>/etc/sysctl.conf   –内核配置文件</p>
+<p>&#x2F;usr&#x2F;local				–&#x2F;opt      相当于Windows下的   C:\Program Files</p>
 </blockquote>
 <blockquote>
-<p>/etc/password    –账号信息的文件</p>
+<p>&#x2F;etc&#x2F;sysctl.conf   –内核配置文件</p>
 </blockquote>
 <blockquote>
-<p>/etc/group        –设定用户组合相关信息</p>
+<p>&#x2F;etc&#x2F;password	–账号信息的文件</p>
 </blockquote>
 <blockquote>
-<p>/usr/src</p>
+<p>&#x2F;etc&#x2F;group		–设定用户组合相关信息</p>
 </blockquote>
 <blockquote>
-<p>/usr/log        –日志</p>
-<p>日志文件     –文件类型              作用</p>
-<p>messages  文本文件            系统日志文件</p>
-<p>secure        文本文件            安全日志文件</p>
-<p>dmesg        文本文件            硬件信息加载情况日志文件</p>
-<p>cron            文本文件            定时任务日志文件</p>
-<p>wtmp          二进制文件        记录登录者信息的文件</p>
-<p>lastlog        二进制文件        记录用户近期登录的情况</p>
+<p>&#x2F;usr&#x2F;src</p>
 </blockquote>
 <blockquote>
-<p>/proc     Linux系统中重要的一个文件，内核信息和进程方面</p>
-<p>/proc/cpuinfo           当前cpu信息</p>
-<p>/proc/meminfo        </p>
-<p>/proc/loadavg            当前系统载入文件</p>
-<p>/proc/mounts            挂载信息</p>
+<p>&#x2F;usr&#x2F;log		–日志</p>
+<p>日志文件 	–文件类型  			作用</p>
+<p>messages  文本文件    		系统日志文件</p>
+<p>secure  	  文本文件    		安全日志文件</p>
+<p>dmesg  	  文本文件    		硬件信息加载情况日志文件</p>
+<p>cron  		  文本文件    		定时任务日志文件</p>
+<p>wtmp  		二进制文件    	记录登录者信息的文件</p>
+<p>lastlog		二进制文件		记录用户近期登录的情况</p>
 </blockquote>
 <blockquote>
-<p>/var                    –存储网站</p>
+<p>&#x2F;proc 	Linux系统中重要的一个文件，内核信息和进程方面</p>
+<p>&#x2F;proc&#x2F;cpuinfo   		当前cpu信息</p>
+<p>&#x2F;proc&#x2F;meminfo		</p>
+<p>&#x2F;proc&#x2F;loadavg			当前系统载入文件</p>
+<p>&#x2F;proc&#x2F;mounts			挂载信息</p>
 </blockquote>
 <blockquote>
-<p>/bin                  –bin 存放系统目录</p>
+<p>&#x2F;var					–存储网站</p>
 </blockquote>
 <blockquote>
-<p>/sbin                –sbin 存放系统目录</p>
+<p>&#x2F;bin				  –bin 存放系统目录</p>
 </blockquote>
 <blockquote>
-<p>/home              –用户的家目录/主目录</p>
+<p>&#x2F;sbin				–sbin 存放系统目录</p>
 </blockquote>
 <blockquote>
-<p>/root              –root用户的家目录/主目录</p>
+<p>&#x2F;home			  –用户的家目录&#x2F;主目录</p>
 </blockquote>
 <blockquote>
-<p>/boot              –启动信息</p>
+<p>&#x2F;root			  –root用户的家目录&#x2F;主目录</p>
 </blockquote>
 <blockquote>
-<p>/tmp                –临时文件</p>
+<p>&#x2F;boot			  –启动信息</p>
 </blockquote>
-<p>​    </p>
-<h2 id="Linux系统定时任务目录"><a href="#Linux系统定时任务目录" class="headerlink" title="Linux系统定时任务目录"></a>Linux系统定时任务目录</h2><h3 id="crontab-定时任务-计划任务"><a href="#crontab-定时任务-计划任务" class="headerlink" title="crontab 定时任务/计划任务"></a>crontab 定时任务/计划任务</h3><table>
+<blockquote>
+<p>&#x2F;tmp				–临时文件</p>
+</blockquote>
+<p>​	</p>
+<h2 id="Linux系统定时任务目录"><a href="#Linux系统定时任务目录" class="headerlink" title="Linux系统定时任务目录"></a>Linux系统定时任务目录</h2><h3 id="crontab-定时任务-x2F-计划任务"><a href="#crontab-定时任务-x2F-计划任务" class="headerlink" title="crontab 定时任务&#x2F;计划任务"></a>crontab 定时任务&#x2F;计划任务</h3><table>
 <thead>
 <tr>
 <th>crontab 目录</th>
@@ -1059,38 +1076,38 @@ DNS--域名解析协议 可以配置多个DNS<span aria-hidden="true" class="lin
 </blockquote>
 <h3 id="pwd命令"><a href="#pwd命令" class="headerlink" title="pwd命令"></a>pwd命令</h3><blockquote>
 <p>显示当前工作路径</p>
-<p>例如：/usr/local/nginx</p>
+<p>例如：&#x2F;usr&#x2F;local&#x2F;nginx</p>
 </blockquote>
 <h3 id="cd命令"><a href="#cd命令" class="headerlink" title="cd命令"></a>cd命令</h3><blockquote>
 <p>改变当前工作目录（进入某个目录中）</p>
-<p>例如：cd/usr/local/nginx</p>
+<p>例如：cd&#x2F;usr&#x2F;local&#x2F;nginx</p>
 </blockquote>
 <h3 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h3><blockquote>
 <p>-绝对路径- 在Linux中 Unix系统中一切由根开始</p>
-<p>​                        /根目录</p>
-<p>/root    /home    /usr    /var    /boot    等等</p>
-<p>​                                           |</p>
-<p>​                                        www</p>
-<p>​                                            |</p>
-<p>​                                        html —index.html –绝对路径：/var/www/html/index.html</p>
-<p>-相对路径-    .开始 或 ..开始</p>
+<p>​						&#x2F;根目录</p>
+<p>&#x2F;root	&#x2F;home	&#x2F;usr	&#x2F;var	&#x2F;boot	等等</p>
+<p>​										   |</p>
+<p>​										www</p>
+<p>​											|</p>
+<p>​										html —index.html –绝对路径：&#x2F;var&#x2F;www&#x2F;html&#x2F;index.html</p>
+<p>-相对路径-	.开始 或 ..开始</p>
 </blockquote>
 <h3 id="ls命令"><a href="#ls命令" class="headerlink" title="ls命令"></a>ls命令</h3><blockquote>
 <p>显示当前的目录的内容（可见）</p>
 </blockquote>
 <blockquote>
-<img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104183529584.png" alt="image-20221104183529584" style="zoom: 80%;" />
+<img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104183529584.png" alt="image-20221104183529584" style="zoom: 80%;">
 </blockquote>
 <h3 id="符号"><a href="#符号" class="headerlink" title="符号"></a>符号</h3><blockquote>
-<p>/         —&gt;表示根（目录）</p>
-<p>~        —&gt;表示家（目录）</p>
-<p>.         —&gt;表示当前（目录）</p>
-<p>..        —&gt;表示当前（目录）的上一层</p>
+<p>&#x2F;		 —&gt;表示根（目录）</p>
+<p>~		—&gt;表示家（目录）</p>
+<p>.		 —&gt;表示当前（目录）</p>
+<p>..		—&gt;表示当前（目录）的上一层</p>
 <p>—       —&gt;表示上一次进入的目录</p>
 </blockquote>
 <h3 id="mkdir"><a href="#mkdir" class="headerlink" title="mkdir"></a>mkdir</h3><blockquote>
 <p>创建一个或多个（空的）目录</p>
-<p>例：mkdir sec    </p>
+<p>例：mkdir sec	</p>
 <p>mkdir sec mca</p>
 </blockquote>
 <h3 id="rmdir"><a href="#rmdir" class="headerlink" title="rmdir"></a>rmdir</h3><blockquote>
@@ -1102,15 +1119,15 @@ DNS--域名解析协议 可以配置多个DNS<span aria-hidden="true" class="lin
 </blockquote>
 <p>参数</p>
 <blockquote>
-<p>/r        –递归删除/将目录以下的内容逐一删除</p>
-<p>/f        –强制删除/不需要确认(谨慎    删库跑路必备)</p>
-<p>-i        –删除前逐一询问确认</p>
+<p>&#x2F;r		–递归删除&#x2F;将目录以下的内容逐一删除</p>
+<p>&#x2F;f		–强制删除&#x2F;不需要确认(谨慎	删库跑路必备)</p>
+<p>-i		–删除前逐一询问确认</p>
 </blockquote>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104204716179.png" alt="image-20221104204716179"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104204854076.png" alt="image-20221104204854076"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104204716179.png" alt="image-20221104204716179"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104204854076.png" alt="image-20221104204854076"></p>
 <h3 id="touch命令"><a href="#touch命令" class="headerlink" title="touch命令"></a>touch命令</h3><p>创建文件的命令（空文件）</p>
 <blockquote>
-<p>touch a.txt        touch a.txt b.txt c.txt</p>
+<p>touch a.txt		touch a.txt b.txt c.txt</p>
 <p>touch .a.txt</p>
 </blockquote>
 <h3 id="cp命令"><a href="#cp命令" class="headerlink" title="cp命令"></a>cp命令</h3><p>复制文件或目录</p>
@@ -1121,41 +1138,41 @@ DNS--域名解析协议 可以配置多个DNS<span aria-hidden="true" class="lin
 <blockquote>
 <p>cp -r</p>
 </blockquote>
-<img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104205846511.png" alt="image-20221104205846511" style="zoom: 67%;" />
+<img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104205846511.png" alt="image-20221104205846511" style="zoom: 67%;">
 
 
 
 <h3 id="mv命令"><a href="#mv命令" class="headerlink" title="mv命令"></a>mv命令</h3><blockquote>
 <p>当前目录下操作重命名</p>
-<p>相同/不同 移动文件或目录</p>
+<p>相同&#x2F;不同 移动文件或目录</p>
 </blockquote>
-<img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104210119975.png" alt="image-20221104210119975" style="zoom:67%;" />
+<img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104210119975.png" alt="image-20221104210119975" style="zoom:67%;">
 
-<img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104210211563.png" alt="image-20221104210211563" style="zoom:67%;" />
+<img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104210211563.png" alt="image-20221104210211563" style="zoom:67%;">
 
 
 
 <h3 id="文件内容与编辑操作"><a href="#文件内容与编辑操作" class="headerlink" title="文件内容与编辑操作"></a>文件内容与编辑操作</h3><h4 id="文件内容"><a href="#文件内容" class="headerlink" title="文件内容"></a>文件内容</h4><blockquote>
 <p>cat 命令    查看文件内容 从文件的第一行开始显示</p>
-<p>例如 —        cat a.txt</p>
+<p>例如 —		cat a.txt</p>
 <ul>
 <li>高级用法<ul>
-<li> <img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104211221192.png" alt="image-20221104211221192" style="zoom:67%;" /></li>
+<li><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104211221192.png" alt="image-20221104211221192" style="zoom:67%;"></li>
 </ul>
 </li>
 </ul>
 <p>tec命令 查看文件内容 从文件的最后一行开始显示</p>
 <p>nl命令</p>
 <ul>
-<li><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104211454232.png" alt="image-20221104211454232"></li>
+<li><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104211454232.png" alt="image-20221104211454232"></li>
 </ul>
 </blockquote>
 <blockquote>
-<p>echo命令     </p>
+<p>echo命令	 </p>
 <blockquote>
-<p>​    &gt; 输出重定向 &gt; 覆盖的方式写入</p>
-<p>​    &gt;&gt; 输出重定向 &gt;&gt; 追加的方式写入</p>
-<p>​    <img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104210803344.png" alt="image-20221104210803344"></p>
+<p>​	&gt; 输出重定向 &gt; 覆盖的方式写入</p>
+<p>​	&gt;&gt; 输出重定向 &gt;&gt; 追加的方式写入</p>
+<p>​	<img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104210803344.png" alt="image-20221104210803344"></p>
 </blockquote>
 </blockquote>
 <p>more命令</p>
@@ -1168,9 +1185,9 @@ DNS--域名解析协议 可以配置多个DNS<span aria-hidden="true" class="lin
 <p>-n</p>
 <p>-f</p>
 </blockquote>
-<h4 id="文件编辑"><a href="#文件编辑" class="headerlink" title="文件编辑"></a>文件编辑</h4><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104224443762.png" alt="image-20221104224443762"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104224554604.png" alt="image-20221104224554604"></p>
-<p>vi或vim    </p>
+<h4 id="文件编辑"><a href="#文件编辑" class="headerlink" title="文件编辑"></a>文件编辑</h4><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104224443762.png" alt="image-20221104224443762"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104224554604.png" alt="image-20221104224554604"></p>
+<p>vi或vim	</p>
 <blockquote>
 <p>vim install -y vim</p>
 </blockquote>
@@ -1183,7 +1200,7 @@ DNS--域名解析协议 可以配置多个DNS<span aria-hidden="true" class="lin
 <p>命令模式(插入模式)</p>
 <blockquote>
 <ul>
-<li>i    从当前光标处开始插入文本</li>
+<li>i	从当前光标处开始插入文本</li>
 <li>I    从当前光标所在行，行首进行插入</li>
 <li>a   从当前光标处下一个字符开始插入</li>
 <li>A   从当前光标所在行，行尾开始插入文本</li>
@@ -1226,7 +1243,7 @@ DNS--域名解析协议 可以配置多个DNS<span aria-hidden="true" class="lin
 <h5 id="命令模式下光标跳转的快捷键"><a href="#命令模式下光标跳转的快捷键" class="headerlink" title="命令模式下光标跳转的快捷键"></a>命令模式下光标跳转的快捷键</h5><h5 id="方向跳转"><a href="#方向跳转" class="headerlink" title="方向跳转"></a><strong>方向跳转</strong></h5><table>
 <thead>
 <tr>
-<th><strong>方向键=kjhl</strong></th>
+<th><strong>方向键&#x3D;kjhl</strong></th>
 <th><strong>上下左右移动</strong></th>
 </tr>
 </thead>
@@ -1267,18 +1284,18 @@ DNS--域名解析协议 可以配置多个DNS<span aria-hidden="true" class="lin
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>0=home</strong></td>
+<td><strong>0&#x3D;home</strong></td>
 <td><strong>跳转至行首</strong></td>
 </tr>
 <tr>
-<td><strong>$=end</strong></td>
+<td><strong>$&#x3D;end</strong></td>
 <td><strong>跳转至行尾</strong></td>
 </tr>
 </tbody></table>
 <h5 id="行首行尾跳转"><a href="#行首行尾跳转" class="headerlink" title="行首行尾跳转"></a><strong>行首行尾跳转</strong></h5><table>
 <thead>
 <tr>
-<th><strong>gg=1G</strong></th>
+<th><strong>gg&#x3D;1G</strong></th>
 <th><strong>跳转到文件的首行</strong></th>
 </tr>
 </thead>
@@ -1294,12 +1311,12 @@ DNS--域名解析协议 可以配置多个DNS<span aria-hidden="true" class="lin
 <h5 id="文件行跳转"><a href="#文件行跳转" class="headerlink" title="文件行跳转"></a><strong>文件行跳转</strong></h5><table>
 <thead>
 <tr>
-<th><strong>Ctrl+f=Pagedown</strong></th>
+<th><strong>Ctrl+f&#x3D;Pagedown</strong></th>
 <th><strong>向文件尾部翻一屏</strong></th>
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>Ctrl+b=Pageup</strong></td>
+<td><strong>Ctrl+b&#x3D;Pageup</strong></td>
 <td><strong>向文件首部翻一屏</strong></td>
 </tr>
 </tbody></table>
@@ -1346,7 +1363,7 @@ DNS--域名解析协议 可以配置多个DNS<span aria-hidden="true" class="lin
 <h5 id="剪切命令"><a href="#剪切命令" class="headerlink" title="剪切命令"></a>剪切命令</h5><table>
 <thead>
 <tr>
-<th>x=del</th>
+<th>x&#x3D;del</th>
 <th>删除一个字符</th>
 </tr>
 </thead>
@@ -1415,7 +1432,7 @@ DNS--域名解析协议 可以配置多个DNS<span aria-hidden="true" class="lin
 <td>与命令反方向查找</td>
 </tr>
 <tr>
-<td>/字符</td>
+<td>&#x2F;字符</td>
 <td>向下查找</td>
 </tr>
 <tr>
@@ -1430,7 +1447,7 @@ DNS--域名解析协议 可以配置多个DNS<span aria-hidden="true" class="lin
 </blockquote>
 <h3 id="p"><a href="#p" class="headerlink" title="-p"></a>-p</h3><blockquote>
 <p>逐层的去创建 例：</p>
-<p>mkdir -p day01/images</p>
+<p>mkdir -p day01&#x2F;images</p>
 </blockquote>
 <p>1.2界面进行管理 GUI</p>
 <blockquote>
@@ -1443,8 +1460,8 @@ DNS--域名解析协议 可以配置多个DNS<span aria-hidden="true" class="lin
 tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <blockquote>
-<p>​                                                                          /</p>
-<p>/bin    /sbin    /root    /home    /boot    /dev    /proc    /media    /lib    /lib64    /sys    /var    /tmp    /usr    /etc-配置文件    /run     等等    </p>
+<p>​			  	   			 	   		 			    		&#x2F;</p>
+<p>&#x2F;bin	&#x2F;sbin	&#x2F;root	&#x2F;home	&#x2F;boot	&#x2F;dev	&#x2F;proc	&#x2F;media	&#x2F;lib	&#x2F;lib64	&#x2F;sys	&#x2F;var	&#x2F;tmp	&#x2F;usr	&#x2F;etc-配置文件	&#x2F;run 	等等	</p>
 </blockquote>
 <p>CentOS系统的启动流程</p>
 <ul>
@@ -1454,10 +1471,10 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <li>开机自检 BIOS 硬件检测 内存 硬盘(阵列卡) 网卡 远程卡是否有问题</li>
 <li>MBR引导  </li>
 <li>GRUB菜单 内核 光标上下选择 单用户</li>
-<li>加载内核 /boot</li>
+<li>加载内核 &#x2F;boot</li>
 <li>init进程</li>
-<li>读取运行级别 /etc/inittab</li>
-<li>初始化系统 /etc/rc.sysinit</li>
+<li>读取运行级别 &#x2F;etc&#x2F;inittab</li>
+<li>初始化系统 &#x2F;etc&#x2F;rc.sysinit</li>
 <li>根据运行级别启动服务</li>
 <li>运行显示界面</li>
 </ul>
@@ -1472,13 +1489,13 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 </li>
 <li><p>GRUB菜单 内核 光标上下选择 单用户</p>
 </li>
-<li><p>加载内核 /boot</p>
+<li><p>加载内核 &#x2F;boot</p>
 </li>
 <li><p>systemd进程</p>
 </li>
-<li><p>读取运行级别 /etc/systemd/default.target</p>
+<li><p>读取运行级别 &#x2F;etc&#x2F;systemd&#x2F;default.target</p>
 </li>
-<li><p>初始化系统 /usr/lib/system/sysinit.target</p>
+<li><p>初始化系统 &#x2F;usr&#x2F;lib&#x2F;system&#x2F;sysinit.target</p>
 </li>
 <li><p>并行启动服务</p>
 </li>
@@ -1491,7 +1508,7 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <p>对同一个文件（目录）的权限做出了不同的规定</p>
 <ul>
 <li>多用户操作系统 级别不一样<ul>
-<li>sst        </li>
+<li>sst		</li>
 <li>ssy</li>
 <li>sss</li>
 </ul>
@@ -1506,54 +1523,55 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <blockquote>
 <p>drwxr-xr-x.</p>
 <blockquote>
-<p>第一个字符表示文件的类型    首字母【d】开头-表示的是一个目录（文件夹）</p>
+<p>第一个字符表示文件的类型	首字母【d】开头-表示的是一个目录（文件夹）</p>
 </blockquote>
 </blockquote>
 <p>11个字符</p>
 <blockquote>
 <p>lrwxrwxrwx.</p>
 <blockquote>
-<p>第一个字符表示文件的类型    首字母【l】开头-表示的是一个文件（连接文件）</p>
+<p>第一个字符表示文件的类型	首字母【l】开头-表示的是一个文件（连接文件）</p>
 </blockquote>
 </blockquote>
 <p>11个字符</p>
 <blockquote>
 <p>-rw-r–r–.</p>
 <blockquote>
-<p>第一个字符表示文件的类型    首字母【-】开头-表示的是一个文件（普通文件）</p>
+<p>第一个字符表示文件的类型	首字母【-】开头-表示的是一个文件（普通文件）</p>
 </blockquote>
 </blockquote>
 <p>11个字符</p>
 <blockquote>
 <p>brwxrwxrwx.</p>
 <blockquote>
-<p>第一个字符表示文件的类型    首字母【b】开头-表示的是一个文件（存储设备）</p>
+<p>第一个字符表示文件的类型	首字母【b】开头-表示的是一个文件（存储设备）</p>
 </blockquote>
 </blockquote>
 <p>11个字符</p>
 <blockquote>
 <p>crwxrwxrwx.</p>
 <blockquote>
-<p>第一个字符表示文件的类型    首字母【c】开头-表示的是一个文件（串口设备）</p>
+<p>第一个字符表示文件的类型	首字母【c】开头-表示的是一个文件（串口设备）</p>
 </blockquote>
 </blockquote>
 <p>第二个字符开始3个字符一组，共9个字符</p>
 <blockquote>
-<p>第一组    是    属主权限</p>
+<p>第一组	是	属主权限</p>
 <ul>
-<li>读        –R    -4</li>
+<li>读		–R	-4</li>
 </ul>
 </blockquote>
 <blockquote>
-<p>第二组    是    属组权限</p>
+<p>第二组	是	属组权限</p>
 <ul>
-<li>写        –W    -2    </li>
+<li>写		–W	-2</li>
 </ul>
+<p>	</p>
 </blockquote>
 <blockquote>
-<p>第三组    是    其他权限</p>
+<p>第三组	是	其他权限</p>
 <ul>
-<li>执行     –X    -1</li>
+<li>执行	 –X	-1</li>
 </ul>
 </blockquote>
 <p>最后一个字符.有什么含义</p>
@@ -1561,7 +1579,7 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <blockquote>
 <p>修改文件权限（RWX）</p>
 <p>chmod + x install.sh 给执行权限</p>
-<p>​                    or</p>
+<p>​					or</p>
 <p>chmod 777 install.sh 给执行权限</p>
 <p>chmod 755 install.sh 给执行权限</p>
 <p>chmod 600 install.sh 给执行权限 </p>
@@ -1577,31 +1595,31 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 </blockquote>
 <h2 id="用户管理"><a href="#用户管理" class="headerlink" title="用户管理"></a>用户管理</h2><p>超级用户</p>
 <blockquote>
-<p>皇帝用户 拥有最高权限        能够登陆系统，但是管理员用户不但可以操作自己的目录，还可以操作其他人的        UID—0</p>
+<p>皇帝用户 拥有最高权限		能够登陆系统，但是管理员用户不但可以操作自己的目录，还可以操作其他人的		UID—0</p>
 </blockquote>
 <p>普通用户</p>
 <blockquote>
-<p>老百姓用户        能够登陆系统，但是只能操作自己的目录内容    </p>
+<p>老百姓用户		能够登陆系统，但是只能操作自己的目录内容	</p>
 <p>UID –C6 UID 500<del>65535 | C7 UID 1000</del>65535</p>
 </blockquote>
 <p>虚拟用户</p>
 <blockquote>
-<p>傀儡用户        无法直接创建。系统自身拥有，不能够登陆系统</p>
+<p>傀儡用户		无法直接创建。系统自身拥有，不能够登陆系统</p>
 <p>UID –C6 UID 1<del>499 | C7 UID 1</del>999</p>
 </blockquote>
-<p>UID和GID    通过id命令可以查看</p>
+<p>UID和GID	通过id命令可以查看</p>
 <blockquote>
-<p>UID    身份证    </p>
+<p>UID	身份证	</p>
 </blockquote>
 <blockquote>
-<p>GID    户口本</p>
+<p>GID	户口本</p>
 </blockquote>
 <p>su命令 切换系统中不同的用户</p>
 <blockquote>
-<p>root   su azkaban—不带环境的切换     su -azkaban—–带环境的切换</p>
+<p>root   su azkaban—不带环境的切换 	su -azkaban—–带环境的切换</p>
 <p>azkaban</p>
 </blockquote>
-<p>sudo命令    普通用户临时提权操作</p>
+<p>sudo命令	普通用户临时提权操作</p>
 <blockquote>
 <p>sudo passwd</p>
 </blockquote>
@@ -1611,8 +1629,8 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 </blockquote>
 <p>修改密码 </p>
 <blockquote>
-<p>用户密码要有规则        必须要有管理员权限    默认改root密码</p>
-<img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105003632027.png" alt="image-20221105003632027" style="zoom: 50%;" />
+<p>用户密码要有规则		必须要有管理员权限	默认改root密码</p>
+<img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105003632027.png" alt="image-20221105003632027" style="zoom: 50%;">
 
 <ul>
 <li>passwd</li>
@@ -1622,21 +1640,21 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 </blockquote>
 <p>添加用户</p>
 <blockquote>
-<p>useradd    参数：</p>
+<p>useradd	参数：</p>
 <p>-c</p>
-<p>-d        useradd -d/home/git -m git</p>
-<p>-g        useradd -gitlab -g git</p>
-<p>-G        </p>
-<p>-s        CentOS 默认Bash    </p>
+<p>-d		useradd -d&#x2F;home&#x2F;git -m git</p>
+<p>-g		useradd -gitlab -g git</p>
+<p>-G		</p>
+<p>-s		CentOS 默认Bash	</p>
 <p>-u</p>
 </blockquote>
 <p>删除用户</p>
 <blockquote>
-<p>userdel    参数：</p>
+<p>userdel	参数：</p>
 <p>-r</p>
-<p>/etc/passwd</p>
-<p>/etc/group</p>
-<p>/etc/shadow </p>
+<p>&#x2F;etc&#x2F;passwd</p>
+<p>&#x2F;etc&#x2F;group</p>
+<p>&#x2F;etc&#x2F;shadow </p>
 </blockquote>
 <p>-bash-4.2$ 什么原因导致，如何去修复</p>
 <blockquote>
@@ -1651,29 +1669,29 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <ul>
 <li>ContOS系统创建一个用户操作系统到底执行什么操作</li>
 <li>创建 用户主目录的时候<ul>
-<li>/home/test</li>
-<li>/etc/skel</li>
+<li>&#x2F;home&#x2F;test</li>
+<li>&#x2F;etc&#x2F;skel</li>
 </ul>
 </li>
-<li>cp /etc/skel/ .bash* /home/test</li>
+<li>cp &#x2F;etc&#x2F;skel&#x2F; .bash* &#x2F;home&#x2F;test</li>
 </ul>
 </blockquote>
 <p>重要目录 </p>
 <blockquote>
-<p>/etc/passwd</p>
-<p>/etc/group</p>
-<p>/etc/shadow   密码</p>
+<p>&#x2F;etc&#x2F;passwd</p>
+<p>&#x2F;etc&#x2F;group</p>
+<p>&#x2F;etc&#x2F;shadow   密码</p>
 </blockquote>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105004459019.png" alt="image-20221105004459019"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105004459019.png" alt="image-20221105004459019"></p>
 <h1 id="十四、Linux系统用户管理与ACL权限"><a href="#十四、Linux系统用户管理与ACL权限" class="headerlink" title="十四、Linux系统用户管理与ACL权限"></a>十四、Linux系统用户管理与ACL权限</h1><h2 id="文件权限"><a href="#文件权限" class="headerlink" title="文件权限"></a>文件权限</h2><blockquote>
-<p>默认权限    &gt;&gt;    普通权限</p>
+<p>默认权限	&gt;&gt;	普通权限</p>
 <blockquote>
 <ul>
 <li>第一个字符 文件类型</li>
 <li>第二个字符到第十个字符结束<ul>
-<li>属主    &gt;&gt;    RWX</li>
-<li>属组    &gt;&gt;    RWX </li>
-<li>其他    &gt;&gt;    RWX</li>
+<li>属主	&gt;&gt;	RWX</li>
+<li>属组	&gt;&gt;	RWX </li>
+<li>其他	&gt;&gt;	RWX</li>
 </ul>
 </li>
 </ul>
@@ -1691,19 +1709,19 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 </blockquote>
 <blockquote>
 <ul>
-<li><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105173627783.png" alt="image-20221105173627783" style="zoom: 67%;" /></li>
-<li><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105173724585.png" alt="image-20221105173724585"></p>
+<li><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105173627783.png" alt="image-20221105173627783" style="zoom: 67%;"></li>
+<li><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105173724585.png" alt="image-20221105173724585"></p>
 </li>
-<li><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105174038006.png" alt="image-20221105174038006"></p>
+<li><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105174038006.png" alt="image-20221105174038006"></p>
 </li>
 </ul>
-<p>怎么操作让普通用户也能用less看 /etc/shadow文件中内容。</p>
+<p>怎么操作让普通用户也能用less看 &#x2F;etc&#x2F;shadow文件中内容。</p>
 <ul>
-<li>chomod u+s /usr/bin/less    or    chmod 4755 /usr/bin/less     在root用户中</li>
-<li><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105174358608.png" alt="image-20221105174358608"></li>
-<li><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105174556091.png" alt="image-20221105174556091"></li>
+<li>chomod u+s &#x2F;usr&#x2F;bin&#x2F;less	or	chmod 4755 &#x2F;usr&#x2F;bin&#x2F;less     在root用户中</li>
+<li><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105174358608.png" alt="image-20221105174358608"></li>
+<li><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105174556091.png" alt="image-20221105174556091"></li>
 <li>只是使用了less的命令，more cat vim等都行</li>
-<li><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105212239132.png" alt="image-20221105212239132" style="zoom:67%;" /></li>
+<li><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105212239132.png" alt="image-20221105212239132" style="zoom:67%;"></li>
 <li>警告 操作有风险 使用需谨慎</li>
 </ul>
 </blockquote>
@@ -1716,7 +1734,7 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <p>操作基本项目，无非就是suid设置是所有者的权限，sgid设置的事所属组的特殊权限。</p>
 <p>文件【充要条件】</p>
 <ol>
-<li>可执行的文件/二进制（/bin    /sbin）</li>
+<li>可执行的文件&#x2F;二进制（&#x2F;bin	&#x2F;sbin）</li>
 <li>命令执行者（其他）所有组，需要该文件有执行权限</li>
 <li>在执行的过程中，执行者执行组灵魂附体</li>
 <li>权限只有在执行过程中有，执行完了就没有</li>
@@ -1728,12 +1746,12 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <li>如果是普通用户 对该目录有w权限，新建的文件的属组 也是该目录的属组</li>
 </ol>
 </blockquote>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105214543387.png" alt="image-20221105214543387"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105214543387.png" alt="image-20221105214543387"></p>
 <p>补充题外话</p>
 <blockquote>
 <p>locate 搜索会比 find 快</p>
 <ul>
-<li>find        使用I/O操作 在硬盘/磁盘递归查找</li>
+<li>find		使用I&#x2F;O操作 在硬盘&#x2F;磁盘递归查找</li>
 <li>locate    有本地Linux数据库 <ul>
 <li>有mylocate.db</li>
 <li>在Linux系统中默认是没有的</li>
@@ -1748,17 +1766,17 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <p>作用</p>
 <ol>
 <li>只是针对该目录有w和x权限</li>
-<li>/tmp<img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105215402906.png" alt="image-20221105215402906"></li>
-<li>chmod o+t 文件      </li>
+<li>&#x2F;tmp<img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105215402906.png" alt="image-20221105215402906"></li>
+<li>chmod o+t 文件</li>
 </ol>
 <p>问题</p>
 <ul>
-<li><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105215454041.png" alt="image-20221105215454041"></li>
+<li><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105215454041.png" alt="image-20221105215454041"></li>
 </ul>
 </blockquote>
 <p>ACL权限</p>
 <ul>
-<li>文件的ACL权限    提供了所有者(属主、属组、其他人)的读写  执行权限之外的特殊权限控制。叫访问控制列表</li>
+<li>文件的ACL权限	提供了所有者(属主、属组、其他人)的读写  执行权限之外的特殊权限控制。叫访问控制列表</li>
 <li>设置的对象<ul>
 <li>文件、目录</li>
 </ul>
@@ -1769,7 +1787,7 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 </li>
 <li>查看ACL权限<ul>
 <li>getfacl</li>
-<li><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105162016588.png" alt="image-20221105162016588" style="zoom: 67%;" /></li>
+<li><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105162016588.png" alt="image-20221105162016588" style="zoom: 67%;"></li>
 </ul>
 </li>
 <li>设定ACL权限<ul>
@@ -1782,11 +1800,11 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 </li>
 <li>删除ACL权限<ul>
 <li>删除指定用户的ACL权限<ul>
-<li>setfacl -x u:用户名    文件名</li>
+<li>setfacl -x u:用户名	文件名</li>
 </ul>
 </li>
 <li>删除指定用户组的ACL权限<ul>
-<li>setfacl -x g：用户组名    文件名</li>
+<li>setfacl -x g：用户组名	文件名</li>
 </ul>
 </li>
 <li>删除其他用户组的ACL权限<ul>
@@ -1796,8 +1814,8 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 </ul>
 </li>
 <li>递归ACL权限<ul>
-<li>目录    -R</li>
-<li>setfacl -m u:用户名:权限 -R    文件名</li>
+<li>目录	-R</li>
+<li>setfacl -m u:用户名:权限 -R	文件名</li>
 </ul>
 </li>
 <li>默认ACL权限<ul>
@@ -1810,35 +1828,35 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <blockquote>
 <p>useradd</p>
 </blockquote>
-<img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105150705771.png" alt="image-20221105150705771" style="zoom: 67%;" />
+<img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105150705771.png" alt="image-20221105150705771" style="zoom: 67%;">
 
 <blockquote>
 <p>userdel</p>
-<img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105150739901.png" alt="image-20221105150739901" style="zoom:67%;" />
+<img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105150739901.png" alt="image-20221105150739901" style="zoom:67%;">
 </blockquote>
 <blockquote>
 <p>usermod</p>
-<img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105150758773.png" alt="image-20221105150758773" style="zoom:67%;" />
+<img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105150758773.png" alt="image-20221105150758773" style="zoom:67%;">
 </blockquote>
 <blockquote>
-<p>passwd    root用户下使用</p>
+<p>passwd	root用户下使用</p>
 </blockquote>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105151212305.png" alt="image-20221105151212305"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105151656166.png" alt="image-20221105151656166"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105152129802.png" alt="image-20221105152129802"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105151212305.png" alt="image-20221105151212305"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105151656166.png" alt="image-20221105151656166"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105152129802.png" alt="image-20221105152129802"></p>
 <p>stdin 例：</p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105152347060.png" alt="image-20221105152347060"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105152459197.png" alt="image-20221105152459197"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105152520217.png" alt="image-20221105152520217"></p>
-<h2 id="关于密码"><a href="#关于密码" class="headerlink" title="关于密码"></a>关于密码</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105153454359.png" alt="image-20221105153454359"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105153657851.png" alt="image-20221105153657851"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105154107570.png" alt="image-20221105154107570"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105152347060.png" alt="image-20221105152347060"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105152459197.png" alt="image-20221105152459197"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105152520217.png" alt="image-20221105152520217"></p>
+<h2 id="关于密码"><a href="#关于密码" class="headerlink" title="关于密码"></a>关于密码</h2><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105153454359.png" alt="image-20221105153454359"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105153657851.png" alt="image-20221105153657851"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105154107570.png" alt="image-20221105154107570"></p>
 <p>密码带有安全思想</p>
 <blockquote>
-<p>useradd tomcat -s /sbin/nologin -M</p>
+<p>useradd tomcat -s &#x2F;sbin&#x2F;nologin -M</p>
 </blockquote>
 <h1 id="十五、安全技术中Linux权限与字符集、特殊符号、通配符"><a href="#十五、安全技术中Linux权限与字符集、特殊符号、通配符" class="headerlink" title="十五、安全技术中Linux权限与字符集、特殊符号、通配符"></a>十五、安全技术中Linux权限与字符集、特殊符号、通配符</h1><h2 id="Linux文件权限与属性详解"><a href="#Linux文件权限与属性详解" class="headerlink" title="Linux文件权限与属性详解"></a>Linux文件权限与属性详解</h2><blockquote>
-<p>su    &amp;    sudo</p>
+<p>su	&amp;	sudo</p>
 <p>普通用户临时提权使用的</p>
 </blockquote>
 <blockquote>
@@ -1847,16 +1865,20 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <li><p>chattr</p>
 <blockquote>
 <ul>
-<li>+<ul>
-<li>在原有的基础上    增加权限(参数)</li>
+<li><ul>
+<li></li>
+</ul>
+<ul>
+<li>在原有的基础上	增加权限(参数)</li>
 </ul>
 </li>
-<li>-<ul>
-<li>在原有的基础上    减少权限(参数)</li>
+<li><ul>
+<li></li>
+<li>在原有的基础上	减少权限(参数)</li>
 </ul>
 </li>
 <li>i<ul>
-<li>root权限，某些重要的内容不让你修改 /etc/shadow  (仅对于二进制/可执行)</li>
+<li>root权限，某些重要的内容不让你修改 &#x2F;etc&#x2F;shadow  (仅对于二进制&#x2F;可执行)</li>
 </ul>
 </li>
 <li>a<ul>
@@ -1873,33 +1895,39 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <h3 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h3><blockquote>
 <p>某同学公司服务器中了病毒(恶意程序)，可执行的脚本update.py，用root账号都无法删除。ps -ef grep xxx.pkill -9 命令杀掉进程，后台守护进程防止程序关闭，自动拉起。（发现可以删除的文件，删除后会自动通过网络自动下载下拉）用到以下知识</p>
 <ul>
-<li>定时任务/计划任务    3. 检查任务    防止自动拉起</li>
-<li>防火墙             1. 封杀指定IP地址段 30分钟 或者 永久封杀</li>
+<li>定时任务&#x2F;计划任务    3. 检查任务	防止自动拉起</li>
+<li>防火墙			 1. 封杀指定IP地址段 30分钟 或者 永久封杀</li>
 <li>进程管理         2. 杀掉进程</li>
-<li>权限管理        </li>
+<li>权限管理</li>
 </ul>
 </blockquote>
 <p>复现</p>
-<p>1.</p>
+<ol>
+<li></li>
+</ol>
 <blockquote>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105164940936.png" alt="image-20221105164940936"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105164940936.png" alt="image-20221105164940936"></p>
 </blockquote>
-<p>2.</p>
+<ol start="2">
+<li></li>
+</ol>
 <blockquote>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105165008589.png" alt="image-20221105165008589"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105165008589.png" alt="image-20221105165008589"></p>
 </blockquote>
-<p>3.</p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105165226264.png" alt="image-20221105165226264"></p>
+<ol start="3">
+<li></li>
+</ol>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105165226264.png" alt="image-20221105165226264"></p>
 <p>经验：</p>
 <blockquote>
-<p>chattr +i    防止删库跑路 rm -rf</p>
+<p>chattr +i	防止删库跑路 rm -rf</p>
 </blockquote>
 <p>重要配置文件、系统文件、网站文件可以通过此方式来保护</p>
 <p>分析</p>
 <blockquote>
 <p>chattr +i</p>
 <ul>
-<li>update.py    +    定时任务技术<ul>
+<li>update.py	+	定时任务技术<ul>
 <li>到时间自动从网站远程下载</li>
 </ul>
 </li>
@@ -1918,56 +1946,56 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 </blockquote>
 <p>操作</p>
 <blockquote>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105172842230.png" alt="image-20221105172842230"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105172842230.png" alt="image-20221105172842230"></p>
 </blockquote>
 <blockquote>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105172915120.png" alt="image-20221105172915120"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105172915120.png" alt="image-20221105172915120"></p>
 </blockquote>
-<h1 id="十六、Linux字符集、特殊符号、通配符"><a href="#十六、Linux字符集、特殊符号、通配符" class="headerlink" title="十六、Linux字符集、特殊符号、通配符"></a>十六、Linux字符集、特殊符号、通配符</h1><h2 id="字符集"><a href="#字符集" class="headerlink" title="字符集"></a>字符集</h2><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105220136235.png" alt="image-20221105220136235" style="zoom:67%;" />
+<h1 id="十六、Linux字符集、特殊符号、通配符"><a href="#十六、Linux字符集、特殊符号、通配符" class="headerlink" title="十六、Linux字符集、特殊符号、通配符"></a>十六、Linux字符集、特殊符号、通配符</h1><h2 id="字符集"><a href="#字符集" class="headerlink" title="字符集"></a>字符集</h2><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105220136235.png" alt="image-20221105220136235" style="zoom:67%;">
 
-<img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105220724834.png" alt="image-20221105220724834" style="zoom:67%;" />
+<img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105220724834.png" alt="image-20221105220724834" style="zoom:67%;">
 
 
 
-<img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105220758111.png" alt="image-20221105220758111" style="zoom: 50%;" />
+<img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105220758111.png" alt="image-20221105220758111" style="zoom: 50%;">
 
 
 
 <h2 id="特殊符号"><a href="#特殊符号" class="headerlink" title="特殊符号"></a>特殊符号</h2><h3 id="表示位置"><a href="#表示位置" class="headerlink" title="表示位置"></a>表示位置</h3><blockquote>
-<p>/        </p>
+<p>&#x2F;		</p>
 <ul>
-<li>Linux/Unix根目录</li>
+<li>Linux&#x2F;Unix根目录</li>
 </ul>
 </blockquote>
 <blockquote>
 <p>~</p>
 <ul>
-<li>Linux/Unix用户的主目录</li>
+<li>Linux&#x2F;Unix用户的主目录</li>
 </ul>
 </blockquote>
 <blockquote>
 <p>.</p>
 <ul>
-<li>Linux/Unix所在当前目录</li>
+<li>Linux&#x2F;Unix所在当前目录</li>
 </ul>
 </blockquote>
 <blockquote>
 <p>..</p>
 <ul>
-<li>Linux/Unix所在当前目录的上一层目录</li>
+<li>Linux&#x2F;Unix所在当前目录的上一层目录</li>
 </ul>
 </blockquote>
 <blockquote>
 <p>—</p>
 <ul>
-<li>Linux/Unix切换上一次的目录</li>
+<li>Linux&#x2F;Unix切换上一次的目录</li>
 </ul>
 </blockquote>
 <h3 id="引号相关"><a href="#引号相关" class="headerlink" title="引号相关"></a>引号相关</h3><blockquote>
 <p>‘’</p>
 <blockquote>
 <ul>
-<li>单引号    所见即所得<ul>
+<li>单引号	所见即所得<ul>
 <li>表示字符串常量</li>
 </ul>
 </li>
@@ -1982,45 +2010,46 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <p>“”</p>
 <blockquote>
 <ul>
-<li>双引号    所见非所得<ul>
+<li>双引号	所见非所得<ul>
 <li>$</li>
 </ul>
 </li>
 <li>echo ‘$LANG’</li>
 </ul>
-<img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105221905721.png" alt="image-20221105221905721" style="zoom: 67%;" />
+<img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105221905721.png" alt="image-20221105221905721" style="zoom: 67%;">
 </blockquote>
 </blockquote>
 <blockquote>
 <p>\</p>
 <ul>
-<li>转义字符    用在一些命令、变量、路径 </li>
+<li>转义字符	用在一些命令、变量、路径</li>
 </ul>
 </blockquote>
 <blockquote>
-<p>`` </p>
+<p>&#96;&#96; </p>
 <ul>
-<li>反引号    命令替换    </li>
+<li>反引号	命令替换</li>
 </ul>
+<p>	</p>
 </blockquote>
 <h3 id="重定向符"><a href="#重定向符" class="headerlink" title="重定向符"></a>重定向符</h3><p>重定向输出</p>
 <blockquote>
-<p>&lt;        &gt;    </p>
+<p>&lt;    	&gt;    </p>
 <ul>
 <li>标准输出重定向 覆盖的方式写入到文件</li>
 </ul>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105223332132.png" alt="image-20221105223332132"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105223332132.png" alt="image-20221105223332132"></p>
 <p>&lt;       &gt;&gt;</p>
 <ul>
 <li>标准输出重定向 追加的方式写入到文件</li>
 </ul>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105223253752.png" alt="image-20221105223253752"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105223253752.png" alt="image-20221105223253752"></p>
 </blockquote>
 <p>重定向输入</p>
 <blockquote>
-<p>&lt;        用来引导命令从哪里去读取数据</p>
-<p>&lt;&lt;     cat命令</p>
-<p>案例当前系统无法上网/没有vi    vim文本编辑器/修改yum源</p>
+<p>&lt;		用来引导命令从哪里去读取数据</p>
+<p>&lt;&lt; 	cat命令</p>
+<p>案例当前系统无法上网&#x2F;没有vi	vim文本编辑器&#x2F;修改yum源</p>
 </blockquote>
 <p>案例</p>
 <blockquote>
@@ -2030,18 +2059,18 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 </ul>
 <p>分析</p>
 <ul>
-<li>标准输入    0</li>
-<li>标准输出    1</li>
-<li>错误输出    2</li>
+<li>标准输入	0</li>
+<li>标准输出	1</li>
+<li>错误输出	2</li>
 </ul>
 </blockquote>
 <h3 id="管道符"><a href="#管道符" class="headerlink" title="管道符"></a>管道符</h3><blockquote>
-<p>|    含义</p>
+<p>|	含义</p>
 <ul>
 <li>把前面一个命令的结果通过管道符传递给后面的命令</li>
 <li>注意 管道默认传递的是文字符号</li>
 <li>ps -ef | grep yomcat</li>
-<li>cat a.txt | wc -l </li>
+<li>cat a.txt | wc -l</li>
 </ul>
 <p>管道</p>
 <ul>
@@ -2052,17 +2081,17 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 </li>
 </ul>
 </blockquote>
-<h3 id="其他字符"><a href="#其他字符" class="headerlink" title="其他字符"></a>其他字符</h3><h1 id=""><a href="#" class="headerlink" title=""></a></h1><blockquote>
-<p>出现在Shell终端 CLI      # 提示你是root    提示符</p>
-<p>nginx/等    #这是一个端口        配置文件或Shell表示注释</p>
+<h3 id="其他字符"><a href="#其他字符" class="headerlink" title="其他字符"></a>其他字符</h3><h1 id><a href="#" class="headerlink" title></a></h1><blockquote>
+<p>出现在Shell终端 CLI 	 # 提示你是root	提示符</p>
+<p>nginx&#x2F;等	#这是一个端口		配置文件或Shell表示注释</p>
 <ul>
 <li>what？<ul>
 <li>编程语言中的一种说明，被注释的内容在程序中不起作用。</li>
 </ul>
 </li>
 <li>why？<ul>
-<li>代码的/配置文件的解释说明作用</li>
-<li>人/疲劳/健忘/程序员之间</li>
+<li>代码的&#x2F;配置文件的解释说明作用</li>
+<li>人&#x2F;疲劳&#x2F;健忘&#x2F;程序员之间</li>
 <li>让某一行或多行代码不起作用</li>
 </ul>
 </li>
@@ -2074,7 +2103,7 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 </blockquote>
 <p>$</p>
 <blockquote>
-<p>出现在Shell终端CLI    $表示你是普通用户</p>
+<p>出现在Shell终端CLI	$表示你是普通用户</p>
 <p>脚本或配置文件中$LANG取出变量中的内容</p>
 </blockquote>
 <p>&amp;</p>
@@ -2106,13 +2135,15 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 </ul>
 </blockquote>
 <h2 id="通配符"><a href="#通配符" class="headerlink" title="通配符"></a>通配符</h2><p>作用：就是一些特殊的字符，来实现某些特定的特殊的功能</p>
-<p>*</p>
+<ul>
+<li></li>
+</ul>
 <blockquote>
 <p>匹配任意字符</p>
-<p>例：        day01下有几个文件</p>
+<p>例：		day01下有几个文件</p>
 <ul>
-<li><p>​    a.txt    b.txt    c.txt    d.txt    ……</p>
-<p>​                *.txt</p>
+<li><p>​	a.txt	b.txt	c.txt	d.txt	……</p>
+<p>​				*.txt</p>
 </li>
 </ul>
 </blockquote>
@@ -2120,17 +2151,17 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <p>扩展</p>
 <p>文件名.扩展名</p>
 <ul>
-<li>*.txt    *.doc    *.mp3    *.conf    *.c    等等</li>
+<li>*.txt	*.doc	*.mp3	*.conf	*.c	等等</li>
 </ul>
 </blockquote>
 <p>(<em><em><strong>.</strong></em>  两边各只有一个</em></p>
 <blockquote>
 <p>任意名称.任意类型 </p>
 </blockquote>
-<p>/*</p>
+<p>&#x2F;*</p>
 <blockquote>
 <p>目录下所有内容</p>
-<p>rm -rf /*</p>
+<p>rm -rf &#x2F;*</p>
 </blockquote>
 <p>？</p>
 <blockquote>
@@ -2161,9 +2192,9 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <p>匹配文件</p>
 <p>创建文件</p>
 <p>touch {a..z}</p>
-<img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105234010164.png" alt="image-20221105234010164" style="zoom:50%;" />
+<img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221105234010164.png" alt="image-20221105234010164" style="zoom:50%;">
 </blockquote>
-<h1 id="十八、安全技术中常见Linux系统文件压缩-解压缩"><a href="#十八、安全技术中常见Linux系统文件压缩-解压缩" class="headerlink" title="十八、安全技术中常见Linux系统文件压缩/解压缩"></a>十八、安全技术中常见Linux系统文件压缩/解压缩</h1><h2 id="Linux系统中常见的压缩包格式"><a href="#Linux系统中常见的压缩包格式" class="headerlink" title="Linux系统中常见的压缩包格式"></a>Linux系统中常见的压缩包格式</h2><blockquote>
+<h1 id="十八、安全技术中常见Linux系统文件压缩-x2F-解压缩"><a href="#十八、安全技术中常见Linux系统文件压缩-x2F-解压缩" class="headerlink" title="十八、安全技术中常见Linux系统文件压缩&#x2F;解压缩"></a>十八、安全技术中常见Linux系统文件压缩&#x2F;解压缩</h1><h2 id="Linux系统中常见的压缩包格式"><a href="#Linux系统中常见的压缩包格式" class="headerlink" title="Linux系统中常见的压缩包格式"></a>Linux系统中常见的压缩包格式</h2><blockquote>
 <p>.zip</p>
 <p>.tar.gz</p>
 <p>.tgz</p>
@@ -2197,13 +2228,13 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <p>tar[可选项] [文件]</p>
 <ul>
 <li>可选项<ul>
-<li>-z        通过gzip压缩或解压</li>
+<li>-z		通过gzip压缩或解压</li>
 <li>-c        创建一个新的压缩包</li>
 <li>-v        显示箱体的tar命令执行过程</li>
 <li>-f         指定压缩文件的名称</li>
 <li>-x        解开tar格式包</li>
 <li>-C       指定解压的目录路径</li>
-<li>–exclude=PATH    打包的时候想排除不需要处理的文件或目录</li>
+<li>–exclude&#x3D;PATH    打包的时候想排除不需要处理的文件或目录</li>
 <li>-h        打包软连接文件指向的源文件</li>
 <li>-t         不解压的情况下查看压缩包内容</li>
 <li>-p        保持文件属性不变(原有属性)</li>
@@ -2231,13 +2262,13 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <li>tar ztf</li>
 </ul>
 </blockquote>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106000531756.png" alt="image-20221106000531756"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106001214077.png" alt="image-20221106001214077"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106001532162.png" alt="image-20221106001532162"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106000531756.png" alt="image-20221106000531756"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106001214077.png" alt="image-20221106001214077"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106001532162.png" alt="image-20221106001532162"></p>
 <p>Linux常见的压缩格式10种格式</p>
 <h3 id="tar"><a href="#tar" class="headerlink" title="*.tar"></a>*.tar</h3><blockquote>
 <p>通常是对图片类的文件进行打包</p>
-<p>通常源代码/源文件 *.h *.c *cpp</p>
+<p>通常源代码&#x2F;源文件 *.h *.c *cpp</p>
 </blockquote>
 <h3 id="tar-gz"><a href="#tar-gz" class="headerlink" title="*.tar.gz"></a>*.tar.gz</h3><blockquote>
 <p>gzip工具进行压缩 特点：</p>
@@ -2273,16 +2304,16 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 </ul>
 <p>split</p>
 <ul>
-<li><p>-b    表示设置每一个分割单元/块的大小</p>
+<li><p>-b	表示设置每一个分割单元&#x2F;块的大小</p>
 </li>
 <li><p>-d    指定分割包的后缀是数字形式表示</p>
 </li>
 <li><p>-a    来设置分割序列的长度，默认长度2个 00 01 02</p>
 </li>
 </ul>
-<img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106003848211.png" alt="image-20221106003848211" style="zoom:67%;" />
+<img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106003848211.png" alt="image-20221106003848211" style="zoom:67%;">
 
-<p>做日志分割但是不局限于日志/视频/音频/4G的单个文件</p>
+<p>做日志分割但是不局限于日志&#x2F;视频&#x2F;音频&#x2F;4G的单个文件</p>
 </blockquote>
 <h3 id="tgz"><a href="#tgz" class="headerlink" title="*.tgz"></a>*.tgz</h3><blockquote>
 <p>*.bz2</p>
@@ -2298,7 +2329,7 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <ul>
 <li>压缩<ul>
 <li>bzip2 -z bj2.txt     </li>
-<li> bj2.txt.bz2</li>
+<li>bj2.txt.bz2</li>
 </ul>
 </li>
 <li>解压<ul>
@@ -2311,7 +2342,7 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <h3 id="Z"><a href="#Z" class="headerlink" title="*.Z"></a>*.Z</h3><blockquote>
 <p>压缩</p>
 <ul>
-<li>compress bj2.txt            —-     bj2.txt.Z</li>
+<li>compress bj2.txt            —- 	bj2.txt.Z</li>
 </ul>
 <p>解压</p>
 <ul>
@@ -2328,14 +2359,14 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <p>压缩</p>
 <p>解压</p>
 </blockquote>
-<h1 id="十九、Linux文件的查找（节选）"><a href="#十九、Linux文件的查找（节选）" class="headerlink" title="十九、Linux文件的查找（节选）"></a>十九、Linux文件的查找（节选）</h1><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106005015828.png" alt="image-20221106005015828"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106005056519.png" alt="image-20221106005056519"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106005145315.png" alt="image-20221106005145315"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106005211876.png" alt="image-20221106005211876"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106005321628.png" alt="image-20221106005321628"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106005351876.png" alt="image-20221106005351876"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106005415003.png" alt="image-20221106005415003"></p>
-<h1 id="二十、Linux系统文件传输与定时任务-计划任务"><a href="#二十、Linux系统文件传输与定时任务-计划任务" class="headerlink" title="二十、Linux系统文件传输与定时任务/计划任务"></a>二十、Linux系统文件传输与定时任务/计划任务</h1><h2 id="文件传输-1"><a href="#文件传输-1" class="headerlink" title="文件传输"></a>文件传输</h2><ol>
+<h1 id="十九、Linux文件的查找（节选）"><a href="#十九、Linux文件的查找（节选）" class="headerlink" title="十九、Linux文件的查找（节选）"></a>十九、Linux文件的查找（节选）</h1><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106005015828.png" alt="image-20221106005015828"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106005056519.png" alt="image-20221106005056519"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106005145315.png" alt="image-20221106005145315"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106005211876.png" alt="image-20221106005211876"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106005321628.png" alt="image-20221106005321628"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106005351876.png" alt="image-20221106005351876"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106005415003.png" alt="image-20221106005415003"></p>
+<h1 id="二十、Linux系统文件传输与定时任务-x2F-计划任务"><a href="#二十、Linux系统文件传输与定时任务-x2F-计划任务" class="headerlink" title="二十、Linux系统文件传输与定时任务&#x2F;计划任务"></a>二十、Linux系统文件传输与定时任务&#x2F;计划任务</h1><h2 id="文件传输-1"><a href="#文件传输-1" class="headerlink" title="文件传输"></a>文件传输</h2><ol>
 <li><p>scp命令</p>
 <blockquote>
 <p>作用：远程文件的复制</p>
@@ -2343,7 +2374,7 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <li>用户不同主机之间的文件复制</li>
 <li>SSH协议保证了复制的安全性<ul>
 <li>免密登录</li>
-<li>TCP/IP</li>
+<li>TCP&#x2F;IP</li>
 </ul>
 </li>
 </ul>
@@ -2353,17 +2384,7 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <li>全量备份</li>
 </ul>
 </li>
-<li>通常在第一次做备份的时候推荐使用scp命令<ul>
-<li><p>全网备份     </p>
-</li>
-<li><p>项目</p>
-</li>
-<li><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106140723860.png" alt="image-20221106140723860"></p>
-</li>
-<li><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106140802185.png" alt="image-20221106140802185"></p>
-</li>
-</ul>
-</li>
+<li><h2 id="通常在第一次做备份的时候推荐使用scp命令-全网备份-项目"><a href="#通常在第一次做备份的时候推荐使用scp命令-全网备份-项目" class="headerlink" title="通常在第一次做备份的时候推荐使用scp命令- 全网备份- 项目- "></a>通常在第一次做备份的时候推荐使用scp命令<br>- 全网备份<br>- 项目<br>- <img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106140723860.png" alt="image-20221106140723860"></h2>  <img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106140802185.png" alt="image-20221106140802185"></li>
 </ul>
 </blockquote>
 </li>
@@ -2379,22 +2400,22 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 </blockquote>
 </li>
 </ol>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106140927768.png" alt="image-20221106140927768"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106141019966.png" alt="image-20221106141019966"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106141041773.png" alt="image-20221106141041773"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106141117265.png" alt="image-20221106141117265"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106141229232.png" alt="image-20221106141229232"></p>
-<h2 id="定时任务"><a href="#定时任务" class="headerlink" title="定时任务"></a>定时任务</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106141311611.png" alt="image-20221106141311611"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106141412046.png" alt="image-20221106141412046"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106142859505.png" alt="image-20221106142859505"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106142945655.png" alt="image-20221106142945655"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106143238320.png" alt="image-20221106143238320"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106143548530.png" alt="image-20221106143548530"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106143707283.png" alt="image-20221106143707283"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106143756264.png" alt="image-20221106143756264"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106143814658.png" alt="image-20221106143814658"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106143835715.png" alt="image-20221106143835715"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106144046011.png" alt="image-20221106144046011"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106140927768.png" alt="image-20221106140927768"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106141019966.png" alt="image-20221106141019966"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106141041773.png" alt="image-20221106141041773"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106141117265.png" alt="image-20221106141117265"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106141229232.png" alt="image-20221106141229232"></p>
+<h2 id="定时任务"><a href="#定时任务" class="headerlink" title="定时任务"></a>定时任务</h2><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106141311611.png" alt="image-20221106141311611"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106141412046.png" alt="image-20221106141412046"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106142859505.png" alt="image-20221106142859505"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106142945655.png" alt="image-20221106142945655"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106143238320.png" alt="image-20221106143238320"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106143548530.png" alt="image-20221106143548530"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106143707283.png" alt="image-20221106143707283"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106143756264.png" alt="image-20221106143756264"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106143814658.png" alt="image-20221106143814658"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106143835715.png" alt="image-20221106143835715"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106144046011.png" alt="image-20221106144046011"></p>
 <h1 id="二十一、磁盘管理与网络管理以及静态路由项目"><a href="#二十一、磁盘管理与网络管理以及静态路由项目" class="headerlink" title="二十一、磁盘管理与网络管理以及静态路由项目"></a>二十一、磁盘管理与网络管理以及静态路由项目</h1><h2 id="磁盘管理"><a href="#磁盘管理" class="headerlink" title="磁盘管理"></a>磁盘管理</h2><h3 id="磁盘分类"><a href="#磁盘分类" class="headerlink" title="磁盘分类"></a>磁盘分类</h3><p>工作原理分类</p>
 <blockquote>
 <p>机械硬盘</p>
@@ -2405,7 +2426,7 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <p>特点：</p>
 <ul>
 <li>寿命相对比较长</li>
-<li>如果损坏/故障方便维修</li>
+<li>如果损坏&#x2F;故障方便维修</li>
 <li>读写速度慢</li>
 </ul>
 <p>固态硬盘</p>
@@ -2415,9 +2436,9 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 </ul>
 <p>特点：</p>
 <ul>
-<li>相对寿命/读写次数/寿命相对较短</li>
+<li>相对寿命&#x2F;读写次数&#x2F;寿命相对较短</li>
 <li>读写速度快</li>
-<li>性能高/稳定性好</li>
+<li>性能高&#x2F;稳定性好</li>
 </ul>
 </blockquote>
 <p>硬盘接口分类</p>
@@ -2425,18 +2446,18 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <p>SAS</p>
 <ul>
 <li>转速比较高<ul>
-<li>10k    12k    15k</li>
+<li>10k	12k	15k</li>
 </ul>
 </li>
 <li>存储容量相对小<ul>
-<li>146G    300G    600G    1TB    2TB    3TB</li>
+<li>146G	300G	600G	1TB	2TB	3TB</li>
 </ul>
 </li>
 </ul>
 <p>SATA</p>
 <ul>
-<li>数据存储/速度慢/容量大<ul>
-<li>1TB    2TB    3TB    4TB    8TB    12TB</li>
+<li>数据存储&#x2F;速度慢&#x2F;容量大<ul>
+<li>1TB	2TB	3TB	4TB	8TB	12TB</li>
 </ul>
 </li>
 <li>转速<ul>
@@ -2463,64 +2484,64 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 </blockquote>
 <p>磁盘阵列</p>
 <blockquote>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106145214912.png" alt="image-20221106145214912"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106145214912.png" alt="image-20221106145214912"></p>
 </blockquote>
 <p>RAID磁盘阵列</p>
 <blockquote>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106145301078.png" alt="image-20221106145301078"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106145301078.png" alt="image-20221106145301078"></p>
 </blockquote>
 <p>RAID级别</p>
 <blockquote>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106145355605.png" alt="image-20221106145355605"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106145355605.png" alt="image-20221106145355605"></p>
 </blockquote>
 <p>常见命令</p>
 <blockquote>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106145521369.png" alt="image-20221106145521369"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106145521369.png" alt="image-20221106145521369"></p>
 </blockquote>
-<p>/etc/fstab</p>
+<p>&#x2F;etc&#x2F;fstab</p>
 <blockquote>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106145633687.png" alt="image-20221106145633687"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106145844973.png" alt="image-20221106145844973"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106145633687.png" alt="image-20221106145633687"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106145844973.png" alt="image-20221106145844973"></p>
 </blockquote>
 <p>案例</p>
 <blockquote>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106145941249.png" alt="image-20221106145941249"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106150022056.png" alt="image-20221106150022056"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106150220091.png" alt="image-20221106150220091"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106150307071.png" alt="image-20221106150307071"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106150326297.png" alt="image-20221106150326297"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106145941249.png" alt="image-20221106145941249"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106150022056.png" alt="image-20221106150022056"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106150220091.png" alt="image-20221106150220091"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106150307071.png" alt="image-20221106150307071"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106150326297.png" alt="image-20221106150326297"></p>
 </blockquote>
 <h2 id="网络管理"><a href="#网络管理" class="headerlink" title="网络管理"></a>网络管理</h2><h3 id="C7"><a href="#C7" class="headerlink" title="C7"></a>C7</h3><blockquote>
-<p>ipconfig    没有的话就    yum install -y ipconfig</p>
+<p>ipconfig	没有的话就	yum install -y ipconfig</p>
 <p>ip a</p>
 <p>需要的软件</p>
 <ul>
 <li>yum install -y lrzsz</li>
 <li>yum install -y wget  curl</li>
 </ul>
-<p>ping IP/域名</p>
+<p>ping IP&#x2F;域名</p>
 <p>telnet IP：端口</p>
-<p>route    add    -net 192.168.0.0/24 gw 192.168.0.1</p>
-<p>route    del    -net 192.168.0.0/24 gw 192.168.0.1</p>
-<p>子网掩码    255.255.255.0</p>
-<p>0.0.0.0/0</p>
+<p>route	add	-net 192.168.0.0&#x2F;24 gw 192.168.0.1</p>
+<p>route	del	-net 192.168.0.0&#x2F;24 gw 192.168.0.1</p>
+<p>子网掩码	255.255.255.0</p>
+<p>0.0.0.0&#x2F;0</p>
 <p>端口 21 22 23 25 80 443 3306 3389 等</p>
-<p>DNS 114.114.144.114    223.5.5.5     233.6.6.6    1.2.4.8    8.8.8.8（Google）    202.106.0.20（联通）</p>
+<p>DNS 114.114.144.114    223.5.5.5 	233.6.6.6	1.2.4.8	8.8.8.8（Google）	202.106.0.20（联通）</p>
 <p>网关 （路由）</p>
 <p>防火墙 firewalld</p>
 <p>VPN &gt;&gt; 静态路由</p>
 </blockquote>
-<h2 id="静态路由"><a href="#静态路由" class="headerlink" title="静态路由"></a>静态路由</h2><p>192.168.110.1/24    10.0.0.1/24</p>
+<h2 id="静态路由"><a href="#静态路由" class="headerlink" title="静态路由"></a>静态路由</h2><p>192.168.110.1&#x2F;24	10.0.0.1&#x2F;24</p>
 <blockquote>
-<p>10.0.0.2/24    ETHO</p>
+<p>10.0.0.2&#x2F;24	ETHO</p>
 <ul>
 <li>百度</li>
-<li>route add -net 192.168.110.0/24 qw 10.0.0.1        &gt;&gt;10.0.0.1/24</li>
+<li>route add -net 192.168.110.0&#x2F;24 qw 10.0.0.1        &gt;&gt;10.0.0.1&#x2F;24</li>
 </ul>
-<p>192.168.110.2/24      ETHI</p>
+<p>192.168.110.2&#x2F;24      ETHI</p>
 <ul>
 <li>G网</li>
-<li>route add -net 10.0.0.0/24 gw 192.168.110.1        &gt;&gt;192.168.110.1/24</li>
+<li>route add -net 10.0.0.0&#x2F;24 gw 192.168.110.1        &gt;&gt;192.168.110.1&#x2F;24</li>
 </ul>
 <p>此时百度访问G网</p>
 </blockquote>
@@ -2528,7 +2549,7 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <ul>
 <li>开启内核转发</li>
 </ul>
-<h1 id="二十二、安全技术之ContOS7-x进程管理与网站攻击流程-信息收集"><a href="#二十二、安全技术之ContOS7-x进程管理与网站攻击流程-信息收集" class="headerlink" title="二十二、安全技术之ContOS7.x进程管理与网站攻击流程/信息收集"></a>二十二、安全技术之ContOS7.x进程管理与网站攻击流程/信息收集</h1><h2 id="进程管理-1"><a href="#进程管理-1" class="headerlink" title="进程管理"></a>进程管理</h2><h3 id="C7-1"><a href="#C7-1" class="headerlink" title="C7"></a>C7</h3><blockquote>
+<h1 id="二十二、安全技术之ContOS7-x进程管理与网站攻击流程-x2F-信息收集"><a href="#二十二、安全技术之ContOS7-x进程管理与网站攻击流程-x2F-信息收集" class="headerlink" title="二十二、安全技术之ContOS7.x进程管理与网站攻击流程&#x2F;信息收集"></a>二十二、安全技术之ContOS7.x进程管理与网站攻击流程&#x2F;信息收集</h1><h2 id="进程管理-1"><a href="#进程管理-1" class="headerlink" title="进程管理"></a>进程管理</h2><h3 id="C7-1"><a href="#C7-1" class="headerlink" title="C7"></a>C7</h3><blockquote>
 <p>进程概念</p>
 <ul>
 <li><p>在Linux系统中、每一段执行的程序就称为一个进程。系统进程编号id</p>
@@ -2568,7 +2589,7 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <li>进程连接的终端名</li>
 <li>进程资源占用<ul>
 <li>CPU</li>
-<li>内存 </li>
+<li>内存</li>
 </ul>
 </li>
 </ul>
@@ -2588,7 +2609,7 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 </li>
 <li><p>S</p>
 <blockquote>
-<p>x在进程正在睡眠     信号/信号量        </p>
+<p>x在进程正在睡眠     信号&#x2F;信号量		</p>
 <ul>
 <li>Ctrl+C终止</li>
 <li>Ctrl+Z挂起</li>
@@ -2633,7 +2654,9 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <ul>
 <li>表示进程是多线程</li>
 </ul>
-<p>+</p>
+<ul>
+<li></li>
+</ul>
 <ul>
 <li>表示当前进程运行在前台<ul>
 <li>终端</li>
@@ -2663,7 +2686,7 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 </ul>
 <p>ef用标准的格式显示进程</p>
 <p>pstree -pu</p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106162722761.png" alt="image-20221106162722761"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106162722761.png" alt="image-20221106162722761"></p>
 <p>ps -aux|more    用BSD的格式示进程</p>
 </blockquote>
 <h3 id="系统负载"><a href="#系统负载" class="headerlink" title="系统负载"></a>系统负载</h3><blockquote>
@@ -2677,7 +2700,7 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <p>kill</p>
 <ul>
 <li>PID</li>
-<li>-9    最高权限/强制终止</li>
+<li>-9    最高权限&#x2F;强制终止</li>
 </ul>
 <p>killall</p>
 <ul>
@@ -2690,15 +2713,15 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 </ul>
 </blockquote>
 <h3 id="C7防火墙基本"><a href="#C7防火墙基本" class="headerlink" title="C7防火墙基本"></a>C7防火墙基本</h3><blockquote>
-<p>firewall-cmd –zone=pulic –list-ports</p>
-<p>firewall-cmd –zone=pulicadd-ports=port/tcp –permanent</p>
+<p>firewall-cmd –zone&#x3D;pulic –list-ports</p>
+<p>firewall-cmd –zone&#x3D;pulicadd-ports&#x3D;port&#x2F;tcp –permanent</p>
 <p>firewall-cmd –reload</p>
 <p>firewall-cmd –completely-reload</p>
-<p>firewall-cmd –zoneremove-port=port/tcp –permanent</p>
+<p>firewall-cmd –zoneremove-port&#x3D;port&#x2F;tcp –permanent</p>
 <p>firewall-cmd –help</p>
 <p>firewall-cmd –state</p>
 </blockquote>
-<h2 id="攻击流程-黑客攻击-入侵的操作步骤"><a href="#攻击流程-黑客攻击-入侵的操作步骤" class="headerlink" title="攻击流程(黑客攻击/入侵的操作步骤)"></a>攻击流程(黑客攻击/入侵的操作步骤)</h2><h3 id="确定目标"><a href="#确定目标" class="headerlink" title="确定目标"></a>确定目标</h3><ul>
+<h2 id="攻击流程-黑客攻击-x2F-入侵的操作步骤"><a href="#攻击流程-黑客攻击-x2F-入侵的操作步骤" class="headerlink" title="攻击流程(黑客攻击&#x2F;入侵的操作步骤)"></a>攻击流程(黑客攻击&#x2F;入侵的操作步骤)</h2><h3 id="确定目标"><a href="#确定目标" class="headerlink" title="确定目标"></a>确定目标</h3><ul>
 <li>确定目标地址范围    &gt;&gt; 信息收集 &gt;&gt; 网站信息whois信息  &gt;&gt; 天眼查、ICP、国家企业信息公示系统</li>
 <li>ms.com子域名<ul>
 <li>task.ms.com</li>
@@ -2706,7 +2729,7 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <li>*.ms.com</li>
 </ul>
 </li>
-<li>SSL http/https<ul>
+<li>SSL http&#x2F;https<ul>
 <li>SSL证书的查询</li>
 </ul>
 </li>
@@ -2726,11 +2749,11 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 </ul>
 </li>
 <li>网站框架<ul>
-<li>浏览器插件/Chrome、火狐、Edge</li>
+<li>浏览器插件&#x2F;Chrome、火狐、Edge</li>
 </ul>
 </li>
-<li>敏感文件/目录探测 </li>
-<li>社交网站/平台</li>
+<li>敏感文件&#x2F;目录探测 </li>
+<li>社交网站&#x2F;平台</li>
 <li>WAF</li>
 </ul>
 <h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><ul>
@@ -2766,12 +2789,12 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <h3 id="工具-对应技术"><a href="#工具-对应技术" class="headerlink" title="工具       对应技术"></a>工具       对应技术</h3><ul>
 <li>Kali、Google、dig、dnsmap、nslookup</li>
 <li>ping、fping、nmap、AutoScan</li>
-<li> 空会话、amap、kail</li>
+<li>空会话、amap、kail</li>
 <li>meta、kali</li>
 <li>meta、kali、python、字典</li>
 <li>conf、php mysql等</li>
-<li>有良知删除一条或多条/没良知清空</li>
-<li>一句话/编写/NVC/3389</li>
+<li>有良知删除一条或多条&#x2F;没良知清空</li>
+<li>一句话&#x2F;编写&#x2F;NVC&#x2F;3389</li>
 <li>ping死亡之ping</li>
 </ul>
 <h1 id="二十三、渗透测试Web应用程序"><a href="#二十三、渗透测试Web应用程序" class="headerlink" title="二十三、渗透测试Web应用程序"></a>二十三、渗透测试Web应用程序</h1><h2 id="常见的Web服务器"><a href="#常见的Web服务器" class="headerlink" title="常见的Web服务器"></a>常见的Web服务器</h2><p>IIS</p>
@@ -2803,7 +2826,7 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <p>J2EE开源的应用服务器</p>
 </blockquote>
 <h2 id="Web应用程序前端开发基础"><a href="#Web应用程序前端开发基础" class="headerlink" title="Web应用程序前端开发基础"></a>Web应用程序前端开发基础</h2><blockquote>
-<p>高级    安全攻防</p>
+<p>高级	安全攻防</p>
 <ul>
 <li>应急响应</li>
 <li>渗透测试</li>
@@ -2811,7 +2834,7 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 </ul>
 </blockquote>
 <blockquote>
-<p>中级    安全运营</p>
+<p>中级	安全运营</p>
 <ul>
 <li>终端安全</li>
 <li>行为安全</li>
@@ -2824,7 +2847,7 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 </ul>
 </blockquote>
 <blockquote>
-<p>初级    安全支持</p>
+<p>初级	安全支持</p>
 <ul>
 <li>办公网络安全<ul>
 <li>内网安全</li>
@@ -2852,7 +2875,7 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <p>用户在这样的信息平台就会留下数据</p>
 <p>浏览器</p>
 <ul>
-<li>漏洞        <ul>
+<li>漏洞		<ul>
 <li>SQL注入</li>
 </ul>
 </li>
@@ -2876,7 +2899,7 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <li>博客</li>
 <li>Web邮件</li>
 <li>交互信息</li>
-<li>公众号/小程序</li>
+<li>公众号&#x2F;小程序</li>
 </ul>
 </blockquote>
 <p>Web前端开发技术入门</p>
@@ -2894,7 +2917,7 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 </li>
 <li><p>安恒—-明鉴 </p>
 </li>
-<li><p>绿盟WVSS/RSAS </p>
+<li><p>绿盟WVSS&#x2F;RSAS </p>
 </li>
 <li><p>其他–Nmap等</p>
 </li>
@@ -2914,8 +2937,8 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <li>root用户登录</li>
 <li>测试一个网站根据网络安全法(授权)</li>
 <li>dnsenum<ul>
-<li>-f    指定文件  dns.txt<ul>
-<li>/usr/share/dnsenum/dns.txt</li>
+<li>-f	指定文件  dns.txt<ul>
+<li>&#x2F;usr&#x2F;share&#x2F;dnsenum&#x2F;dns.txt</li>
 </ul>
 </li>
 </ul>
@@ -2958,7 +2981,7 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 </ul>
 </li>
 </ul>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106220549680.png" alt="image-20221106220549680"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106220549680.png" alt="image-20221106220549680"></p>
 <blockquote>
 <p>网站的备案信息  </p>
 <ul>
@@ -2966,11 +2989,11 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 </ul>
 <p>SSL状态查询</p>
 <ul>
-<li>myssl.com/ssl.html</li>
+<li>myssl.com&#x2F;ssl.html</li>
 </ul>
 </blockquote>
 <blockquote>
-<p>​    APP信息提取</p>
+<p>​	APP信息提取</p>
 <ul>
 <li>抓包工具</li>
 <li>安卓APP的反编译  <ul>
@@ -2982,7 +3005,7 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <blockquote>
 <p>暴力破解</p>
 <ul>
-<li>二级域名的爆破    <ul>
+<li>二级域名的爆破	<ul>
 <li>demon v1.2以后</li>
 </ul>
 </li>
@@ -3003,7 +3026,7 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <blockquote>
 <p>第三方网站的收集操作</p>
 <ul>
-<li>工具    <ul>
+<li>工具	<ul>
 <li>7kbScan</li>
 </ul>
 </li>
@@ -3031,13 +3054,13 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <li>.git源码</li>
 <li>.SVN源码泄露</li>
 <li>.DS_Store文件泄露</li>
-<li>WEB-INF/web.xml</li>
+<li>WEB-INF&#x2F;web.xml</li>
 <li>网站备份文件泄露   .gz .rar .zip .tar.gz .bak .tar</li>
 <li>github泄露<ul>
 <li>工具  <ul>
 <li>theHarvester Github搜</li>
 <li>全栈自动监控Github<ul>
-<li>sec.xiaomi.com/article/37</li>
+<li>sec.xiaomi.com&#x2F;article&#x2F;37</li>
 </ul>
 </li>
 </ul>
@@ -3077,45 +3100,45 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
 <p>漏洞扫描</p>
 <p>msf框架</p>
 <p>其他</p>
-<h1 id="SQL注入"><a href="#SQL注入" class="headerlink" title="SQL注入"></a>SQL注入</h1><h2 id="SQL-Injection-Base"><a href="#SQL-Injection-Base" class="headerlink" title="SQL Injection Base"></a>SQL Injection Base</h2><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106225744023.png" alt="image-20221106225744023" style="zoom: 67%;" />
+<h1 id="SQL注入"><a href="#SQL注入" class="headerlink" title="SQL注入"></a>SQL注入</h1><h2 id="SQL-Injection-Base"><a href="#SQL-Injection-Base" class="headerlink" title="SQL Injection Base"></a>SQL Injection Base</h2><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106225744023.png" alt="image-20221106225744023" style="zoom: 67%;">
 
 
 
 <p>What is Database？</p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106230013934.png" alt="image-20221106230013934"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106230013934.png" alt="image-20221106230013934"></p>
 <p>MySQL Base</p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106231122191.png" alt="image-20221106231122191"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221106231122191.png" alt="image-20221106231122191"></p>
 <p>特殊用法</p>
 <blockquote>
 <p>查看当前时间</p>
-<p>​    select NOW();</p>
+<p>​	select NOW();</p>
 <p>查看当前选择的库</p>
-<p>​    select DATABASE();</p>
+<p>​	select DATABASE();</p>
 <p>版本</p>
-<p>​    select VERSION();</p>
+<p>​	select VERSION();</p>
 <p>查看当前登录数据库的用户</p>
-<p>​    select USER();</p>
+<p>​	select USER();</p>
 <p>查看数据路径</p>
-<p>​    select @@datadir;</p>
+<p>​	select @@datadir;</p>
 <p>查看mysql安装路径</p>
-<p>​    select @@basedir;</p>
+<p>​	select @@basedir;</p>
 <p>查看mysql安装的系统</p>
-<p>​    select  @@version_compile_os;</p>
+<p>​	select  @@version_compile_os;</p>
 </blockquote>
-<h2 id="What-is-SQL-Injection"><a href="#What-is-SQL-Injection" class="headerlink" title="What is SQL Injection"></a>What is SQL Injection</h2><p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221107111148724.png" alt="image-20221107111148724"></p>
+<h2 id="What-is-SQL-Injection"><a href="#What-is-SQL-Injection" class="headerlink" title="What is SQL Injection"></a>What is SQL Injection</h2><p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221107111148724.png" alt="image-20221107111148724"></p>
 <p>Web程序三层架构：界面层 + 业务逻辑层 + 数据访问层</p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221107112154904.png" alt="image-20221107112154904"></p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221107112334977.png" alt="image-20221107112334977"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221107112154904.png" alt="image-20221107112154904"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221107112334977.png" alt="image-20221107112334977"></p>
 <p>SQL注入带来的威胁：</p>
 <ul>
 <li>猜解后台数据库，盗取网站敏感信息</li>
 <li>绕过验证登录网站后台</li>
 <li>借助数据库的存储过程进行提权等操作</li>
 </ul>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221107112525262.png" alt="image-20221107112525262"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221107112525262.png" alt="image-20221107112525262"></p>
 <p>SQL Injection Demo</p>
 <p>题外话 四步记忆法</p>
-<p><img src="C:\Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104174229958.png" alt="image-20221104174229958"></p>
+<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221104174229958.png" alt="image-20221104174229958"></p>
 
                 
             </div>
@@ -3474,7 +3497,7 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
   <script>
     new Waline({
         el: '#waline',
-        serverURL: 'https://waline.your-domain.com',
+        serverURL: 'https://mapled-h93e-dpk4h96dr-hsiryy.vercel.app/',
         avatar: 'mm'    
     });
   </script> 
@@ -3493,13 +3516,13 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2022/11/30/Day12/">
+                <a href="/2022/11/30/Day11/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="SEC12">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="SEC11">
                         
-                        <span class="card-title">SEC12</span>
+                        <span class="card-title">SEC11</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -3519,6 +3542,14 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/sec/">
+                        <span class="chip bg-color">sec</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -3786,6 +3817,9 @@ tree -L 1或tree -L 2<span aria-hidden="true" class="line-numbers-rows"><span></
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
             
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">21.1k</span>
+            
             
             
                 
@@ -4047,17 +4081,16 @@ $(function () {
     
 
     
-        
+
+    <!-- 雪花特效 -->
+     
         <script type="text/javascript">
             // 只在桌面版网页启用特效
             var windowWidth = $(window).width();
             if (windowWidth > 768) {
-                document.write('<script type="text/javascript" src="/libs/others/sakura.js"><\/script>');
+                document.write('<script type="text/javascript" src="/libs/others/snow.js"><\/script>');
             }
         </script>
-    
-
-    <!-- 雪花特效 -->
     
 
     <!-- 鼠标星星特效 -->
