@@ -4,19 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="SEC02, Maple Leaf Falling">
-    <meta name="description" content="day02PHP语法PHP脚本在服务器上执行，然后将纯HTML发送回浏览器
-PHP脚本
-&amp;lt;?php
-  &amp;#x2F;&amp;#x2F;内容
-?&amp;gt;
-
-
-文中有PHP代码的话 后缀名必须要.php  要以分号结尾
-
- php中的注释
-
-&amp;">
+    <meta name="keywords" content="Nessus漏洞扫描, Maple Leaf Falling">
+    <meta name="description" content="NessusNessus号称是世界上最流行的漏洞扫描程序，全世界有超过75000个组织在使用它。该工具提供完整的电脑漏洞扫描服务，并随时更新其漏洞数据库。Nessus不同于传统的漏洞扫描软件，Nessus可同时在本机或远端上遥控，进行系统的">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -28,7 +17,7 @@ PHP脚本
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>SEC02 | Maple Leaf Falling</title>
+    <title>Nessus漏洞扫描 | Maple Leaf Falling</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -301,12 +290,12 @@ PHP脚本
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">SEC02</h1>
+                    <h1 class="description center-align post-title">Nessus漏洞扫描</h1>
                 </div>
             </div>
         </div>
@@ -346,28 +335,28 @@ PHP脚本
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-11-30
+                    2022-12-03
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-12-02
+                    2022-12-04
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    1.7k
+                    865
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    8 Min
+                    3 Min
                 </div>
                 
 
@@ -395,483 +384,136 @@ PHP脚本
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="day02"><a href="#day02" class="headerlink" title="day02"></a>day02</h1><h2 id="PHP语法"><a href="#PHP语法" class="headerlink" title="PHP语法"></a>PHP语法</h2><p>PHP脚本在服务器上执行，然后将纯HTML发送回浏览器</p>
-<p>PHP脚本</p>
-<pre class="line-numbers language-php" data-language="php"><code class="language-php">&lt;?php
-  &#x2F;&#x2F;内容
-?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+                <h1 id="Nessus"><a href="#Nessus" class="headerlink" title="Nessus"></a>Nessus</h1><p>Nessus号称是世界上最流行的漏洞扫描程序，全世界有超过75000个组织在使用它。该工具提供完整的电脑漏洞扫描服务，并随时更新其漏洞数据库。Nessus不同于传统的漏洞扫描软件，Nessus可同时在本机或远端上遥控，进行系统的漏洞分析扫描。Nessus也是渗透测试重要工具之一。</p>
+<h2 id="Kali安装Nessus"><a href="#Kali安装Nessus" class="headerlink" title="Kali安装Nessus"></a>Kali安装Nessus</h2><p>1.访问Nessus官网</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">www.tenable.com/downloads/nessus<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
+<p>2.下载 Nessus-10.1.1-debian6_amd64.deb  kali版本</p>
+<p>3.在windows系统下复制安装包</p>
+<p>4.到kali里粘贴Paste</p>
+<p><img src="/2022/12/03/Nessus%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F/image-20221203220937243.png"></p>
+<p>5.新建文件夹Nessus把安装包放里面</p>
+<p><img src="/2022/12/03/Nessus%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F/image-20221203223959326.png"></p>
+<p>6.在Xshell中进入Nessus文件夹</p>
+<p><img src="/2022/12/03/Nessus%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F/image-20221203224017070.png"></p>
+<p>安装Nessus程序 执行</p>
 <blockquote>
-<p>文中有PHP代码的话 后缀名必须要.php  要以分号结尾</p>
+<p>dpkg -i Nessus-10.1.1-debian6 amd64.deb</p>
 </blockquote>
-<p> php中的注释</p>
+<p><img src="/2022/12/03/Nessus%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F/image-20221203224425609.png"></p>
+<p>启动Nessus</p>
 <blockquote>
-<pre class="line-numbers language-php+HTML" data-language="php+HTML"><code class="language-php+HTML">&lt;?php
-echo &quot;Hello world&quot;;   &#x2F;&#x2F;输出
-&#x2F;*echo &quot;Hello world&quot;;
-echo &quot;Hello world&quot;;
-echo &quot;Hello world&quot;;*&#x2F;
-?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>service nessusd start</p>
 </blockquote>
-<h2 id="PHP常见函数"><a href="#PHP常见函数" class="headerlink" title="PHP常见函数"></a>PHP常见函数</h2><p>php变量</p>
-<pre class="line-numbers language-php" data-language="php"><code class="language-php">&lt;?php
-$a &#x3D; &quot;11111&quot;;
-echo $a;
-?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
+<p>查看kali的ip</p>
 <blockquote>
-<p><img src="/2022/11/30/Day02/image-20221110165629495.png"></p>
+<p>ip a</p>
 </blockquote>
-<pre class="line-numbers language-php" data-language="php"><code class="language-php">&lt;?php
-$a &#x3D; &quot;11111&quot;;
-$a &#x3D; &quot;22211&quot;;
-echo $a;
-?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+<p><img src="/2022/12/03/Nessus%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F/image-20221203224633580.png"></p>
+<p>浏览器访问nessus的web网站</p>
+<p>在kali里面IP用127.0.0.1，在物理机用kali的IP</p>
 <blockquote>
-<p><img src="/2022/11/30/Day02/image-20221110165708366.png"></p>
+<p><a target="_blank" rel="noopener" href="https://10.0.0.138:8834/#/">https://10.0.0.138:8834/#/</a></p>
 </blockquote>
-<pre class="line-numbers language-php" data-language="php"><code class="language-php">&lt;?php
-$x&#x3D;5;
-$y&#x3D;7;
-$z&#x3D;$x+$y;
-echo $z
-?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+<p><img src="/2022/12/03/Nessus%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F/image-20221203225849106.png"></p>
+<p>选择Managed Scanner</p>
+<p>选择</p>
+<p><img src="/2022/12/03/Nessus%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F/image-20221203225941087.png"></p>
+<p>点击Continue  创建用户名 然后Continue 等待配置</p>
+<p>配置好之后是这样</p>
+<p><img src="/2022/12/03/Nessus%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F/image-20221203230132787.png"></p>
+<p>现在并不能Scan  </p>
+<h3 id="离线激活Nessus"><a href="#离线激活Nessus" class="headerlink" title="离线激活Nessus"></a>离线激活Nessus</h3><p>去nessus官网申请激活码，姓名随便填，邮箱必须正确，用来接收激活码</p>
 <blockquote>
-<p><img src="/2022/11/30/Day02/image-20221110165932773.png"></p>
+<p><a target="_blank" rel="noopener" href="https://tenable.com/products/nessus/nessus-essentials">https://tenable.com/products/nessus/nessus-essentials</a></p>
 </blockquote>
-<p>phpinfo();</p>
+<p><img src="/2022/12/03/Nessus%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F/image-20221203231045213.png"></p>
+<p>之后会收到你的邮箱会收到激活码</p>
+<p><img src="/2022/12/03/Nessus%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F/image-20221203231206515.png"></p>
+<p>获得质询码 challenge code</p>
 <blockquote>
-<p>测试网站可不可以执行php</p>
-<p>测试debug</p>
+<p>&#x2F;opt&#x2F;nessus&#x2F;sbin&#x2F;nessuscli fetch –challenge</p>
 </blockquote>
-<p>system();</p>
+<p><img src="/2022/12/03/Nessus%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F/image-20221203231529407.png"></p>
+<p>获取离线插件包地址及激活证书</p>
 <blockquote>
-<p>可以使用system函数执行系统命令   &#x2F;&#x2F;后门木马</p>
+<p><a target="_blank" rel="noopener" href="https://plugins.nessus.org/v2/offline.php">https://plugins.nessus.org/v2/offline.php</a></p>
 </blockquote>
-<h2 id="PHP变量规则"><a href="#PHP变量规则" class="headerlink" title="PHP变量规则"></a>PHP变量规则</h2><ul>
-<li>变量名不能包含空格和特殊符号</li>
-<li>区分大小写</li>
-<li>必须以字母或者下划线字符开始</li>
-<li>php语句和php变量都是区分大小写的</li>
-</ul>
+<p><img src="/2022/12/03/Nessus%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F/image-20221203231810803.png"></p>
+<p>第一个输入challenge code 第二个输入邮箱得到的激活码</p>
+<p>跳转到此网页</p>
+<p><img src="/2022/12/03/Nessus%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F/image-20221203232012512.png"></p>
+<p><img src="/2022/12/03/Nessus%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F/image-20221203232218179.png"></p>
+<p>右键链接到新窗口打开 不要在此窗口打开不然激活码会失效</p>
+<p>把下载的两个文件复制到在kali创建的文件夹</p>
+<p><img src="/2022/12/03/Nessus%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F/image-20221203234045277.png"></p>
+<p>开始激活</p>
 <blockquote>
-<p>php没有声明变量的命令</p>
-<p>变量在第一次赋值的时候被创建</p>
+<p>&#x2F;opt&#x2F;nessus&#x2F;sbin&#x2F;nessuscli fetch –register-offline .&#x2F;nessus.license</p>
 </blockquote>
-<p>PHP是一门弱类型语言</p>
+<p><img src="/2022/12/03/Nessus%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F/image-20221203234211563.png"></p>
+<p>安装插件包</p>
 <blockquote>
-<p>php会根据变量的值，自动把变量转换为正确的数据类型</p>
+<p>&#x2F;opt&#x2F;nessus&#x2F;sbin&#x2F;nessuscli update .&#x2F;all-2.0.tar.gz</p>
+<p>&#x2F;opt&#x2F;nessus&#x2F;lib&#x2F;nessus&#x2F;plugins  #插件包目录</p>
 </blockquote>
-<p>PHP变量作用域</p>
+<p><img src="/2022/12/03/Nessus%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F/image-20221203234423972.png"></p>
+<p>重启nessus</p>
 <blockquote>
-<p>有四种不同的变量作用域</p>
-<ul>
-<li>local</li>
-<li>global</li>
-<li>static</li>
-<li>parameter</li>
-</ul>
+<p>service nessusd restart</p>
 </blockquote>
-<p>局部和全局作用域</p>
+<p>重新访问网站</p>
 <blockquote>
-<p>局部不能引用全区变量的数据 相反亦然</p>
-<pre class="line-numbers language-php" data-language="php"><code class="language-php">&lt;?php
-$x&#x3D;5;  &#x2F;&#x2F;全局变量
-&#x2F;&#x2F; 函数框架，函数（大盒子（处理代码））
-function myTest()&#123;
-    $y&#x3D;10; &#x2F;&#x2F;局部变量
-    echo &quot;&lt;p&gt;Text&lt;p&gt;&quot;;
-    echo &quot;变量 x 为：$x&quot;;
-    echo &quot;&lt;br&gt;&quot;;
-    echo &quot;变量 y 为 $y&quot;;
-&#125;
-
- &#x2F;&#x2F; 调用函数 
- myTest();   
-
-echo &quot;&lt;p&gt;Text&lt;p&gt;&quot;;
-echo &quot;变量 x 为：$x&quot;;
-echo &quot;&lt;br&gt;&quot;;
-echo &quot;变量 y 为 $y&quot;;
-
-?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p><img src="/2022/11/30/Day02/image-20221110172110685.png"></p>
+<p><a target="_blank" rel="noopener" href="https://10.0.0.138:8834/#/settings/about">https://10.0.0.138:8834/#/settings/about</a></p>
 </blockquote>
-<p>gobal</p>
+<p><img src="/2022/12/03/Nessus%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F/image-20221203234601898.png"></p>
+<p>等待插件加载 加载会很慢 别刷新 等待登录界面出现</p>
+<p><img src="/2022/12/03/Nessus%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F/image-20221204002411513.png"></p>
+<p>登录之后看到有IP限制</p>
+<p><img src="/2022/12/03/Nessus%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F/image-20221204002534611.png"></p>
+<h3 id="解除IP限制"><a href="#解除IP限制" class="headerlink" title="解除IP限制"></a>解除IP限制</h3><p>获取当前plugins的版本</p>
 <blockquote>
-<pre class="line-numbers language-php" data-language="php"><code class="language-php">&lt;?php
-$x&#x3D;5;  
-$y&#x3D;10; 
-
-function myText()&#123;
-    global $x,$y,$z;
-    $z&#x3D;$x+$y;
-    echo $z;
-&#125;
-
-myText();
-echo $z;
-?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p><img src="/2022/11/30/Day02/image-20221110172717443.png"></p>
+<p><a target="_blank" rel="noopener" href="https://plugins.nessus.org/v2/plugins.php">https://plugins.nessus.org/v2/plugins.php</a></p>
 </blockquote>
-<p>Static</p>
+<p>停止nessus服务</p>
 <blockquote>
-<pre class="line-numbers language-php" data-language="php"><code class="language-php">&lt;?php
-function myText()&#123;
-    static $x&#x3D;0,$y&#x3D;1;
-    echo &quot;第 $y 次：&quot;;
-    $y++;
-    echo $x;
-    $x++;
-    echo $x;
-    echo &quot;&lt;br&gt;&quot;;
-&#125;
-myText();
-myText();
-myText();
-myText();
-myText();
-?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p><img src="/2022/11/30/Day02/image-20221110173247241.png"></p>
+<p>service nessusd stop</p>
 </blockquote>
-<p>参数作用域</p>
+<p>创建plugin_feed_info.inc</p>
 <blockquote>
-<pre class="line-numbers language-php" data-language="php"><code class="language-php">&lt;?php
-
-function myText($x)&#123;
-    echo $x;
-&#125;
-
-myText(5);
-?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p><img src="/2022/11/30/Day02/image-20221110173532626.png"></p>
+<p>vi plugin_feed_info.inc   复制我的代码就好 只需要修改PLUGIN_SET</p>
 </blockquote>
-<h2 id="PHP输出"><a href="#PHP输出" class="headerlink" title="PHP输出"></a>PHP输出</h2><p>echo&#x2F;print 区别</p>
-<ul>
-<li>echo –可以输出一个或多个字符串；</li>
-<li>print –只允许输出一个字符串，返回值总为1；</li>
-</ul>
-<p>echo没有返回值，print有返回值</p>
-<pre class="line-numbers language-php+HTML" data-language="php+HTML"><code class="language-php+HTML">&lt;head&gt;
-    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;
-&lt;&#x2F;head&gt;
-
-&lt;?php
-echo &quot;&lt;h2&gt; sss啦啦啦&lt;&#x2F;h2&gt;&quot;;
-echo &quot;hello world &lt;br&gt;&quot;;
-echo &quot;这是一个&quot;.&quot;字符串&quot;.&quot;shji&quot;,&quot;ccsa.&quot;;
-?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>.号和，号可以拼接</p>
-<pre class="line-numbers language-php+HTML" data-language="php+HTML"><code class="language-php+HTML">&lt;head&gt;
-    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;
-&lt;&#x2F;head&gt;
-
-&lt;?php
-$txt1&#x3D;&quot;学习php&quot;;
-$txt2&#x3D;&quot;ssdadw&quot;;
-$cars&#x3D;array(&quot;Volvo&quot;,&quot;BWM&quot;,&quot;Toyota&quot;);
-
-echo $txt1;
-echo &quot;&lt;br&gt;&quot;;
-echo &quot;我的车是&#123;$cars[1]&#125;&quot;;
-?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+<p>PLUGIN_SET &#x3D; “202101081345”;<br>PLUGIN_FEED &#x3D; “ProfessionalFeed (Direct)”;<br>PLUGIN_FEED_TRANSPORT &#x3D; “Tenable Network Security Lightning”;</p>
+<p><img src="/2022/12/03/Nessus%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F/image-20221204003305129.png"></p>
+<p>PLUGIN_SET 是刚刚你获取的的plugins的版本号</p>
+<p>将plugin_feed_info.inc替换到&#x2F;opt&#x2F;nessus&#x2F;var&#x2F;nessus&#x2F;plugin_feed_info.inc</p>
 <blockquote>
-<p><img src="/2022/11/30/Day02/image-20221110175555415.png"></p>
+<p>cp plugin_feed_info.inc &#x2F;opt&#x2F;nessus&#x2F;var&#x2F;nessus&#x2F;</p>
 </blockquote>
-<p>EOF# PHP EOF(heredoc)</p>
-<pre class="line-numbers language-php+HTML" data-language="php+HTML"><code class="language-php+HTML">&lt;head&gt;
-    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;
-&lt;&#x2F;head&gt;
-
-&lt;?php
-&#x2F;&#x2F;需求：
-&#x2F;&#x2F;打印一首诗格式不变
-echo &lt;&lt;&lt;EOF
-    以阿萨
-    &lt;p&gt;ssss&lt;p&gt;
-    &lt;h1&gt;bbbb&lt;&#x2F;h1&gt;
-EOF;
-
-?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+<p>将&#x2F;opt&#x2F;nessus&#x2F;lib&#x2F;nessus&#x2F;plugins&#x2F;plugin_feed_info.inc文件删除</p>
 <blockquote>
-<p><img src="/2022/11/30/Day02/image-20221110180524080.png"></p>
+<p>rm -rf &#x2F;opt&#x2F;nessus&#x2F;var&#x2F;nessus&#x2F;plugins&#x2F;plugin_feed_info.inc</p>
 </blockquote>
-<pre class="line-numbers language-php+HTML" data-language="php+HTML"><code class="language-php+HTML">&lt;head&gt;
-    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;
-&lt;&#x2F;head&gt;
-
-&lt;?php
-$a&#x3D;array(&quot;Volvo&quot;,&quot;BWM&quot;,&quot;Toyota&quot;);
-&#x2F;&#x2F; 结束需要独立一行且前后不能空格
-echo $a;
-echo &quot;&lt;br&gt;&quot;;
-print ($a);
-echo &quot;&lt;br&gt;&quot;;
-print_r ($a);
-echo &quot;&lt;br&gt;&quot;;
-var_dump($a);
-?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+<p>启动nessus服务</p>
 <blockquote>
-<p><img src="/2022/11/30/Day02/image-20221110181249525.png"></p>
+<p>service nessusd start</p>
 </blockquote>
-<h2 id="PHP数据类型比较"><a href="#PHP数据类型比较" class="headerlink" title="PHP数据类型比较"></a>PHP数据类型比较</h2><p>数据类型</p>
-<ul>
-<li><p>String</p>
-</li>
-<li><p>Integer</p>
-</li>
-<li><p>Float</p>
-</li>
-<li><p>Boolean</p>
-</li>
-<li><p>Array</p>
-</li>
-<li><p>Object</p>
-<ul>
-<li>&#96;&#96;&#96;php<?php
-class Car
-{   
-function what_color($color){
-    return $color;
-}
-
-
-}
-$color = new Car();//格式化
-var_dump($color);
-?>
-<pre class="line-numbers language-none"><code class="language-none">
-    &gt; ![](Day02&#x2F;image-20221110195100889.png)
-
-- NULL
-
-- Resource（资源类型）
-
-
-
-
-
-类型比较
-
-&#96;&#96;&#96;php+HTML
-&lt;head&gt;
-    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;
-&lt;&#x2F;head&gt;
-
-&lt;?php
-if (42&#x3D;&#x3D;&quot;42&quot;)&#123;
-    echo &#39;值相等&lt;br&gt;&#39;;
-&#125;if(42&#x3D;&#x3D;&#x3D;&quot;42&quot;)&#123;
-    echo &#39;类型相等&lt;br&gt;&#39;;
-&#125;else&#123;
-    echo &#39;都不相等&lt;br&gt;&#39;;
-&#125;
-
-?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-</ul>
-</li>
-</ul>
+<p>访问nessus网站  限制解除</p>
+<p><img src="/2022/12/03/Nessus%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F/image-20221204010120667.png"></p>
+<h3 id="解决Nessus重启失效后遗症"><a href="#解决Nessus重启失效后遗症" class="headerlink" title="解决Nessus重启失效后遗症"></a>解决Nessus重启失效后遗症</h3><p>由于Nessus服务每次重启后，都会重置plugin_feed_info.inc，这将会使nessus&#x2F;plugins目录下所有的插件都被删除，无法扫描。因此要将nessus服务设置为手动，并且先停止nessus服务。可以写批处理解决此问题</p>
+<p>编写启动脚本</p>
 <blockquote>
-<p><img src="/2022/11/30/Day02/image-20221110201818015.png"></p>
+<p>vi qd_nessus.sh</p>
+<p>service nessusd stop;<br>cp &#x2F;root&#x2F;plugin_feed_info.inc &#x2F;opt&#x2F;nessus&#x2F;var&#x2F;nessus&#x2F;;<br>rm -rf &#x2F;opt&#x2F;nessus&#x2F;lib&#x2F;nessus&#x2F;plugins&#x2F;plugin_feed_info.inc;<br>service nessusd start;</p>
 </blockquote>
-<h2 id="PHP常量"><a href="#PHP常量" class="headerlink" title="PHP常量"></a>PHP常量</h2><p>使用define()函数，</p>
-<pre class="line-numbers language-php+HTML" data-language="php+HTML"><code class="language-php+HTML">&lt;head&gt;
-    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;
-&lt;&#x2F;head&gt;
-
-&lt;?php
-define(&quot;GREETING&quot;,&quot;欢迎访问&quot;);
-echo GREETING;
-echo &#39;&lt;br&gt;&#39;;
-echo greeting; &#x2F;&#x2F;这是警告信息，表示该常量未定义
-?&gt;
-
-
-
-
-
-&lt;head&gt;
-    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;
-&lt;&#x2F;head&gt;
- 
-&lt;?php
-define(&quot;GREETING&quot;,&quot;欢迎访问&quot;);
-function myTest()&#123;
-    echo GREETING;
-&#125;
-
-
-myTest();
-?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+<p>每次需要启动nessus时 输入启动命令</p>
 <blockquote>
-<p><img src="/2022/11/30/Day02/image-20221110203132211.png"></p>
+<p>sh qd_nessus.sh</p>
 </blockquote>
-<p>常量是全局的</p>
-<p>strlen()</p>
-<p>常常用在循环和其他函数中，因为这是确定字符串何时结束时很重要的</p>
-<pre class="line-numbers language-php+HTML" data-language="php+HTML"><code class="language-php+HTML">&lt;head&gt;
-    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;
-&lt;&#x2F;head&gt;
- 
-&lt;?php
-&#x2F;&#x2F;默认函数
-echo strlen(&quot;sssadad111sad57a8wd&quot;);
-?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+<p>查看插件大小 如果大小是几kb的话 那就需要重新安装插件</p>
 <blockquote>
-<p><img src="/2022/11/30/Day02/image-20221110203815102.png"></p>
+<p>du -h &#x2F;opt&#x2F;nessus&#x2F;lib&#x2F;nessus&#x2F;plugins</p>
 </blockquote>
-<p>strpos()</p>
-<p>strpos()函数用于在字符串内查找一个字符或一段指定的文本。</p>
-<p>如果在字符串中找到匹配，该函数会返回第一个匹配的字符位置。如果未找到，则返回FALSE</p>
-<pre class="line-numbers language-php+HTML" data-language="php+HTML"><code class="language-php+HTML">&lt;head&gt;
-    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;
-&lt;&#x2F;head&gt;
- 
-&lt;?php
-&#x2F;&#x2F;默认函数
-echo strpos(&quot;sssadad 111sad 57a8wd&quot;,&quot;ad&quot;);
-  n
-?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<blockquote>
-<p><img src="/2022/11/30/Day02/image-20221110204920014.png"></p>
-</blockquote>
-<h2 id="PHP运算符"><a href="#PHP运算符" class="headerlink" title="PHP运算符"></a>PHP运算符</h2><pre class="line-numbers language-php+HTML" data-language="php+HTML"><code class="language-php+HTML">&lt;?php
-$a &#x3D; 10;
-$e &#x3D; 5;
-echo ($a + $e);
-echo &quot;&lt;br&gt;&quot;;
-
-echo ($a - $e);
-echo &quot;&lt;br&gt;&quot;;
-
-echo ($a * $e);
-echo &quot;&lt;br&gt;&quot;;
-
-echo ($a &#x2F; $e);
-echo &quot;&lt;br&gt;&quot;;
-
-echo ($a % $e);
-echo &quot;&lt;br&gt;&quot;;
-
-echo -$x;
-?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<blockquote>
-<p><img src="/2022/11/30/Day02/image-20221110205921819.png"></p>
-</blockquote>
-<p>$y+&#x3D;100   &#x3D;&#x3D;   $y&#x3D;$y+100</p>
-<pre class="line-numbers language-php+HTML" data-language="php+HTML"><code class="language-php+HTML">&lt;?php
-$a &#x3D; 10;
-echo $a++.&quot;&lt;br&gt;&quot;;  &#x2F;&#x2F; 先输出再相加
-
-$b &#x3D; 10;
-echo ++$b.&quot;&lt;br&gt;&quot;;   &#x2F;&#x2F;$a &#x3D; $a + 1 先相加再输出
-
-$c &#x3D; 10;
-echo $c--.&quot;&lt;br&gt;&quot;;
-
-$d &#x3D; 10;
-echo --$d;
-?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<blockquote>
-<p><img src="/2022/11/30/Day02/image-20221110210953399.png"></p>
-</blockquote>
-<p>PHP计算器</p>
-<pre class="line-numbers language-php+HTML" data-language="php+HTML"><code class="language-php+HTML">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-    &lt;meta charset&#x3D;&quot;utf-8&quot;&gt;
-&lt;&#x2F;head&gt;
-
-&lt;?php
-$num1 &#x3D; $_GET[&quot;num1&quot;];
-$opt &#x3D; $_GET[&quot;opt&quot;];
-$num2 &#x3D; $_GET[&quot;num2&quot;];
-$jisuan &#x3D; $num1.$opt.$num2;
-$jieguo &#x3D; eval(&quot;return $jisuan;&quot;);
-?&gt;
-
-&lt;body&gt;
-    &lt;form action&#x3D;&quot;&quot; method&#x3D;&quot;get&quot;&gt;
-        数字：&lt;input type&#x3D;&quot;number&quot; name&#x3D;&quot;num1&quot; value&#x3D;&quot;&lt;?php echo $num1;?&gt;&quot;&gt;
-        &lt;label&gt;运算符&lt;&#x2F;label&gt;
-        &lt;select name&#x3D;&quot;opt&quot; id&#x3D;&quot;&quot;&gt;
-            &lt;option value&#x3D;&quot;+&quot;&gt;+&lt;&#x2F;option&gt;
-            &lt;option value&#x3D;&quot;-&quot;&gt;-&lt;&#x2F;option&gt;
-            &lt;option value&#x3D;&quot;*&quot;&gt;*&lt;&#x2F;option&gt;
-            &lt;option value&#x3D;&quot;&#x2F;&quot;&gt;&#x2F;&lt;&#x2F;option&gt;
-        &lt;&#x2F;select&gt;
-        数字2：&lt;input type&#x3D;&quot;number&quot; name&#x3D;&quot;num2&quot; value&#x3D;&quot;&lt;?php echo $num2;?&gt;&quot;&gt;
-        &lt;input type&#x3D;&quot;submit&quot; value&#x3D;&quot;计算&quot; &gt;
-        &lt;br&gt;
-        &lt;?php echo $jieguo;?&gt;
-    &lt;&#x2F;form&gt;
-&lt;&#x2F;body&gt;
-&lt;&#x2F;html&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<blockquote>
-<p><img src="/2022/11/30/Day02/image-20221110214753693.png"></p>
-</blockquote>
-<h2 id="PHP超级全局变量"><a href="#PHP超级全局变量" class="headerlink" title="PHP超级全局变量"></a>PHP超级全局变量</h2><p>php超级全局变量列表</p>
-<ul>
-<li>$GLOBALS</li>
-</ul>
-<pre class="line-numbers language-php" data-language="php"><code class="language-php">&lt;?php
-$x &#x3D; 75;
-$y &#x3D; 65;
-
-function addtion()&#123;
-    $GLOBALS[&#39;s&#39;] &#x3D; $GLOBALS[&#39;x&#39;];
-&#125;
-
-addtion();
-echo $s;
-?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<blockquote>
-<p><img src="/2022/11/30/Day02/image-20221110223336552.png"></p>
-</blockquote>
-<ul>
-<li>$_SERVER</li>
-</ul>
-<blockquote>
-<p>取出页面头部信息</p>
-</blockquote>
-<ul>
-<li>$_REQUEST</li>
-<li>$_POST</li>
-</ul>
-<blockquote>
-<p>不显示明文</p>
-<p>一般用于登录窗口</p>
-</blockquote>
-<ul>
-<li>$_GET</li>
-</ul>
-<blockquote>
-<p>接收来自表单action的值 传的值为明文</p>
-<p>传输对安全没有要求的 </p>
-</blockquote>
-<ul>
-<li>$_FILES</li>
-<li>$_ENV</li>
-<li>$_COOKIE</li>
-<li>$_SESSION</li>
-</ul>
 
                 
             </div>
@@ -898,7 +540,7 @@ echo $s;
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://hsiryy.github.io/2022/11/30/Day02/">https://hsiryy.github.io/2022/11/30/Day02/</a>
+                    <a href="https://hsiryy.github.io/2022/12/03/Nessus%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F/">https://hsiryy.github.io/2022/12/03/Nessus%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1227,17 +869,18 @@ echo $s;
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2022/11/30/%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%B8%97%E9%80%8F%E4%B8%8E%E9%98%B2%E5%BE%A1/">
+                <a href="/2022/12/03/Nessus%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="远程代码执行渗透与防御">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Nessus漏洞扫描">
                         
-                        <span class="card-title">远程代码执行渗透与防御</span>
+                        <span class="card-title">Nessus漏洞扫描</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1247,9 +890,9 @@ echo $s;
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-11-30
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-03
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -1258,6 +901,7 @@ echo $s;
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1276,13 +920,13 @@ echo $s;
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/11/30/Day01/">
+                <a href="/2022/12/02/test/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="SEC01">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="test">
                         
-                        <span class="card-title">SEC01</span>
+                        <span class="card-title">test</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1293,7 +937,7 @@ echo $s;
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-11-30
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-02
                             </span>
                         <span class="publish-author">
                             
@@ -1306,8 +950,8 @@ echo $s;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/sec/">
-                        <span class="chip bg-color">sec</span>
+                    <a href="/tags/test/">
+                        <span class="chip bg-color">test</span>
                     </a>
                     
                 </div>
